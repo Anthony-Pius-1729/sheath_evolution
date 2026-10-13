@@ -71,9 +71,9 @@ analysis because the available evidence did not support reliable reference-linea
 
 For residue $i$, remodeling compares its extended and contracted intermolecular contact sets:
 
-$$
-R_i = 1 - \frac{|C_i^E \cap C_i^C|}{|C_i^E \cup C_i^C|}.
-$$
+```math
+R_i = 1 - \frac{\lvert C_i^E \cap C_i^C\rvert}{\lvert C_i^E \cup C_i^C\rvert}.
+```
 
 Contacts use minimum heavy-atom distance strictly below 5 Å and a partner identity containing
 protein family, relative ring, relative azimuth and canonical residue position. Eligibility
@@ -102,10 +102,12 @@ and in [`supplementary_data/archived_commands.txt`](supplementary_data/archived_
 
 Each protein has a separate standardized linear model:
 
-$$
-z(r_i) = \beta_0 + \beta_R z(R_i) + \beta_A z(\mathrm{RSA}_i)
-+ \beta_P z(\mathrm{WCN}_i) + \beta_F z(\mathrm{GNM}_i) + \epsilon_i.
-$$
+```math
+\begin{aligned}
+z(r_i) = \beta_0 &+ \beta_R z(R_i) + \beta_A z(\mathrm{RSA}_i) \\
+&+ \beta_P z(\mathrm{WCN}_i) + \beta_F z(\mathrm{GNM}_i) + \epsilon_i.
+\end{aligned}
+```
 
 RSA, WCN and GNM are the **archived monomer descriptors averaged across available states**.
 The remodeling coefficient describes rate SD per remodeling SD conditional on those inputs.
