@@ -14,6 +14,16 @@ outputs, final alignments/topologies, model outputs and exact commands are retai
 These permit verification of the supplied site inputs and downstream numerical reporting.
 They do not identify the historical coordinate bytes or exact selected subunits.
 
+The independent saved-file audit in `verify_retained_data.py` checks all 927 recorded
+positions from the five retained references, including 435 eligible positions. It verifies
+the complete supplementary mapping export, contact-count arithmetic, metric eligibility
+and values, and joins for all 223 primary fitted positions against structural inputs,
+alignment reference/occupancy/variability and saved Rate4Site scores/posterior SDs.
+`RETAINED_DATA_VALIDATION.json` records the checks and source hashes; `DATA_DICTIONARY.md`
+defines the fields. Individual partner-contact tuples were not serialized. These checks
+establish internal consistency of the retained measurements, not their atomic-coordinate
+reconstruction or the validity of the selected historical subunits.
+
 ## Ordered structural procedure in the retained implementation
 
 1. The producer expects each original PDB accession's mmCIF under `sheath_pilot/structures/`.
@@ -87,8 +97,10 @@ already documented. External tool binaries/build sources are not part of the dep
 
 `reproducibility_archive.zip` packages local code, recorded sequence inputs, processed
 alignments/trees/rates/site tables, decision evidence and documentation with a SHA-256
-inventory. It is prepared for deposition; it has no public URL or DOI yet. Original atomic
+inventory. The source repository is public. The code/data package is prepared for the
+versioned GitHub release v1.0.0; a separate archival-service deposit and DOI remain pending.
+The package excludes local manuscript drafts and submission documents. Original atomic
 coordinates and unlogged intermediate provenance are absent and are not replaced by guessed
 values. The archive supports inspection and downstream replay from retained site inputs,
-with the limits above. Public deposition and complete structural reconstruction are separate
-remaining tasks.
+with the limits above. Archival DOI deposition and complete structural reconstruction are
+separate remaining tasks.

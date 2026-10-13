@@ -62,7 +62,7 @@ for k in alns:
 # Copy complete outputs and selected inputs into a reviewable, compact supplementary bundle.
 copy_paths=['results/hypothesis_test_primary.json','results/sensitivity.json','results/partial_residuals.csv','results/R_all_references.csv','orthology/primary_alignment_verification.csv','orthology/afp_sf1_feasibility.csv','orthology/dataset_decision.csv','orthology/afp_check3.json','orthology/r2pyocin_genome_copies.csv','orthology/r2pyocin_within_genome_distance.csv','orthology/salcis_loci.csv','orthology/salcis_ent_loci.csv','orthology/diffocin_all_loci.csv','sheath_pilot/qc_output/structural_qc_report.txt','FROZEN_ANALYSIS.md','hypothesis_test.py','requirements.txt','sheath_pilot/structural_qc.py','sheath_pilot/covariates.py']
 copy_paths += list(alns.values())
-copy_paths += ['REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json']
+copy_paths += ['REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json','DATA_DICTIONARY.md','verify_retained_data.py','RETAINED_DATA_VALIDATION.json']
 copy_paths += ['reference_sequences.json','DATASET_DECISION.md','AFP_FEASIBILITY.md','DIFFOCIN_FEASIBILITY.md','R2_FINAL_DECISION.md','sheath_pilot/lattice.py','sheath_pilot/remodeling.py','afp_loci.py','afp_tree.py','locus_architecture.py','filter_hits.py','local_search.py','uniprot_retrieve.py','prelim_tree.py']
 copy_paths += [f'retrieval_uniprot/{fam}_provenance.json' for fam in ['r2pyocin','afp_Afp2','afp_Afp3','salcis','diffocin']]
 copy_paths += [f'retrieval_uniprot/{fam}_search_provenance.json' for fam in ['r2pyocin','salcis','diffocin']]
@@ -84,8 +84,10 @@ This supplement reports retained outputs and reproducibility details for the thr
 analysis. It does not introduce new rate estimates, model fits or structural calculations.
 The complete-precision tables, residue mappings, commands and selected archived outputs
 are supplied in `supplementary_data/`. Code and retained study outputs are hosted in the
-currently private [GitHub repository](https://github.com/Anthony-Pius-1729/sheath_evolution); public access and an archived release/DOI
-remain pending. Manuscript drafts and submission files are excluded from that repository.
+public [GitHub repository](https://github.com/Anthony-Pius-1729/sheath_evolution) and
+[v1.0.0 code/data release](https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.0).
+Separate archival-service deposition and DOI registration remain pending. Current manuscript
+drafts and submission files are excluded from the release package.
 
 ## Supplementary Methods
 
@@ -97,6 +99,11 @@ pairs (gapped segments receive no index); `seqres_pos`
 is one-based extended entity sequence position. The residue-mapping CSV preserves author
 residue numbers in both states, canonical indices, contact counts, eligibility and descriptor
 values for every recorded position. Gaps and unresolved residues are not assigned coordinates.
+The complete export contains 927 recorded positions, including 435 eligible positions.
+`DATA_DICTIONARY.md` defines its fields. `RETAINED_DATA_VALIDATION.json` records an audit of
+this export, contact-count arithmetic and joins for all 223 primary fitted sites against
+the structural tables, alignments and Rate4Site outputs. This verifies saved-file
+correspondence, not the original atomic contacts; individual contact tuples were not retained.
 The two author chain sets are case-sensitive; operator-derived AFP copies are distinct from
 the deposited chain names. A selected contact-reference subunit key was not archived.
 

@@ -213,6 +213,7 @@ for name,tex in [('manuscript_for_review.tex',review_tex),('supplementary_for_re
     assert not any(v in tex for v in ['Anthony Yua Ior','ior23@itu.edu.tr','Istanbul Technical University','Maslak 34867','Anthony-Pius-1729'])
     (root/name).write_text(tex)
 declaration_markdown='## Acknowledgments\n'+source.split('## Acknowledgments\n',1)[1].split('## References\n',1)[0]
+availability_markdown=source.split('## Data and code availability\n',1)[1].split('## Acknowledgments\n',1)[0]
 title_page=preamble+'\n'+r'\title{'+inline(title)+'}\n'+r'''\author{Anthony Yua Ior\\[0.5em]
 \small Istanbul Technical University\\
 \small Maslak 34867, Istanbul, Turkiye\\
@@ -221,12 +222,7 @@ title_page=preamble+'\n'+r'\title{'+inline(title)+'}\n'+r'''\author{Anthony Yua 
 \begin{document}
 \maketitle
 \section*{Data and code availability}
-Code and retained study outputs are hosted at
-\href{https://github.com/Anthony-Pius-1729/sheath_evolution}{the GitHub repository},
-which is currently private. A local code/data archive has been prepared; public access and
-an archived release/DOI remain pending. Original coordinate files and selected reference
-keys are absent; the provenance audit documents these limits.
-'''+blocks(declaration_markdown)+'\n'+r'\end{document}'+'\n'
+'''+blocks(availability_markdown)+'\n'+blocks(declaration_markdown)+'\n'+r'\end{document}'+'\n'
 assert title_page.isascii()
 (root/'title_page.tex').write_text(title_page)
 
@@ -264,7 +260,9 @@ not mandate a template; LaTeX upload handling still needs confirmation in the po
 `SUBMISSION_CHECKLIST.md` and `COVER_LETTER_DRAFT.md` record submission preparation.
 `REVIEW_RESPONSE.md` describes the changes made in response to the supplied review.
 `REPRODUCIBILITY_AUDIT.md` documents what the archive can and cannot reproduce.
-The separate `reproducibility_archive.zip` is local and prepared for deposition, not public.
+The separate `reproducibility_archive.zip` contains retained code/data and is available
+through the public v1.0.0 GitHub release. It excludes manuscript and submission documents.
+Separate archival-service deposition and DOI registration remain pending.
 To produce the main paper without the supplement, comment out `\\input{supplementary.tex}`.
 The supplement depends on the main preamble and is not a standalone document.
 
@@ -283,13 +281,14 @@ limitation and unpropagated rate uncertainty remain visible.
 
 Source consistency, references, saved numbers, archive integrity and figure images have
 been checked. No TeX compiler is installed locally, so manuscript PDF compilation and
-final page-layout verification remain pending. Code and retained data have been pushed to the private GitHub repository
+final page-layout verification remain pending. Code and retained data are in the public GitHub repository
 https://github.com/Anthony-Pius-1729/sheath_evolution. Manuscript files remain local.
-Public access and an archived release/DOI remain pending. The bundle contains selected processed outputs,
+The versioned code/data release is public; separate DOI deposition remains pending.
+The bundle contains selected processed outputs,
 not the full retrieval cache, external tools or complete runnable analysis environment.
 '''
 (root/'LATEX_README.md').write_text(readme)
-paths=['manuscript.tex','supplementary.tex','MANUSCRIPT.md','SUPPLEMENTARY.md','MANUSCRIPT_REVIEW.md','REVIEW_RESPONSE.md','REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json','SUBMISSION_CHECKLIST.md','COVER_LETTER_DRAFT.md','prepare_supplementary.py','validate_manuscript.py','build_reproducibility_archive.py','make_figures.py','write_manuscript_latex.py']+figure_files
+paths=['manuscript.tex','supplementary.tex','MANUSCRIPT.md','SUPPLEMENTARY.md','MANUSCRIPT_REVIEW.md','REVIEW_RESPONSE.md','REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json','DATA_DICTIONARY.md','verify_retained_data.py','RETAINED_DATA_VALIDATION.json','SUBMISSION_CHECKLIST.md','COVER_LETTER_DRAFT.md','prepare_supplementary.py','validate_manuscript.py','build_reproducibility_archive.py','make_figures.py','write_manuscript_latex.py']+figure_files
 if (root/'MANUSCRIPT_VALIDATION.json').exists():paths.append('MANUSCRIPT_VALIDATION.json')
 if (root/'REPRODUCIBILITY_ARCHIVE.json').exists():paths.append('REPRODUCIBILITY_ARCHIVE.json')
 with zipfile.ZipFile(root/'manuscript_latex.zip','w',zipfile.ZIP_DEFLATED) as z:

@@ -13,7 +13,7 @@ The repository supports inspection of the evidence and reproduction from retaine
 missing atomic-coordinate provenance limits exact reconstruction of the original structural
 calculations.
 
-**Study snapshot:** 13 October 2026
+**Study snapshot:** 14 October 2026
 
 ## Main finding and scope
 
@@ -49,6 +49,8 @@ linear associations, not causal effects or a test of adaptive evolution.
 | [`FROZEN_ANALYSIS.md`](FROZEN_ANALYSIS.md) | Original written specification, preserved unchanged. |
 | [`DATASET_DECISION.md`](DATASET_DECISION.md) | Evolutionary inclusion/exclusion decisions. |
 | [`REPRODUCIBILITY_AUDIT.md`](REPRODUCIBILITY_AUDIT.md) | Input completeness, deterministic structural selection and unresolved provenance. |
+| [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) | Residue-table fields, indexing, joins and missing measurements. |
+| [`RETAINED_DATA_VALIDATION.json`](RETAINED_DATA_VALIDATION.json) | Integrity audit of all 927 retained structural records and 223 primary fitted sites. |
 
 The retained publication figures display structural distributions, dataset selection and
 adjusted associations. Figure 3 shows added-variable plots for Afp2, Afp3 and diffocin; its
@@ -150,7 +152,19 @@ The final primary alignments are:
 
 ## Inspect and regenerate presentation
 
-Run commands from the repository root. The following commands use retained outputs and do
+Run commands from the repository root. To audit the retained measurements independently:
+
+```sh
+python3 verify_retained_data.py
+```
+
+This standard-library command checks the complete mapping export, contact-count arithmetic,
+eligibility, remodeling values, structural-to-fitted joins, alignment occupancy and
+variability, and saved rate scores/posterior SDs. It writes an audit report and leaves the
+scientific inputs and outputs unchanged. It does not reconstruct atomic contacts or test
+bootstrap coverage under spatial dependence.
+
+The following commands use retained outputs and do
 not recompute structural contacts, infer phylogenies, estimate rates or fit regressions:
 
 ```sh
@@ -173,11 +187,15 @@ To prepare a local code/data bundle with a SHA-256 inventory:
 python3 build_reproducibility_archive.py
 ```
 
-This produces `reproducibility_archive.zip` and its metadata report. The local bundle may
-include manuscript files when they are present in the working directory; the ZIP is excluded
-from Git. Generated ZIP packages,
+This produces `reproducibility_archive.zip` and its metadata report. The package contains
+retained code, inputs, outputs, figures and audit documentation; manuscript and submission
+files are excluded even when present locally. Generated ZIP packages,
 extracted duplicate bundles, caches, downloaded article XML and local third-party tool builds
 are excluded from Git. The retained source and study data are versioned directly.
+
+The versioned [v1.0.0 release](https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.0)
+provides the code/data ZIP and its SHA-256 checksum. GitHub release hosting
+does not assign a DOI; deposition with an archival service remains pending.
 
 ### Local manuscript preparation
 

@@ -1,0 +1,85 @@
+{
+  "scope": "Saved-file integrity and correspondence audit; no coordinates, contacts, rates or models recomputed.",
+  "status": "passed",
+  "structural": [
+    {
+      "protein": "R2 pyocin",
+      "recorded_positions": 257,
+      "eligible_positions": 143
+    },
+    {
+      "protein": "AFP Afp2",
+      "recorded_positions": 184,
+      "eligible_positions": 84
+    },
+    {
+      "protein": "AFP Afp3",
+      "recorded_positions": 190,
+      "eligible_positions": 82
+    },
+    {
+      "protein": "SalCIS",
+      "recorded_positions": 168,
+      "eligible_positions": 68
+    },
+    {
+      "protein": "Diffocin",
+      "recorded_positions": 128,
+      "eligible_positions": 58
+    }
+  ],
+  "recorded_positions": 927,
+  "eligible_positions": 435,
+  "primary": [
+    {
+      "dataset": "afp_Afp2",
+      "fitted_positions": 84,
+      "sequences": 27,
+      "variable_positions": 51
+    },
+    {
+      "dataset": "afp_Afp3",
+      "fitted_positions": 81,
+      "sequences": 31,
+      "variable_positions": 64
+    },
+    {
+      "dataset": "diffocin",
+      "fitted_positions": 58,
+      "sequences": 33,
+      "variable_positions": 50
+    }
+  ],
+  "primary_fitted_positions": 223,
+  "verified": [
+    "complete retained mapping export",
+    "contact-count arithmetic and eligibility",
+    "remodeling values from retained counts",
+    "structural-to-fitted site joins",
+    "alignment reference, occupancy and observed variability",
+    "saved Rate4Site scores and posterior SDs"
+  ],
+  "not_verified": [
+    "original atomic-coordinate bytes",
+    "historical selected subunit keys",
+    "individual contact partner identities",
+    "spatial dependence coverage"
+  ],
+  "source_sha256": {
+    "orthology/afp_sf1_afp2_like.afa": "eb411a9ebb28057f3d64a26d1fe07ff9c33d2f2d61d88ba06a193f0948ee4cfe",
+    "orthology/afp_sf1_afp3_like.afa": "8668427c38cbfa35a0f923714a50dba4c6dfd982bb39112e082f784f1c1b0586",
+    "orthology/diffocin_primary.afa": "07bd0dc4c3f2f2cb6fe799f80fa6cb77f72401aac17279979a5ed1f3865647ba",
+    "rates/afp_Afp2.res": "f13b5dc386252e0a4b433b07947110680aa8fa1ca0e37947f26d7965e4cad527",
+    "rates/afp_Afp3.res": "a5e8ecee9973e2b1eccda315a29a4fe9457cc97fceffbb65cd7cf592c9cc7329",
+    "rates/diffocin.res": "1e8b46ee05500ae1f28ff5e452c831859a7e2f54d7072842bb904f65936ea86f",
+    "results/hypothesis_test_primary.json": "f31036a749f56ec5b000d288c56ca0e5e9729464f4d4a085a854b12859239dc0",
+    "results/sitetable_primary_afp_Afp2.csv": "4939683406ee8eb1e72b6b11be4d76d36558f6e959de602a0af5cd55030de312",
+    "results/sitetable_primary_afp_Afp3.csv": "1ade64362f6afe94884e0de5131d088d8f624928929010542d92924ae7b02721",
+    "results/sitetable_primary_diffocin.csv": "66ffaa14e4af9a2a9da7fd113b11c94ebc3ff16169beb3932ddaba4b3cfaa8d3",
+    "sheath_pilot/qc_output/R_afp.csv": "96a77aaf26a9e123c163b788569216b57295e010f2fc41991331db4b2cb417bb",
+    "sheath_pilot/qc_output/R_diffocin.csv": "06b114776558232f63252374c333354acb8bd8156b87c8f217b15c9e89fb1b47",
+    "sheath_pilot/qc_output/R_r2pyocin.csv": "be559052ebd56fe90660b74dbffba3740e59930363f2f22559ee38e9223ee4a9",
+    "sheath_pilot/qc_output/R_salcis.csv": "12c2bfe616a3d692bda8fc2489896fa5d97d7cb8e986ad0fd47b0467c8e7de9b",
+    "supplementary_data/TableS1_residue_mapping.csv": "e6bdd8caa39cb759475223aa77a9a36f1d281a1a02486bdc461aa951b4761344"
+  }
+}
