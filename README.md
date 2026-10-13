@@ -1,6 +1,6 @@
 # Contact-network remodeling and bacterial sheath protein evolution
 
-This repository contains the code, retained analysis inputs and outputs, and manuscript for
+This repository contains the code and retained analysis inputs and outputs for
 a study of how intermolecular contacts change during contraction of bacterial injection-system
 sheaths. The central question is whether residue-level contact remodeling is associated with
 site-specific evolutionary rate after adjustment for monomer solvent accessibility, packing
@@ -8,7 +8,8 @@ and flexibility averaged across the extended and contracted states.
 
 The computational analysis is closed. The repository preserves the reported estimates and
 separates the primary analysis from historical feasibility checks and manuscript preparation.
-It supports inspection of the evidence and reproduction from retained downstream inputs;
+Manuscript sources and submission documents are kept locally and excluded from this repository.
+The repository supports inspection of the evidence and reproduction from retained downstream inputs;
 missing atomic-coordinate provenance limits exact reconstruction of the original structural
 calculations.
 
@@ -43,18 +44,16 @@ linear associations, not causal effects or a test of adaptive evolution.
 
 | File | Purpose |
 |---|---|
-| [`MANUSCRIPT.md`](MANUSCRIPT.md) | Scientific narrative, methods, three Results sections, interpretation and references. |
-| [`SUPPLEMENTARY.md`](SUPPLEMENTARY.md) | Detailed structural/orthology methods, full coefficients, sensitivities and supporting evidence. |
 | [`RESULTS.md`](RESULTS.md) | Numerical findings and their interpretation. |
 | [`INDEX.md`](INDEX.md) | Map from each result to its supporting files. |
 | [`FROZEN_ANALYSIS.md`](FROZEN_ANALYSIS.md) | Original written specification, preserved unchanged. |
 | [`DATASET_DECISION.md`](DATASET_DECISION.md) | Evolutionary inclusion/exclusion decisions. |
 | [`REPRODUCIBILITY_AUDIT.md`](REPRODUCIBILITY_AUDIT.md) | Input completeness, deterministic structural selection and unresolved provenance. |
-| [`REVIEW_RESPONSE.md`](REVIEW_RESPONSE.md) | Changes made in response to the focused manuscript review. |
 
-The current manuscript contains three main figures and three main tables, plus supplementary
-Figures and Tables S1–S5. Figure 3 shows added-variable plots for Afp2, Afp3 and diffocin;
-its lines use the saved full-model slopes and are checked against the stored residuals.
+The retained publication figures display structural distributions, dataset selection and
+adjusted associations. Figure 3 shows added-variable plots for Afp2, Afp3 and diffocin; its
+lines use the saved full-model slopes and are checked against the stored residuals. Full
+coefficient and sensitivity tables remain under `supplementary_data/`.
 
 ## Structural datasets and remodeling
 
@@ -155,18 +154,15 @@ not recompute structural contacts, infer phylogenies, estimate rates or fit regr
 ```sh
 python3 prepare_supplementary.py
 python make_figures.py
-python3 write_manuscript_latex.py
-python3 validate_manuscript.py
 ```
 
-`prepare_supplementary.py`, `write_manuscript_latex.py` and `validate_manuscript.py` use the
-Python standard library. Figure generation requires NumPy, pandas and Matplotlib. The
-validation checks source syntax, citation/DOI consistency, figure paths, full-precision
-reported estimates, copied-source hashes and package integrity. A session-specific baseline
-for the 82 original analysis artifacts is used when available; independent source manifests
-remain part of the repository.
+`prepare_supplementary.py` uses the Python standard library. Figure generation requires
+NumPy, pandas and Matplotlib. Preparation regenerates table CSVs, selected source copies and
+a local supplementary draft. Independent source manifests remain part of the repository.
+The LaTeX conversion and manuscript-validation scripts additionally require local manuscript
+files, which are intentionally excluded from Git.
 
-These presentation commands rewrite generated manuscripts, tables, figure files and ZIPs.
+These presentation commands rewrite generated supplementary tables, a local draft and figure files.
 They should be run in a working copy when preserving a particular manuscript snapshot.
 
 To prepare a local code/data bundle with a SHA-256 inventory:
@@ -175,27 +171,27 @@ To prepare a local code/data bundle with a SHA-256 inventory:
 python3 build_reproducibility_archive.py
 ```
 
-This produces `reproducibility_archive.zip` and its metadata report. Generated ZIP packages,
+This produces `reproducibility_archive.zip` and its metadata report. The local bundle may
+include manuscript files when they are present in the working directory; the ZIP is excluded
+from Git. Generated ZIP packages,
 extracted duplicate bundles, caches, downloaded article XML and local third-party tool builds
 are excluded from Git. The retained source and study data are versioned directly.
 
-### LaTeX
+### Local manuscript preparation
 
-The bibliography is embedded; no BibTeX/Biber step is required. With a TeX installation:
+Manuscript drafts, LaTeX sources, title pages, submission documents and generated manuscript
+ZIPs stay in the local working directory and are excluded by `.gitignore`. They are not
+available in a fresh clone. The authoring scripts are retained, but their document inputs
+must be supplied locally before running:
 
 ```sh
-pdflatex -interaction=nonstopmode -halt-on-error manuscript.tex
-pdflatex -interaction=nonstopmode -halt-on-error manuscript.tex
+python3 write_manuscript_latex.py
+python3 validate_manuscript.py
 ```
 
-Use `manuscript.tex` for the complete author version. `title_page.tex` is a separate identifying
-page, and `manuscript_for_review.tex` includes `supplementary_for_review.tex` for the review
-variant. Keep `figures/` beside the sources. Alternatively, upload the generated
-`manuscript_latex.zip` to Overleaf. See [`LATEX_README.md`](LATEX_README.md) and
-[`SUBMISSION_CHECKLIST.md`](SUBMISSION_CHECKLIST.md).
-
-Static source checks have passed. Compilation and final pagination of the revised full
-manuscript have not been verified in this environment because a TeX compiler is absent.
+The validation script checks manuscript syntax, citations, saved numerical estimates and
+package integrity when its local document inputs exist. Manuscript editing and compilation
+are separate from inspection of the versioned code and scientific outputs.
 
 ## Reproduction boundaries
 
@@ -229,9 +225,9 @@ above. No analyses were rerun to prepare this repository or README.
 
 The manuscript title is **Contact-Network Remodeling During Bacterial Sheath Contraction Is
 Associated with Site-Specific Evolutionary Rates in an AFP System**.
-The manuscript is a research draft; no publication DOI or archival release DOI has been
-assigned. Cite the manuscript and the specific repository commit or archived release used,
-and retain the primary experimental/data citations given in the manuscript.
+The manuscript is a local research draft and is not distributed in this repository; no
+publication DOI or archival release DOI has been assigned. Cite the manuscript and the specific repository commit or archived release used,
+and retain the primary experimental/data citations associated with the analysis.
 
 A source repository and a persistent scholarly data deposit serve different purposes.
 Public visibility and an archived release/DOI must be established before replacing the

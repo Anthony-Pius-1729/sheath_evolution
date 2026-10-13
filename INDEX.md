@@ -1,9 +1,9 @@
 # Index — where every result lives
 
 Project root: `/Users/anthony/Documents/sheath_evolution`. Written 2026-10-13.
-**Read `MANUSCRIPT.md` first** (the complete scientific draft, including Introduction and references), then
-`RESULTS.md` (the results with full numbers and limitations). Everything else below is the
-evidence behind them.
+**Read `RESULTS.md` first** for the findings and their limitations. Manuscript and submission
+files listed below belong to the local authoring project and are excluded from GitHub.
+The versioned files provide the scientific inputs, outputs, code and decision evidence.
 
 ---
 

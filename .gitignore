@@ -30,7 +30,7 @@ evoenv/
 /resume.log
 /r4s.res
 
-# TeX build products; retain editable sources and publication figures
+# TeX build products; publication figures remain versioned
 /*.aux
 /*.bbl
 /*.blg
@@ -55,3 +55,18 @@ evoenv/
 .agents/
 .vscode/
 .idea/
+
+# Manuscript and submission documents stay local
+/MANUSCRIPT.md
+/SUPPLEMENTARY.md
+/manuscript.tex
+/supplementary.tex
+/manuscript_for_review.tex
+/supplementary_for_review.tex
+/title_page.tex
+/COVER_LETTER_DRAFT.md
+/MANUSCRIPT_REVIEW.md
+/MANUSCRIPT_VALIDATION.json
+/REVIEW_RESPONSE.md
+/SUBMISSION_CHECKLIST.md
+/LATEX_README.md
