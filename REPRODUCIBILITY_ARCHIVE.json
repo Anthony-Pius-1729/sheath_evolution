@@ -1,10 +1,15 @@
 {
   "archive": "reproducibility_archive.zip",
-  "status": "local archive prepared for deposition; no public URL/DOI",
-  "project_files": 331,
-  "source_bytes": 87681620,
-  "archive_bytes": 29318644,
-  "sha256": "a38f0b0619fa8567a16e8083c30466a026b64b56a702a3dc8ee46a8e900b8157",
+  "status": "code/data package prepared for versioned GitHub release; DOI deposition pending",
+  "version": "v1.0.0",
+  "repository": "https://github.com/Anthony-Pius-1729/sheath_evolution",
+  "release_url": "https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.0",
+  "build_git_head": "02918f400cf8e9de14beab8f72975bd0545a8d39",
+  "project_files": 349,
+  "source_bytes": 91464361,
+  "archive_bytes": 32726164,
+  "sha256": "41db7510c42f0779ce7fd1a1297c0c6e615d23c5d791c3c2548d05192c1877b0",
+  "manuscript_documents_included": false,
   "original_atomic_coordinates_included": false,
   "exact_historical_selected_subunits_verified": false
 }
