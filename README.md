@@ -12,9 +12,6 @@ It supports inspection of the evidence and reproduction from retained downstream
 missing atomic-coordinate provenance limits exact reconstruction of the original structural
 calculations.
 
-**Author:** Anthony Yua Ior  
-**Affiliation:** Istanbul Technical University, Maslak 34867, Istanbul, Turkiye  
-**Contact:** ior23@itu.edu.tr  
 **Study snapshot:** 13 October 2026
 
 ## Main finding and scope
@@ -231,7 +228,7 @@ above. No analyses were rerun to prepare this repository or README.
 ## Citation, availability and declarations
 
 The manuscript title is **Contact-Network Remodeling During Bacterial Sheath Contraction Is
-Associated with Site-Specific Evolutionary Rates in an AFP System**, by Anthony Yua Ior.
+Associated with Site-Specific Evolutionary Rates in an AFP System**.
 The manuscript is a research draft; no publication DOI or archival release DOI has been
 assigned. Cite the manuscript and the specific repository commit or archived release used,
 and retain the primary experimental/data citations given in the manuscript.
