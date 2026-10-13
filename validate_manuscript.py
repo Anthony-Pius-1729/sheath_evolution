@@ -80,12 +80,15 @@ audit=json.loads((ROOT/'structural_provenance_audit.json').read_text());assert a
 for p,h in audit['source_sha256'].items():assert hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==h
 with zipfile.ZipFile(ROOT/'manuscript_latex.zip') as z:
     assert z.testzip() is None
-    for p in tex:assert z.read(p)==(ROOT/p).read_bytes()
+    for p in ['manuscript.tex','supplementary.tex']:assert z.read(p)==(ROOT/p).read_bytes()
+    standalone=[n for n in z.namelist() if n.endswith('.tex') and r'\documentclass' in z.read(n).decode()]
+    assert standalone==['manuscript.tex'],standalone
+    assert not {'title_page.tex','manuscript_for_review.tex','supplementary_for_review.tex'}&set(z.namelist())
     for p in ['MANUSCRIPT.md','SUPPLEMENTARY.md','REVIEW_RESPONSE.md']:assert z.read(p)==(ROOT/p).read_bytes()
 def words(t):
     t=re.sub(r'<sup>.*?</sup>','',t,flags=re.S);return len('\n'.join(l for l in t.splitlines() if not l.startswith(('|','#','    '))).split())
 abstract=body.split('## Abstract\n')[1].split('**Keywords:**')[0];main=body.split('## Introduction\n')[1].split('## Figures\n')[0]
 assert words(abstract)<300 and 4000<=words(main)<=6000
-report=dict(original_analysis_hashes_unchanged=protected,main_figures=3,main_tables=3,supplementary_figures=5,supplementary_tables=5,references=23,primary_fitted_sites=223,sensitivity_specifications=8,main_words=words(main),abstract_words=words(abstract),TeX_sources_checked=5,TeX_source_syntax='passed static checks',review_source_identity='removed from text and PDF-author metadata',saved_coefficients='match original JSON',citation_order_DOIs='checked',ZIP_integrity='passed',actual_adjustment='monomer descriptors averaged across available states',statistical_intervals='sequence-block bootstrap; spatial coverage unassessed',structural_reference_reconstruction='not verified: original coordinates and selected keys absent',public_archive='local deposition archive; public URL/DOI pending',manuscript_PDF_compilation='not performed: no local TeX compiler')
+report=dict(original_analysis_hashes_unchanged=protected,main_figures=3,main_tables=3,supplementary_figures=5,supplementary_tables=5,references=23,primary_fitted_sites=223,sensitivity_specifications=8,main_words=words(main),abstract_words=words(abstract),TeX_sources_checked=5,Overleaf_main_document='manuscript.tex',Overleaf_standalone_documents=1,TeX_source_syntax='passed static checks',review_source_identity='removed from text and PDF-author metadata',saved_coefficients='match original JSON',citation_order_DOIs='checked',ZIP_integrity='passed',actual_adjustment='monomer descriptors averaged across available states',statistical_intervals='sequence-block bootstrap; spatial coverage unassessed',structural_reference_reconstruction='not verified: original coordinates and selected keys absent',public_archive='local deposition archive; public URL/DOI pending',manuscript_PDF_compilation='not performed: no local TeX compiler')
 (ROOT/'MANUSCRIPT_VALIDATION.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

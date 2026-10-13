@@ -251,10 +251,15 @@ pdflatex -interaction=nonstopmode -halt-on-error manuscript.tex
 ```
 
 The article class and common packages support editing; no publisher class is assumed.
-`title_page.tex` is the separate identifying page. `manuscript_for_review.tex` includes
-`supplementary_for_review.tex` and omits author identity from document text and PDF-author
-metadata. Use these alternative files according to the submission system's requirements;
-`manuscript.tex` remains the complete author version. The journal prefers Word and does
+The Overleaf ZIP contains one standalone TeX document: `manuscript.tex`. It includes
+`supplementary.tex` automatically. Separate title-page and review documents remain in the
+local project and are deliberately excluded from this ZIP so the two-page title document
+cannot be selected instead of the paper. `manuscript.tex` is the complete author version.
+
+If an existing project shows only acknowledgments and declarations, open `manuscript.tex`,
+choose File > Settings > Compiler > Main document > manuscript.tex, and Recompile.
+Alternatively upload this ZIP as a NEW Overleaf project; uploading into an old project does
+not remove its previously uploaded title-page source. The journal prefers Word and does
 not mandate a template; LaTeX upload handling still needs confirmation in the portal.
 `SUBMISSION_CHECKLIST.md` and `COVER_LETTER_DRAFT.md` record submission preparation.
 `REVIEW_RESPONSE.md` describes the changes made in response to the supplied review.
@@ -284,7 +289,7 @@ Public access and an archived release/DOI remain pending. The bundle contains se
 not the full retrieval cache, external tools or complete runnable analysis environment.
 '''
 (root/'LATEX_README.md').write_text(readme)
-paths=['manuscript.tex','supplementary.tex','MANUSCRIPT.md','SUPPLEMENTARY.md','MANUSCRIPT_REVIEW.md','REVIEW_RESPONSE.md','REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json','SUBMISSION_CHECKLIST.md','COVER_LETTER_DRAFT.md','title_page.tex','manuscript_for_review.tex','supplementary_for_review.tex','prepare_supplementary.py','validate_manuscript.py','build_reproducibility_archive.py','make_figures.py','write_manuscript_latex.py']+figure_files
+paths=['manuscript.tex','supplementary.tex','MANUSCRIPT.md','SUPPLEMENTARY.md','MANUSCRIPT_REVIEW.md','REVIEW_RESPONSE.md','REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json','SUBMISSION_CHECKLIST.md','COVER_LETTER_DRAFT.md','prepare_supplementary.py','validate_manuscript.py','build_reproducibility_archive.py','make_figures.py','write_manuscript_latex.py']+figure_files
 if (root/'MANUSCRIPT_VALIDATION.json').exists():paths.append('MANUSCRIPT_VALIDATION.json')
 if (root/'REPRODUCIBILITY_ARCHIVE.json').exists():paths.append('REPRODUCIBILITY_ARCHIVE.json')
 with zipfile.ZipFile(root/'manuscript_latex.zip','w',zipfile.ZIP_DEFLATED) as z:
@@ -293,5 +298,16 @@ with zipfile.ZipFile(root/'manuscript_latex.zip','w',zipfile.ZIP_DEFLATED) as z:
     for p in sorted((root/'supplementary_data').rglob('*')):
         if p.is_file():z.write(p,str(p.relative_to(root)))
 folder=root/'manuscript_latex';folder.mkdir(exist_ok=True)
+# Preserve superseded extracted copies as non-TeX backups; original local sources stay intact.
+for name in ['title_page.tex','manuscript_for_review.tex','supplementary_for_review.tex']:
+    old=folder/name
+    if old.exists():
+        backup=folder/'optional_source_backups';backup.mkdir(exist_ok=True)
+        dest=backup/(name+'.txt');index=1
+        while dest.exists():dest=backup/(name+'.'+str(index)+'.txt');index+=1
+        old.rename(dest)
 with zipfile.ZipFile(root/'manuscript_latex.zip') as z:z.extractall(folder)
+with zipfile.ZipFile(root/'manuscript_latex.zip') as z:
+    standalone=[n for n in z.namelist() if n.endswith('.tex') and r'\documentclass' in z.read(n).decode()]
+    assert standalone==['manuscript.tex'], standalone
 print('Created LaTeX source and ZIP: three main figures, three main tables, five supplementary figures/tables, 23 references.')
