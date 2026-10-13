@@ -1,0 +1,81 @@
+{
+  "family": "r2pyocin",
+  "clade_level": 7,
+  "status": "feasibility diagnostics only -- no rates estimated",
+  "paralog_test": {
+    "dropped_paralogs_tested": 117,
+    "inside_clade_in_paralogs": 117,
+    "outside_clade": 0,
+    "clade_members_recovered": "293/293",
+    "in_paralog_topology": {
+      "mrca_leaves": 411,
+      "in_paralogs": 117,
+      "monophyletic": false
+    },
+    "in_paralog_pairs_sister_leaves": 10,
+    "in_paralog_pairs_tested": 117,
+    "in_paralog_median_patristic": 1.6735,
+    "verdict": "117 in-paralogs: the clade is not a clean ortholog set"
+  },
+  "n_orthologs": 293,
+  "phylogenetic_diversity": {
+    "tree_length": 69.524,
+    "mean_patristic_distance": 2.0764,
+    "median_patristic_distance": 2.5824,
+    "max_patristic_distance": 5.0158,
+    "identity_min": 0.3008,
+    "identity_median": 0.6929
+  },
+  "alignment": {
+    "columns": 852,
+    "sequences": 294,
+    "columns_occupancy_ge_50pct": 387,
+    "reference_columns": 386
+  },
+  "structural_sites": {
+    "n_sites": 143,
+    "mapped_to_a_column": 143,
+    "occupancy_ge_80pct": 143,
+    "occupancy_ge_70pct": 143,
+    "occupancy_ge_90pct": 142,
+    "median_occupancy": 1.0,
+    "median_window_occupancy": 0.9991,
+    "sites_window_occupancy_lt_80pct": 27,
+    "invariant_sites": 6,
+    "sites_major_aa_ge_95pct": 22,
+    "median_distinct_aa": 9.0,
+    "median_entropy": 1.5027,
+    "entropy_quartiles": [
+      0.7662,
+      1.5027,
+      1.9908
+    ]
+  },
+  "branch_lengths": {
+    "median_tip": 0.05117,
+    "max_tip": 2.15174,
+    "outlier_tips_gt_q3_plus_3iqr": 12,
+    "outlier_labels": [
+      "A0ABS1GD27",
+      "A0A345DE55",
+      "A0A1T4W573",
+      "A0A4R2P7S3",
+      "A0A0C5VSH8",
+      "A0A3N2E0U0",
+      "A0A5S9P2P4",
+      "A0ABX6GHD2",
+      "A0ABR8T9A4",
+      "A0ABX2ZYG1",
+      "A0ABS5ZIF3",
+      "A0A545T5U0"
+    ]
+  },
+  "taxonomic_redundancy": {
+    "distinct_species": 293,
+    "distinct_genera": 90,
+    "largest_genus": "Pseudomonas",
+    "largest_genus_frac": 0.42,
+    "genus_shannon": 3.056,
+    "effective_genera": 21.25
+  }
+}

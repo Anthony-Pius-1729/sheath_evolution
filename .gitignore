@@ -1,0 +1,57 @@
+# Local Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+evoenv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+
+# Generated distribution bundles and extracted duplicates
+*.zip
+/manuscript_latex/
+/figures/previous_layout/
+/supplementary_data/archived/
+
+# Local third-party downloads, binaries and compilation products
+/tools/
+*.o
+*.a
+*.so
+*.dylib
+
+# Downloaded literature and obsolete retrieval scratch logs
+/*.xml
+/retrieval.log
+/retrieval_superseded_*.log
+/retrieval/
+/resume.log
+/r4s.res
+
+# TeX build products; retain editable sources and publication figures
+/*.aux
+/*.bbl
+/*.blg
+/*.fdb_latexmk
+/*.fls
+/*.out
+/*.toc
+/*.synctex.gz
+/manuscript.log
+/manuscript_for_review.log
+/title_page.log
+/manuscript.pdf
+/manuscript_for_review.pdf
+/title_page.pdf
+
+# Local credentials and editor metadata
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+.vscode/
+.idea/

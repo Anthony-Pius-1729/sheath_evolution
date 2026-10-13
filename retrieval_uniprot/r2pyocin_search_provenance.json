@@ -1,0 +1,90 @@
+{
+  "family": "r2pyocin",
+  "searched_at": "2026-10-13T06:37:32Z",
+  "route": "uniprotkb_pfam_family_scan+local_blastp",
+  "reference": {
+    "uniprot": "Q9S574",
+    "length": 386
+  },
+  "candidate_db": {
+    "fasta": "r2pyocin_candidates.fasta",
+    "sha256": "432855b9538ba117749da37d791f6e5ba777399f974900472793d7beffc4b747",
+    "sequences": 8035,
+    "files": [
+      "db.pdb",
+      "db.phr",
+      "db.pin",
+      "db.pjs",
+      "db.pot",
+      "db.psq",
+      "db.ptf",
+      "db.pto"
+    ]
+  },
+  "tools": {
+    "blastp": "blastp: 2.17.0+",
+    "makeblastdb": "makeblastdb: 2.17.0+"
+  },
+  "search_params": {
+    "evalue": 1e-05,
+    "max_target_seqs": 20000,
+    "seg": "no",
+    "outfmt": "6 qseqid sseqid pident nident length mismatch gapopen qstart qend sstart send slen evalue bitscore",
+    "matrix": "BLOSUM62 (blastp default)"
+  },
+  "frozen_gates": {
+    "ID_LO": 0.3,
+    "ID_HI": 0.9,
+    "MIN_REF_COV": 0.8,
+    "LEN_LO": 0.75,
+    "LEN_HI": 1.3,
+    "imported_from": "filter_hits.py"
+  },
+  "funnel": {
+    "candidates": 8035,
+    "blastp_hits_evalue": 4593,
+    "pass_frozen_gates": 1266,
+    "species_dereplicated": 967
+  },
+  "reference_recovery": {
+    "in_candidate_set": true,
+    "self_hit_pident": 1.0,
+    "self_hit_ref_cov": 1.0,
+    "passes_gates": false,
+    "note": "the reference is expected to be retrieved and then excluded by the 90% identity ceiling; that is the gate working, not a retrieval failure"
+  },
+  "identity_distribution": {
+    "count": 967.0,
+    "mean": 0.4179,
+    "std": 0.1465,
+    "min": 0.3003,
+    "10%": 0.3229,
+    "25%": 0.3375,
+    "50%": 0.3525,
+    "75%": 0.4117,
+    "90%": 0.7329,
+    "max": 0.8255
+  },
+  "coverage_distribution": {
+    "count": 967.0,
+    "mean": 0.9787,
+    "std": 0.0266,
+    "min": 0.8057,
+    "10%": 0.9767,
+    "25%": 0.9793,
+    "50%": 0.9845,
+    "75%": 0.9896,
+    "90%": 0.9948,
+    "max": 1.0
+  },
+  "genomic_provenance": {
+    "accession_source_counts": {
+      "refseq": 938,
+      "uniprot": 29
+    },
+    "with_embl_xref": 967,
+    "with_proteome": 962,
+    "distinct_species": 967,
+    "distinct_genera": 280
+  }
+}

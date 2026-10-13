@@ -1,0 +1,63 @@
+{
+  "tips_total": 145,
+  "tips_labelled": 85,
+  "tips_unassigned": 60,
+  "label_counts": {
+    "afp3_like": 54,
+    "third_like": 8,
+    "afp2_like": 23
+  },
+  "nearest_labelled_neighbour_concordance": {
+    "overall": 0.941,
+    "by_label": {
+      "afp2_like": 0.913,
+      "afp3_like": 0.963,
+      "third_like": 0.875
+    },
+    "discordant": 5
+  },
+  "mrca_purity": {
+    "afp2_like": {
+      "n": 23,
+      "mrca_tips": 133,
+      "purity": 0.173,
+      "monophyletic": false
+    },
+    "afp3_like": {
+      "n": 54,
+      "mrca_tips": 145,
+      "purity": 0.372,
+      "monophyletic": false
+    },
+    "third_like": {
+      "n": 8,
+      "mrca_tips": 12,
+      "purity": 0.667,
+      "monophyletic": false
+    }
+  },
+  "within_vs_between_patristic": {
+    "afp2_like": {
+      "n": 23,
+      "within_median": 3.361,
+      "between_median": 4.545
+    },
+    "afp3_like": {
+      "n": 54,
+      "within_median": 3.079,
+      "between_median": 5.062
+    },
+    "third_like": {
+      "n": 8,
+      "within_median": 3.022,
+      "between_median": 6.435
+    }
+  },
+  "reference_third_gene": {
+    "sister_tips": 1,
+    "sister_labels": {
+      "third_like": 1
+    }
+  },
+  "reference_afp2_afp3_patristic": 4.619
+}

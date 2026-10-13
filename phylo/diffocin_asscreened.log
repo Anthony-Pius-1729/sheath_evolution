@@ -1,0 +1,169 @@
+IQ-TREE version 3.1.4 for MacOS ARM 64-bit built Sep 29 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    Anthonys-MacBook-Air.local (SSE4.2, 16 GB RAM)
+Command: iqtree -s orthology/diffocin_frozen_offset0.afa -m MFP -B 1000 -alrt 1000 -T 4 --prefix phylo/diffocin_asscreened -quiet -redo
+Seed:    971300 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Oct 13 19:39:34 2026
+Kernel:  SSE2 - 4 threads (8 CPU cores detected)
+
+Reading alignment file orthology/diffocin_frozen_offset0.afa ... Fasta format detected
+Reading fasta file: done in 0.000236034 secs using 75.41% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000518084 secs using 46.9% CPU
+Alignment has 35 sequences with 535 columns, 439 distinct patterns
+329 parsimony-informative, 42 singleton sites, 164 constant sites
+                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.40803e-05 secs using 95.51% CPU
+   1  REF              33.83%    passed     43.79%
+   2  WP_009896260_1   33.83%    passed     15.03%
+   3  WP_006439294_1   33.27%    passed      6.41%
+   4  WP_043967115_1   33.08%    passed     78.19%
+   5  WP_204920801_1   12.34%    passed     12.01%
+   6  WP_114298678_1   32.90%    passed     79.35%
+   7  WP_127007602_1   32.71%    passed     94.25%
+   8  WP_209405181_1   34.21%    passed      8.54%
+   9  WP_121586442_1   33.83%    passed     85.20%
+  10  WP_308457076_1   33.08%    passed     58.32%
+  11  WP_144993540_1   33.64%    passed      9.34%
+  12  WP_390125985_1   34.39%    failed      0.39%
+  13  WP_079427035_1   33.27%    passed     85.29%
+  14  WP_021800384_1   34.39%    failed      3.39%
+  15  WP_014826340_1   33.64%    passed     10.16%
+  16  WP_209455956_1   32.90%    passed     31.16%
+  17  WP_205088111_1   29.72%    passed     52.77%
+  18  WP_271713152_1   33.64%    passed     68.83%
+  19  WP_248835914_1   34.02%    passed     45.44%
+  20  WP_036681869_1   33.46%    passed     61.11%
+  21  WP_253201640_1   33.46%    passed     20.41%
+  22  WP_021624911_1   34.39%    passed     41.93%
+  23  WP_054327801_1   34.39%    failed      1.11%
+  24  WP_192026970_1   33.64%    passed     14.55%
+  25  WP_066619812_1   33.27%    passed     82.76%
+  26  WP_078697695_1   34.21%    passed     53.68%
+  27  WP_015945474_1   33.46%    passed     64.77%
+  28  WP_072772296_1   33.46%    passed     59.74%
+  29  WP_078497565_1   33.64%    failed      2.80%
+  30  WP_006440377_1   31.40%    passed     29.91%
+  31  WP_143332451_1   27.85%    passed     77.52%
+  32  WP_009894567_1   34.39%    passed     43.77%
+  33  WP_011861188_1   33.83%    passed     36.15%
+  34  WP_009889137_1   33.83%    passed     37.25%
+  35  WP_249332812_1   34.77%    passed     93.99%
+****  TOTAL            32.75%  4 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 5.98431e-05 secs using 80.21% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -17271.083
+Optimal log-likelihood: -17270.740
+Proportion of invariable sites: 0.025
+Gamma shape alpha: 1.650
+Parameters optimization took 1 rounds (0.031 sec)
+Time for fast ML tree search: 0.389 seconds
+
+NOTE: ModelFinder requires 26 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 535 epsilon: 0.100) ...
+Akaike Information Criterion:           LG+F+I+R3
+Corrected Akaike Information Criterion: LG+F+I+R3
+Bayesian Information Criterion:         Q.PFAM+F+G4
+Best-fit model: Q.PFAM+F+G4 chosen according to BIC
+
+All model information printed to phylo/diffocin_asscreened.model.gz
+CPU time for ModelFinder: 92.817 seconds (0h:1m:32s)
+Wall-clock time for ModelFinder: 33.451 seconds (0h:0m:33s)
+Generating 1000 samples for ultrafast bootstrap (seed: 971300)...
+
+NOTE: 11 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -17164.447
+2. Current log-likelihood: -17160.256
+Optimal log-likelihood: -17160.195
+Gamma shape alpha: 1.365
+Parameters optimization took 2 rounds (0.056 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.079452 secs using 380.9% CPU
+Computing ML distances took 0.079510 sec (of wall-clock time) 0.302717 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 6.41346e-05 secs using 70.16% CPU
+Constructing RapidNJ tree: done in 0.00116801 secs using 57.36% CPU
+Computing RapidNJ tree took 0.001251 sec (of wall-clock time) 0.000723 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -17192.323
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.287 second
+Computing log-likelihood of 98 initial trees ... 1.334 seconds
+Current best score: -17160.195
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -17155.287
+Iteration 10 / LogL: -17159.275 / Time: 0h:0m:37s
+Iteration 20 / LogL: -17159.319 / Time: 0h:0m:39s
+Finish initializing candidate tree set (6)
+Current best tree score: -17155.287 / CPU time: 5.472
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -17159.062 / Time: 0h:0m:41s (0h:0m:19s left)
+Iteration 40 / LogL: -17163.338 / Time: 0h:0m:43s (0h:0m:16s left)
+Iteration 50 / LogL: -17159.220 / Time: 0h:0m:46s (0h:0m:13s left)
+Log-likelihood cutoff on original alignment: -17204.261
+Iteration 60 / LogL: -17155.332 / Time: 0h:0m:48s (0h:0m:10s left)
+Iteration 70 / LogL: -17155.471 / Time: 0h:0m:50s (0h:0m:7s left)
+Iteration 80 / LogL: -17159.067 / Time: 0h:0m:52s (0h:0m:5s left)
+Iteration 90 / LogL: -17155.405 / Time: 0h:0m:55s (0h:0m:2s left)
+Iteration 100 / LogL: -17159.647 / Time: 0h:0m:57s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -17205.213
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:57s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -17155.287
+Optimal log-likelihood: -17155.286
+Gamma shape alpha: 1.371
+Parameters optimization took 1 rounds (0.026 sec)
+BEST SCORE FOUND : -17155.286
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.091 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file phylo/diffocin_asscreened.splits.nex
+Total tree length: 15.945
+
+Total number of iterations: 102
+CPU time used for tree search: 53.486 sec (0h:0m:53s)
+Wall-clock time used for tree search: 24.219 sec (0h:0m:24s)
+Total CPU time used: 147.296 sec (0h:2m:27s)
+Total wall-clock time used: 58.031 sec (0h:0m:58s)
+
+Computing bootstrap consensus tree...
+Reading input file phylo/diffocin_asscreened.splits.nex...
+35 taxa and 208 splits.
+Consensus tree written to phylo/diffocin_asscreened.contree
+Reading input trees file phylo/diffocin_asscreened.contree
+Log-likelihood of consensus tree: -17159.047
+
+Analysis results written to: 
+  IQ-TREE report:                phylo/diffocin_asscreened.iqtree
+  Maximum-likelihood tree:       phylo/diffocin_asscreened.treefile
+  Likelihood distances:          phylo/diffocin_asscreened.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          phylo/diffocin_asscreened.splits.nex
+  Consensus tree:                phylo/diffocin_asscreened.contree
+  Screen log file:               phylo/diffocin_asscreened.log
+
+Date and Time: Tue Oct 13 19:40:33 2026

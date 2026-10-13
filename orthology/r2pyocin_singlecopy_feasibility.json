@@ -1,0 +1,20 @@
+{
+  "n_sequences": 136,
+  "alignment_columns": 733,
+  "cols_per_ref_residue": 1.9,
+  "genera": 57,
+  "effective_genera": 22.25,
+  "largest_genus": "Pseudomonas",
+  "largest_genus_frac": 0.368,
+  "identity_min": 0.301,
+  "identity_median": 0.462,
+  "sites_occ_ge80": 143,
+  "invariant": 8,
+  "major_ge95": 17,
+  "median_distinct_aa": 7.0,
+  "median_entropy": 1.54,
+  "sites_wocc_lt80": 14,
+  "tree_length": 34.91,
+  "mean_patristic": 1.825,
+  "max_patristic": 4.207
+}

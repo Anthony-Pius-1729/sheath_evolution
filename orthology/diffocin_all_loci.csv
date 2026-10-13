@@ -1,0 +1,143 @@
+candidate,organism,nuc,n_cds,n_sheath_like,n_runs,longest_run,run_slots,run_strands,run_intergenic_bp,non_sheath_anchors,modal_offset,modal_anchor_share,collinearity_rho,anchored,flanking_ref_slots
+A0AC59FY14,Clostridioides difficile ATCC 9689 = DSM 1296,NZ_AQWV01000063.1,54,1,1,1,0,+,,45,0,0.778,1.0,True,-24;-23;-22;-21;-20;-19;-18;-17;-16;-15;-14;-13;-12;-11;-10;-9;-8;-7;-6;-5;-4;-3;-2;-1;1;2;3;4;5;6;7;8;9;10;11;15;16;17;18;19;20;21;22;23;24
+A0A0J1IPY6,Desulfosporosinus acididurans,NZ_LDZY01000004.1,74,1,1,1,0,+,,9,-1,0.667,1.0,True,-4;-1;1;4;5;6;7;8;9
+A0A5C0SEH2,Crassaminicella thermophila,NZ_CP042243.1,80,1,1,1,0,+,,7,1,0.714,1.0,True,-1;1;5;6;8;9;10
+A0A4R2KBA7,Marinisporobacter balticus,NZ_SLWV01000031.1,69,1,1,1,0,+,,7,-1,0.714,1.0,True,-1;1;5;6;8;9;10
+B6FWX3,Peptacetobacter hiranonis (strain DSM 13275 / JCM 10541 / KCTC 15199 / TO-931) (Clostridium hiranonis),NZ_CP036523.1,72,1,1,1,0,+,,11,0,0.727,1.0,True,-21;-4;-3;1;4;5;6;7;8;9;10
+A0A3P3Q2X9,Lachnoanaerobaculum orale,NZ_RRCM01000001.1,66,1,1,1,0,+,,8,-1,0.625,1.0,True,-4;1;2;4;5;6;8;9
+A0A0D0RYZ6,Anoxybacillus thermarum,NZ_JXTH01000041.1,45,1,1,1,0,+,,10,0,1.0,1.0,True,-1;1;2;3;4;5;6;8;9;10
+A0ACG1V203,Megamonas rupellensis,NZ_CATXHE010000001.1,54,1,1,1,0,+,,10,0,0.9,1.0,True,-4;-1;1;2;5;6;7;8;9;10
+A0A369AVN3,Anaerobacterium chartisolvens,NZ_QPJT01000018.1,42,1,1,1,0,+,,9,0,0.778,1.0,True,-14;1;2;4;5;6;8;9;10
+C0Z700,Brevibacillus brevis (strain 47 / JCM 6285 / NBRC 100599),NC_012491.1,71,1,1,1,0,+,,7,-1,0.714,1.0,True,-4;1;5;6;8;9;10
+A0ABU3Z8Q0,Veillonella absiana,NZ_CAUENZ010000001.1,64,1,1,1,0,+,,9,0,1.0,1.0,True,-1;1;2;5;6;7;8;9;10
+A0A940SJJ4,Gottfriedia endophytica,NZ_JAGIYQ010000005.1,79,1,1,1,0,+,,12,0,0.75,0.988,True,-4;-3;1;2;3;4;5;6;8;9;10
+I0R7R5,Lachnoanaerobaculum saburreum F0468,NZ_AJGH01000069.1,45,1,1,1,0,+,,8,-1,0.625,1.0,True,-4;1;2;4;5;6;8;9
+A0ABR7ACX6,Anaerotruncus massiliensis (ex Togo et al. 2026),NZ_JACOIH010000005.1,54,1,1,1,0,+,,9,0,0.889,1.0,True,-11;1;2;4;5;6;8;9;10
+A0AAE3E173,Hominilimicola fabiformis,NZ_JBBNHX010000057.1,44,1,1,1,0,+,,5,0,0.6,1.0,True,1;5;6;8;9
+A0A559IL30,Paenibacillus agilis,NZ_VNJK01000003.1,46,1,1,1,0,+,,11,0,0.909,1.0,True,-9;1;2;3;4;5;6;7;8;9;10
+U7UJ76,Megasphaera vaginalis (ex Srinivasan et al. 2021),NZ_AWXA01000036.1,21,1,1,1,0,+,,7,-1,0.714,1.0,True,-1;1;5;6;8;9;10
+G4Q959,Acidaminococcus intestini (strain RyC-MR95),NC_016077.1,63,1,1,1,0,+,,9,1,0.667,1.0,True,-1;1;2;5;6;7;8;9;10
+A0ACD8G1X8,Agathobaculum massiliense,NZ_AP031451.1,82,1,1,1,0,+,,10,0,0.8,1.0,True,-4;-3;1;4;5;6;8;9;10;11
+A0A1V4IEN7,Clostridium oryzae,NZ_MZGV01000056.1,36,1,1,1,0,+,,10,0,1.0,1.0,True,-1;1;2;4;5;6;7;8;9;10
+A0A6M0RCQ6,Clostridium niameyense,NZ_SXDP01000017.1,33,1,1,1,0,+,,11,2,0.636,1.0,True,-1;1;2;3;5;6;7;8;9;10;11
+A0A7G9B835,Oscillibacter hominis,NZ_CP060490.1,53,1,1,1,0,+,,10,1,0.6,1.0,True,-14;-11;1;2;4;5;6;8;9;10
+U2N9T0,Clostridium intestinale URNW,NZ_KI273145.1,55,1,1,1,0,+,,11,0,0.636,0.991,True,-7;-4;-3;1;4;5;6;7;8;9;10
+A0A6V6Y3Z3,Aedoeadaptatus nemausensis,NZ_CAIJCS010000019.1,70,1,1,1,0,+,,7,-1,0.714,1.0,True,1;2;4;5;6;8;9
+A0A0J6WZC2,Megasphaera cerevisiae DSM 20462,NZ_FUXD01000008.1,55,1,1,1,0,+,,10,-1,0.6,0.997,True,-4;1;2;5;6;7;8;9;10
+A0ABW5ZFG4,Jeotgalibacillus terrae,NZ_JAFBDK010000001.1,74,1,1,1,0,+,,8,-1,0.625,1.0,True,-4;-1;1;5;6;8;9;10
+I4D3F9,Desulfosporosinus acidiphilus (strain DSM 22704 / JCM 16185 / SJ4),NC_018068.1,69,1,1,1,0,+,,9,0,0.889,1.0,True,-3;1;2;4;5;6;8;9;10
+A0ABT1SEC0,Tissierella carlieri,NZ_JANGAC010000015.1,62,1,1,1,0,+,,9,-1,0.667,1.0,True,-8;-1;1;4;5;6;8;9;10
+A0A4U2ZAP4,Lysinibacillus mangiferihumi,NZ_PYWM01000001.1,71,1,1,1,0,+,,6,-1,0.667,1.0,True,1;5;6;8;9;10
+A0ABS4E915,Metaclostridioides mangenotii,NZ_BAAACS010000017.1,64,1,1,1,0,+,,19,0,0.632,1.0,True,-6;-2;-1;1;2;3;4;5;6;7;8;9;10;11;15;16;17;22;23
+A0A1G9QXN4,Megasphaera paucivorans,NZ_FNHQ01000002.1,62,1,1,1,0,+,,9,-1,0.667,1.0,True,-1;1;2;5;6;7;8;9;10
+A0ABY5SDQ5,Paenibacillus spongiae,NZ_CP091430.1,67,1,1,1,0,+,,8,-1,0.75,1.0,True,1;2;4;5;6;8;9;10
+B0P716,Anaerotruncus colihominis DSM 17241,NZ_CERQCY010000007.1,44,1,1,1,0,+,,8,-1,0.75,1.0,True,1;4;5;6;8;9;11;13
+A0ABS2GG22,Veillonella magna,NZ_JACJLA010000012.1,51,1,1,1,0,+,,9,0,1.0,1.0,True,-1;1;2;4;5;6;8;9;10
+A0A6L5XWG6,Velocimicrobium porci,NZ_VUMT01000005.1,73,1,1,1,0,+,,7,-1,0.714,1.0,True,1;2;4;5;6;8;9
+A0ABW1IIA0,Marinicrinis lubricantis,NZ_CBCSCT010000008.1,30,1,1,1,0,+,,5,-1,0.6,1.0,True,1;5;9;10;22
+A0A7R7ENW9,Anaeromicropila herbilytica,NZ_AP024169.1,57,1,1,1,0,+,,7,0,0.857,1.0,True,-4;1;2;5;6;8;9
+A0ABT1SR92,Megasphaera massiliensis,NZ_ACGB01000001.1,65,1,1,1,0,+,,9,1,0.667,1.0,True,-1;1;2;5;6;7;8;9;10
+A0A4P8IE68,Anaerostipes rhamnosivorans,NZ_CP040058.1,81,1,1,1,0,+,,6,-1,0.667,1.0,True,-3;1;5;6;8;9
+A0ABS8EXX8,Hominisplanchenecus faecis,NZ_JAJEQE010000054.1,26,1,1,1,0,+,,6,0,1.0,1.0,True,1;4;5;6;8;9
+A0A081P4F5,Paenibacillus tyrphae,NZ_JNVM01000010.1,68,1,1,1,0,+,,11,0,0.818,0.998,True,-4;1;2;3;4;5;7;8;9;10
+A0ABU7UVH3,Clostridium frigoriphilum,NZ_JAHLDU010000003.1,67,1,1,1,0,+,,8,0,1.0,1.0,True,-1;1;2;3;8;9;10;11
+U1WUV8,Aneurinibacillus aneurinilyticus ATCC 12856,NZ_JARLVH010000060.1,69,1,1,1,0,+,,8,0,0.75,1.0,True,-4;-3;-1;1;5;8;9;10
+A0A923LSX0,Agathobaculum faecis,NZ_JACOPL010000003.1,80,1,1,1,0,+,,9,0,0.778,1.0,True,-4;-3;1;5;6;8;9;10;11
+A6TQV6,Alkaliphilus metalliredigens (strain QYMF),NC_009633.1,76,1,1,1,0,+,,8,1,0.625,1.0,True,-3;-1;1;5;6;8;9;10
+A0ABR9B2Z2,Paenibacillus arenosi,NZ_JACYTN010000027.1,44,1,1,1,0,+,,11,0,0.909,1.0,True,-9;1;2;3;4;5;6;7;8;9;10
+A0A162UWU2,Clostridium magnum DSM 2767,NZ_FQXL01000069.1,19,1,1,1,0,+,,9,0,0.889,1.0,True,1;2;4;5;6;8;9;10;11
+A0A1T4YCC4,Caloramator quimbayensis,NZ_FUYH01000035.1,30,1,1,1,0,+,,8,0,1.0,1.0,True,1;4;5;6;7;8;9;10
+B8FZ46,Desulfitobacterium hafniense (strain DSM 10664 / DCB-2),NC_011830.1,59,1,1,1,0,+,,11,0,0.636,1.0,True,-11;-4;1;2;4;5;6;7;8;9;10
+A0AAE4ALU5,Moryella indoligenes,NZ_JAUSTO010000023.1,35,1,1,1,0,+,,7,-1,0.714,1.0,True,1;2;4;5;6;8;9
+A0ABN6J6N4,Clostridium gelidum,NZ_AP024849.1,54,1,1,1,0,+,,11,-1,0.636,1.0,True,-4;-2;1;2;4;5;6;7;8;9;10
+A0A3T1D2Z8,Cohnella abietis,NZ_AP019400.1,70,1,1,1,0,+,,6,-1,0.667,1.0,True,-4;1;5;8;9;10
+A0A1M7TCW1,Desulfitobacterium chlororespirans DSM 11544,NZ_FRDN01000006.1,58,1,1,1,0,+,,10,0,0.6,1.0,True,-11;-4;1;2;4;5;6;8;9;10
+A0A1T2XK72,Paenibacillus selenitireducens,NZ_MSZX01000002.1,55,1,1,1,0,+,,11,0,0.909,1.0,True,-26;1;2;3;4;5;6;7;8;9;10
+A0A926DZ33,Ligaoa zhengdingensis,NZ_JACRST010000022.1,39,1,1,1,0,+,,8,1,0.625,1.0,True,1;2;4;5;6;8;9;10
+A0ACC7NXE5,Paenibacillus mesotrionivorans,NZ_JBJURJ010000006.1,54,1,1,1,0,+,,10,-1,0.6,1.0,True,-14;-4;1;2;4;5;6;8;9;10
+A0A2S0JWY7,Lysinibacillus sphaericus (Bacillus sphaericus),NZ_CP019980.1,66,1,1,1,0,+,,6,-1,0.667,1.0,True,1;5;6;8;9;10
+B6G002,Peptacetobacter hiranonis (strain DSM 13275 / JCM 10541 / KCTC 15199 / TO-931) (Clostridium hiranonis),NZ_CP036523.1,79,1,1,1,0,+,,11,0,0.909,1.0,True,-4;-1;1;2;4;5;6;7;8;9;10
+A0A498D022,Anaerotruncus massiliensis (ex Liu et al. 2021),NZ_JACOIH010000005.1,54,1,1,1,0,+,,9,0,0.889,1.0,True,-11;1;2;4;5;6;8;9;10
+A0A8D5A277,Dialister hominis,NZ_AP019697.1,75,1,1,1,0,+,,11,0,0.909,1.0,True,-21;-1;1;2;3;5;6;7;8;9;10
+A0A926EKT6,Zhenhengia yiwuensis,NZ_JACRSY010000051.1,22,1,1,1,0,+,,8,1,0.75,1.0,True,-1;1;2;3;4;5;6;7
+A0A9Q7ZU73,Clostridioides difficile (Peptoclostridium difficile),NZ_AP031492.1,51,1,1,1,0,+,,50,0,1.0,1.0,True,-26;-25;-24;-23;-22;-21;-20;-19;-18;-17;-16;-15;-14;-13;-12;-11;-10;-9;-8;-7;-6;-5;-4;-3;-2;-1;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24
+A0ABR6VG78,Megasphaera hominis,NZ_JACOGK010000001.1,64,1,1,1,0,+,,9,1,0.667,1.0,True,-1;1;2;5;6;7;8;9;10
+A0AC59G537,Clostridioides difficile ATCC 9689 = DSM 1296,NC_017175.1,48,1,1,1,0,+,,12,0,0.833,1.0,True,-24;-1;1;2;4;5;6;7;8;9;10;11
+Q18BN0,Clostridioides difficile (strain 630) (Peptoclostridium difficile),NC_009089.1,51,1,1,1,0,+,,50,0,1.0,1.0,True,-26;-25;-24;-23;-22;-21;-20;-19;-18;-17;-16;-15;-14;-13;-12;-11;-10;-9;-8;-7;-6;-5;-4;-3;-2;-1;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24
+A0A9R0BJM4,Clostridioides difficile (strain R20291) (Peptoclostridium difficile),NC_013315.1,51,1,1,1,0,+,,50,0,1.0,1.0,True,-26;-25;-24;-23;-22;-21;-20;-19;-18;-17;-16;-15;-14;-13;-12;-11;-10;-9;-8;-7;-6;-5;-4;-3;-2;-1;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24
+A0A926EJY7,Zhenhengia yiwuensis,NZ_JACRSY010000015.1,57,1,1,1,0,+,,9,0,0.889,1.0,True,-2;1;2;4;5;6;7;8;9
+A0A2S0K5J2,Lysinibacillus sphaericus (Bacillus sphaericus),NZ_AUOZ01000045.1,4,1,1,1,0,+,,1,0,1.0,,False,1
+A0A7I8DR15,Anaerocolumna chitinilytica,NZ_AP023368.1,53,1,1,1,0,+,,11,-1,0.636,0.1,False,-24;-11;-4;1;2;4;5;6;8;9;10
+A0A926EKH3,Zhenhengia yiwuensis,NZ_JACRSY010000015.1,40,1,1,1,0,+,,12,1,0.333,0.158,False,-4;-1;1;2;3;4;5;6;7;8;9
+A0A8D5A570,Dialister hominis,NZ_AP019697.1,62,1,1,1,0,+,,11,0,0.909,0.5,False,-1;1;2;3;5;6;7;8;9;10;16
+A0A239KKP1,Anaerovirgula multivorans,NZ_FZOJ01000049.1,30,1,1,1,0,+,,9,-1,0.556,0.202,False,1;2;5;6;8;9;10
+A0A1S1V457,Andreesenia angusta,NZ_MKIE01000014.1,55,1,1,1,0,+,,11,0,0.455,0.998,False,-5;-4;-1;1;2;5;6;8;9;10
+A0ABR6VJ90,Megasphaera hominis,NZ_JACOGK010000025.1,57,1,1,1,0,+,,9,-1,0.556,0.4,False,-24;-3;1;2;5;6;8;9;10
+A0A6N9Q896,Chengkuizengella marina,NZ_SIJB01000055.1,13,1,1,1,0,+,,2,-1,0.5,,False,-1;1
+A0ABX7ASW4,Lysinibacillus agricola,NZ_CP067341.1,67,1,1,1,0,+,,8,-1,0.375,0.643,False,-24;-4;1;5;8;9;10;17
+A0ABT1RR47,Anaerovorax odorimutans,NZ_JANFXK010000015.1,68,1,1,1,0,+,,8,-1,0.5,-0.167,False,-14;-11;1;2;5;6;8;9
+A0AAE3A0B2,Waltera acetigignens,NZ_BQNJ01000001.1,64,1,1,1,0,+,,8,-1,0.625,0.333,False,1;4;5;6;8;9;13;17
+A0ABU9JVP1,Caldifermentibacillus hisashii,NZ_JBBYAK010000001.1,69,1,1,1,0,+,,10,-1,0.5,1.0,False,-5;-4;-1;1;4;5;6;8;9;10
+S0FNF6,Ruminiclostridium cellobioparum subsp. termitidis CT1112,NZ_AORV01000015.1,36,1,1,1,0,+,,9,-1,0.667,0.4,False,1;2;5;6;7;8;9;10;20
+A0A1T5M3W4,Maledivibacter halophilus,NZ_FUZT01000010.1,45,1,1,1,0,+,,10,0,0.5,0.6,False,-14;-4;1;2;3;5;6;8;9;10
+A0A848RJ72,Peptoniphilus faecalis,NZ_JABDSR010000008.1,79,1,1,1,0,+,,8,0,0.5,1.0,False,-21;1;2;5;6;8;9;13
+A0A3S0C7U7,Paenibacillus whitsoniae,NZ_RXHU01000082.1,67,1,1,1,0,+,,12,-1,0.5,1.0,False,-4;1;2;4;5;6;8;9;10;13;20;21
+I4AEJ2,Desulfitobacterium dehalogenans (strain ATCC 51507 / DSM 9161 / JW/IU-DC1),NC_018017.1,60,1,1,1,0,+,,11,-1,0.545,1.0,False,-11;-5;-4;1;2;4;5;6;8;9;10
+W8T3R5,Peptoclostridium acidaminophilum DSM 3953,NZ_CP007452.1,72,1,1,1,0,+,,11,-1,0.545,0.929,False,-4;-3;-1;1;4;5;6;7;8;9
+A0ACG9AF18,Lysinibacillus fusiformis,NZ_FMVP01000006.1,70,1,1,1,0,+,,7,-1,0.571,-0.25,False,-14;-10;1;6;8;9;10
+A0ABW7DQ46,Megasphaera hexanoica,NZ_AP042418.1,68,1,1,1,0,+,,12,-1,0.5,0.998,False,-21;-4;-1;1;2;5;6;7;8;9;10
+A0A3N9UIV9,Lysinibacillus composti,NZ_JAFBDY010000002.1,80,1,1,1,0,+,,14,-1,0.5,0.367,False,-21;-8;-4;-3;-1;1;4;5;6;8;9;10;11;20
+A0A0C1UA59,Clostridium argentinense CDC 2741,NZ_AYSO01000020.1,60,1,1,1,0,+,,14,0,0.786,0.6,False,-11;-4;-1;1;2;3;4;5;6;7;8;9;10;21
+A0A1G5JYW4,Alkaliphilus peptidifermentans DSM 18978,NZ_FMUS01000022.1,58,2,2,1,-16,+,,12,-1,0.417,0.324,False,-14;-4;1;5;6;8;9;10
+A0A1Q2C8J9,Anaerostipes hadrus,NZ_AP028031.1,77,1,1,1,0,+,,8,0,0.625,0.323,False,-14;-4;1;5;6;8;9
+A0ABS2P7Y4,Geomicrobium sediminis,NZ_JAFBEC010000001.1,73,1,1,1,0,+,,10,0,0.4,0.564,False,-4;-3;-1;1;5;6;8;9;10;17
+A0AAV3W3X8,Clostridium diolis,NZ_CP043998.1,61,1,1,1,0,+,,12,-1,0.667,0.615,False,-14;-11;1;2;4;5;6;7;8;9;10;11
+A0A419SQI7,Ammoniphilus oxalaticus,NZ_MCHY01000002.1,50,1,1,1,0,+,,10,-1,0.5,0.997,False,-4;1;2;4;5;6;8;9;10
+A0ABR9ZTY2,Fusibacter ferrireducens,NZ_JADKNH010000007.1,54,1,1,1,0,+,,15,0,0.6,-0.029,False,-5;-4;-3;1;2;3;4;5;6;8;9;10;21
+A0AAX2ZG67,Terrisporobacter hibernicus,NZ_CP081135.1,70,1,1,1,0,+,,12,-1,0.583,0.158,False,-24;-6;-4;1;4;5;6;7;8;9;10
+A0AA40M5P3,Clostridium novyi B str. ATCC 27606,NZ_CP063816.1,82,1,1,1,0,+,,12,1,0.5,0.993,False,-4;-3;-1;1;2;4;5;6;8;9;10;13
+A0AAE3AYV9,Gallintestinimicrobium propionicum,NZ_JAJEQF010000029.1,49,1,1,1,0,+,,10,0,0.8,0.455,False,-3;1;4;5;6;7;8;9;10;16
+A0ABR4TH75,Clostridium haemolyticum NCTC 9693,NZ_AP045984.1,66,1,1,1,0,+,,13,1,0.538,0.995,False,-4;-3;-1;1;2;3;4;5;6;8;9;10;11
+A0A4Z0XVH4,Caproiciproducens galactitolivorans,NZ_JAJUFJ010000021.1,15,1,1,1,0,+,,2,0,1.0,,False,1;2
+A0A1H3R167,Tindallia californiensis,NZ_FNPV01000011.1,68,1,1,1,0,+,,9,-1,0.556,0.971,False,-4;-3;1;5;6;8;9;10
+A0ABP2NM47,Megamonas funiformis YIT 11815,NZ_CP048627.1,62,1,1,1,0,+,,9,-1,0.556,0.946,False,-4;-3;1;5;6;8;9;10
+A0A6H2H043,Paenibacillus albicereus,NZ_CP051428.1,70,1,1,1,0,+,,8,0,0.25,-0.156,False,-4;1;2;5;6;8;9
+A0A6N4TIP9,Amedibacterium intestinale,NZ_AP019695.1,70,1,1,1,0,+,,10,-1,0.6,0.455,False,-14;-4;-3;1;4;5;6;8;9;10
+A0ABW5PHI5,Paenibacillus gansuensis,NZ_JBHUME010000012.1,74,1,1,1,0,+,,10,-1,0.5,0.018,False,-11;-4;-3;1;5;6;8;9;10;20
+A0A923J1S1,Clostridium tetanomorphum,NZ_JAAZWO010000009.1,58,1,1,1,0,+,,16,0,0.562,0.187,False,-26;-14;-4;1;2;4;5;6;7;8;9;10;22
+A0A8B4Q934,Kurthia zopfii,NZ_QFVS01000004.1,74,1,1,1,0,+,,11,-1,0.364,0.346,False,-20;-14;-4;1;5;6;8;9;10;23
+G9WTL8,Oribacterium asaccharolyticum ACB7,NZ_JH414504.1,75,1,1,1,0,+,,8,0,0.625,0.5,False,-4;1;2;5;6;8;9;16
+A0A1I0FBN4,Natronincola peptidivorans,NZ_FOHU01000014.1,79,1,1,1,0,+,,10,-1,0.5,0.997,False,-14;-5;-4;-1;1;5;8;9;10
+C4Z5U1,Lachnospira eligens (strain ATCC 27750 / DSM 3376 / VPI C15-48 / C15-B4) (Eubacterium eligens),NC_012782.1,68,1,1,1,0,+,,9,-1,0.556,1.0,False,-4;1;2;4;5;6;8;9;13
+A0A1G8WDM9,Salimicrobium halophilum,NZ_FNEV01000015.1,61,1,1,1,0,+,,10,-1,0.6,0.661,False,-5;-4;1;4;5;6;8;9;10;17
+A0A934M409,Clostridium aciditolerans,NZ_CM148504.1,60,1,1,1,0,+,,14,0,0.643,0.617,False,-14;-2;1;2;3;4;5;6;8;9;10
+A0ABS1J425,Catonella massiliensis,NZ_JAEPRJ010000001.1,71,1,1,1,0,+,,9,0,0.778,-0.05,False,-14;-11;-1;1;5;6;7;8;9
+A0ABY7JQ53,Peptostreptococcus equinus,NZ_CP114052.1,85,1,1,1,0,+,,11,-1,0.545,1.0,False,-4;-2;-1;1;2;4;5;6;8;9;10
+A0ABW8TD08,Clostridium neuense,NZ_JBJIAA010000001.1,55,1,1,1,0,+,,16,0,0.5,0.749,False,-26;-24;-14;-5;-4;-2;-1;1;2;4;5;6;8;9;10
+A0A3N1XU14,Mobilisporobacter senegalensis,NZ_RJVG01000005.1,43,1,1,1,0,+,,9,0,0.778,0.533,False,-5;-3;1;2;5;6;8;9;10
+A0A845L7S1,Heliomicrobium gestii (Heliobacterium gestii),NZ_JAFBDC010000003.1,50,1,1,1,0,+,,14,-1,0.5,-0.009,False,-24;-14;-4;1;2;4;5;6;8;9;10;13;20
+A0A7G5C3F7,Cohnella cholangitidis,NZ_CP041969.1,72,1,1,1,0,+,,9,-1,0.556,1.0,False,-14;-4;-1;1;5;6;8;9;10
+M1LNX0,Clostridium saccharoperbutylacetonicum N1-4(HMT),NC_020291.1,57,2,2,1,0,+,,18,0,0.556,0.763,False,-11;-4;-2;1;2;4;5;6;7;8;9;10;11
+A0A0L0WF10,Gottschalkia purinilytica (Clostridium purinilyticum),NZ_LGSS01000001.1,56,1,1,1,0,+,,16,0,0.625,0.34,False,-24;-18;-14;-4;-3;-1;1;2;4;5;6;7;8;9;10
+A0ABZ3FGC3,Terrisporobacter petrolearius,NZ_CP154622.1,74,1,1,1,0,+,,13,-1,0.538,0.204,False,-24;-6;-4;-3;1;4;5;6;7;8;9;10
+A0ABW9X836,Blautia massiliensis (ex Durand et al. 2017),NZ_JAAIUS010000010.1,62,1,1,1,0,+,,9,-1,0.556,1.0,False,-5;-4;1;2;4;5;6;8;9
+A0ABS2FX45,Oscillibacter valericigenes,NZ_JACSNX010000013.1,62,1,1,1,0,+,,12,0,0.667,0.151,False,-14;-11;-4;1;2;4;5;6;8;9;10
+A0ABY2TDC2,Lysinibacillus varians,NZ_CP006837.1,66,1,1,1,0,+,,7,-1,0.571,1.0,False,-4;1;5;6;8;9;10
+A0A9D5M0C5,Ructibacterium gallinarum,NZ_JADCKB010000008.1,58,1,1,1,0,+,,7,0,0.714,-0.27,False,-4;1;5;8;9;10
+A0A1S8T012,Clostridium puniceum,NZ_LZZM01000234.1,59,1,1,1,0,+,,13,0,0.615,0.698,False,-4;-2;1;2;4;5;6;7;8;9;10;11;21
+A0A923NQD2,Zhenpiania hominis,NZ_JACRYT010000033.1,17,1,1,1,0,+,,2,0,1.0,,False,1;2
+A0ACD1AB64,Anoxybacterium hadale,NZ_CP042469.1,58,2,2,1,0,+,,13,-1,0.462,0.476,False,1;2;4;5;6;8;9;10;17
+A0A1M5QKT1,Desulfosporosinus lacus DSM 15449,NZ_FQXJ01000003.1,65,1,1,1,0,+,,10,0,0.8,0.455,False,-3;-1;1;4;5;6;8;9;10;20
+A0A841KUX3,Anaerosolibacter carboniphilus,NZ_JACHEN010000024.1,54,1,1,1,0,+,,16,0,0.562,0.228,False,-14;-11;-1;1;2;3;5;6;8;9;10
+A0A1D8GIE6,Geosporobacter ferrireducens,NZ_CP017269.1,54,1,1,1,0,+,,12,-1,0.417,0.559,False,-11;-1;1;2;5;6;8;9;10
+A0ABS2GDB2,Anaerotignum lactatifermentans,NZ_JACSNT010000015.1,48,1,1,1,0,+,,10,0,0.9,0.455,False,-14;1;2;4;5;6;7;8;9;10
+Q892H4,Clostridium tetani (strain Massachusetts / E88),NC_004557.1,75,1,1,1,0,+,,11,1,0.455,0.673,False,-11;-4;-3;-1;1;2;5;6;8;9;10
+A0A2U8DYW5,Clostridium drakei,NZ_CP020953.1,59,1,1,1,0,+,,13,-1,0.385,0.566,False,-14;-5;-4;-1;1;2;4;5;6;8;9;10;11
+A0A5C0SJ44,Crassaminicella thermophila,NZ_CP042244.1,61,1,1,1,0,+,,8,-1,0.625,0.333,False,-4;-1;1;5;6;8;9;10
+A0A926EGG3,Zhenhengia yiwuensis,NZ_JACRSY010000008.1,77,1,1,1,0,+,,12,-1,0.417,0.678,False,-2;-1;1;2;5;6;7;8;9;16;17;19
+A0A4R2KY51,Marinisporobacter balticus,NZ_SLWV01000005.1,66,1,1,1,0,+,,13,0,0.692,0.556,False,-24;-14;-1;1;2;3;5;6;8;9;10
+A0A6N9Q7W5,Chengkuizengella marina,NZ_SIJB01000037.1,17,1,1,1,0,+,,2,-1,0.5,,False,-1;1
+A0A7M3S9Z3,Anaerocolumna chitinilytica,NZ_AP023368.1,72,1,1,1,0,+,,8,-1,0.5,1.0,False,-11;-4;1;2;5;6;8;9
+A0A0J1FM51,Desulfosporosinus acididurans,NZ_LDZY01000018.1,63,1,1,1,0,+,,11,-1,0.545,0.091,False,-4;-1;1;2;5;6;7;8;9;10;16
+A0A1S1V6X4,Andreesenia angusta,NZ_MKIE01000004.1,59,1,1,1,0,+,,10,-1,0.5,1.0,False,-5;-4;-3;1;2;4;5;6;8;9
+A0A238ZTP4,Anaerovirgula multivorans,NZ_FZOJ01000001.1,76,1,1,1,0,+,,8,0,0.375,0.958,False,-4;-3;1;5;8;9;10

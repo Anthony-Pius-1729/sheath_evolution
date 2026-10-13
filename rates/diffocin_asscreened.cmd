@@ -1,0 +1,1 @@
+./tools/rate4site -s orthology/diffocin_frozen_offset0.afa -t phylo/diffocin_asscreened.r4s.nwk -o rates/diffocin_asscreened.res -x rates/diffocin_asscreened.tree -y rates/diffocin_asscreened.unnorm -a REF -Mw -ib -k 16 -l rates/diffocin_asscreened.log

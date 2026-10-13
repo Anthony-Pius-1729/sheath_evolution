@@ -1,0 +1,15 @@
+# Captured from the original scratchpad venv (evoenv), Python 3.13.13.
+# Recreate with:
+#   python3 -m venv evoenv && ./evoenv/bin/pip install -r requirements.txt
+biopython==1.88
+DendroPy==5.1.0
+numpy==2.5.4
+pandas==3.0.6
+psutil==7.2.2
+pyfamsa==0.7.0
+pyhmmer==0.12.3
+python-dateutil==2.9.0.post0
+pytrimal==0.8.5
+scipy==1.18.1
+scoring-matrices==0.3.5
+six==1.17.0

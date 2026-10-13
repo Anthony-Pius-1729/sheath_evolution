@@ -1,0 +1,25 @@
+afp_Afp2
+iqtree -s orthology/afp_sf1_afp2_like.afa -m MFP -B 1000 -alrt 1000 -T 4 --prefix phylo/afp_Afp2 -quiet -redo
+   35935 (Using SPRNG - Scalable Parallel Random Number Generator)
+./tools/rate4site -s orthology/afp_sf1_afp2_like.afa -t phylo/afp_Afp2.r4s.nwk -o rates/afp_Afp2.res -x rates/afp_Afp2.tree -y rates/afp_Afp2.unnorm -a REF -Mw -ib -k 16 -l rates/afp_Afp2.log
+
+afp_Afp3
+iqtree -s orthology/afp_sf1_afp3_like.afa -m MFP -B 1000 -alrt 1000 -T 4 --prefix phylo/afp_Afp3 -quiet -redo
+   566977 (Using SPRNG - Scalable Parallel Random Number Generator)
+./tools/rate4site -s orthology/afp_sf1_afp3_like.afa -t phylo/afp_Afp3.r4s.nwk -o rates/afp_Afp3.res -x rates/afp_Afp3.tree -y rates/afp_Afp3.unnorm -a REF -Mw -ib -k 16 -l rates/afp_Afp3.log
+
+diffocin
+iqtree -s orthology/diffocin_primary.afa -m MFP -B 1000 -alrt 1000 -T 4 --prefix phylo/diffocin -quiet -redo
+   745908 (Using SPRNG - Scalable Parallel Random Number Generator)
+./tools/rate4site -s orthology/diffocin_primary.afa -t phylo/diffocin.r4s.nwk -o rates/diffocin.res -x rates/diffocin.tree -y rates/diffocin.unnorm -a REF -Mw -ib -k 16 -l rates/diffocin.log
+
+diffocin_asscreened
+iqtree -s orthology/diffocin_frozen_offset0.afa -m MFP -B 1000 -alrt 1000 -T 4 --prefix phylo/diffocin_asscreened -quiet -redo
+   971300 (Using SPRNG - Scalable Parallel Random Number Generator)
+./tools/rate4site -s orthology/diffocin_frozen_offset0.afa -t phylo/diffocin_asscreened.r4s.nwk -o rates/diffocin_asscreened.res -x rates/diffocin_asscreened.tree -y rates/diffocin_asscreened.unnorm -a REF -Mw -ib -k 16 -l rates/diffocin_asscreened.log
+
+diffocin_collinear
+iqtree -s orthology/diffocin_collinear_frame.afa -m MFP -B 1000 -alrt 1000 -T 4 --prefix phylo/diffocin_collinear -quiet -redo
+   9570 (Using SPRNG - Scalable Parallel Random Number Generator)
+./tools/rate4site -s orthology/diffocin_collinear_frame.afa -t phylo/diffocin_collinear.r4s.nwk -o rates/diffocin_collinear.res -x rates/diffocin_collinear.tree -y rates/diffocin_collinear.unnorm -a REF -Mw -ib -k 16 -l rates/diffocin_collinear.log
+

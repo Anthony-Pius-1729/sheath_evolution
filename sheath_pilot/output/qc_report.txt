@@ -1,0 +1,118 @@
+CONTRACTILE SHEATH INTERFACE-PERSISTENCE STRUCTURAL PILOT
+VERDICT ARTIFACTS REGENERATED UNDER THE NATIVE-COORDINATE RULE
+
+generated   : 2026-10-12T19:34:30Z
+script      : regenerate_native_summary.py v1.0 (2026-10-12)
+supersedes  : output/archive_symmetry_inclusive_2026-10-10/ (original pilot.py run, 2026-10-10 23:20)
+
+AUTHORITATIVE. The archived run counted residues whose interface class
+depends on symmetry-generated contacts and therefore reported 1/3 passing.
+
+Counting rule applied here, to every family identically:
+  (1) NATIVE      -- a residue whose classification depends on a contact to a
+                     symmetry-generated neighbour is dropped from the table.
+                     It is not reclassified.
+  (2) ENGINEERING -- a residue within 8.0 A of an internal indel is
+                     dropped (as pilot.py already did for its own counts).
+
+Pre-registered parameters, unchanged:
+  contact cutoff          5.0 A heavy atom
+  minimum class size      20 residues
+  engineering shell       8.0 A
+  partner identity        (canonical entity, screw index n, C6 index k)
+
+No evolutionary rates are estimated in this pilot. No scientific rule was
+changed by this regeneration; only its consistent application.
+
+Scope: this is the historical CATEGORICAL pilot. The frozen continuous
+remodeling metric R_i lives in qc_output/ (see QC_RESULTS.md) and is not
+affected by, and does not depend on, anything in this directory.
+
+Inputs (sha256):
+  9551011e2f01cd35f8fe0bda1f09f2bb901fa0562680574ecb0e8480bdaf3a29  output/archive_symmetry_inclusive_2026-10-10/summary.csv
+  236374759be7f5f4b9da3a969a873ffbfa550cc173a7658a83158426ac2b3da0  output/residues_algoriphagus_P1_Putative_phage_tail_sheath_protein_FI.csv
+  ac5f627d5d43e81ef41a3193d17b58c616ab35cc5ca456f6814ddbbd7eec580a  output/residues_vibrio_P1_Type_VI_secretion_protein_473aa.csv
+  ddb48bc8674eefb2e66a0c8a1f9e241c6478531d592220665eb81c66e82aa6b7  output/residues_vibrio_P2_Type_VI_secretion_protein_159aa.csv
+
+Recomputed here      : class counts, smallest class, verdict, post-hoc collapse.
+Carried over verbatim: identity, modelled/mapped counts, substitutions,
+                       unmatched internal, ring counts, lattice failures
+                       (structural metadata, independent of counting rule).
+NOT regenerated      : per-state structural diagnostics, contact-cutoff sweep,
+                       per-class covariate means. These need the coordinates;
+                       they remain in the archived report and were computed
+                       there WITHOUT the native filter. Do not quote them as
+                       native-rule numbers.
+
+==============================================================================
+PER-FAMILY COUNTS
+==============================================================================
+
+
+  --- algoriphagus / P1_Putative phage tail sheath protein FI_692aa ---
+      residue table         : residues_algoriphagus_P1_Putative_phage_tail_sheath_protein_FI.csv
+      mapped residues       : 511
+      excluded, symmetry-dependent : 0
+      excluded, engineering shell  : 0 (within 8.0 A of an internal indel)
+
+      persistence class        archived     native   NATIVE+ENG
+        persistent_same_partner                86         86           86
+        persistent_changed_partner              2          2            2
+        extended_only                          45         45           45
+        contracted_only                        24         24           24
+        non_interface                         354        354          354
+
+      smallest interface class = 2 (threshold 20) -> FAIL      [archived rule gave 2 -> FAIL]
+      [POST HOC] collapsed three-way scheme: persistent=88, state_specific=69, non_interface=354 -> smallest=69
+      (post hoc, chosen after seeing the counts -- NOT the verdict)
+
+  --- vibrio / P1_Type VI secretion protein_473aa ---
+      residue table         : residues_vibrio_P1_Type_VI_secretion_protein_473aa.csv
+      mapped residues       : 429
+      excluded, symmetry-dependent : 107
+      excluded, engineering shell  : 0 (within 8.0 A of an internal indel)
+
+      persistence class        archived     native   NATIVE+ENG
+        persistent_same_partner                78         73           73
+        persistent_changed_partner            100         17           17
+        extended_only                          20          4            4
+        contracted_only                        52         50           50
+        non_interface                         179        178          178
+
+      smallest interface class = 4 (threshold 20) -> FAIL      [archived rule gave 20 -> PASS]
+      [POST HOC] collapsed three-way scheme: persistent=90, state_specific=54, non_interface=178 -> smallest=54
+      (post hoc, chosen after seeing the counts -- NOT the verdict)
+
+  --- vibrio / P2_Type VI secretion protein_159aa ---
+      residue table         : residues_vibrio_P2_Type_VI_secretion_protein_159aa.csv
+      mapped residues       : 125
+      excluded, symmetry-dependent : 28
+      excluded, engineering shell  : 4 (within 8.0 A of an internal indel)
+
+      persistence class        archived     native   NATIVE+ENG
+        persistent_same_partner                61         57           56
+        persistent_changed_partner             22          7            7
+        extended_only                          10          4            4
+        contracted_only                         3          4            3
+        non_interface                          25         25           25
+
+      smallest interface class = 3 (threshold 20) -> FAIL      [archived rule gave 3 -> FAIL]
+      [POST HOC] collapsed three-way scheme: persistent=63, state_specific=7, non_interface=25 -> smallest=7
+      (post hoc, chosen after seeing the counts -- NOT the verdict)
+
+==============================================================================
+OVERALL (native-coordinate rule)
+==============================================================================
+      system                                         entity  mapped  n_persistent_same_partner  n_persistent_changed_partner  n_extended_only  n_contracted_only  smallest_interface_class verdict
+algoriphagus P1_Putative phage tail sheath protein FI_692aa     511                         86                             2               45                 24                         2    FAIL
+      vibrio             P1_Type VI secretion protein_473aa     429                         73                            17                4                 50                         4    FAIL
+      vibrio             P2_Type VI secretion protein_159aa     125                         56                             7                4                  3                         3    FAIL
+
+  protein families passing: 0 / 3
+
+  The pre-registered four-way gate is not met in any family. The decisive
+  class is persistent_changed_partner for Algoriphagus (2) and the
+  state-specific classes for Vibrio: the lattice keeps its connectivity
+  through contraction, so subunits slide and tilt against the same (n, k)
+  neighbours rather than swapping partners. The class is well defined and
+  simply not populated -- a property of the mechanism, not of the data.

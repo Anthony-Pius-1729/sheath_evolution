@@ -1,0 +1,9 @@
+family,dataset,n_seq,eff_genera,sites,invariant,median_entropy,status,informative_sites,informative_frac
+R2 pyocin,narrow clade (L2),124,1.05,143,46.0,0.185,excluded,97.0,0.678
+R2 pyocin,single-copy set (best case),136,22.25,143,8.0,1.54,excluded,135.0,0.944
+SalCIS,no set definable,9,,68,,,excluded,,
+AFP,Afp2 position,27,5.49,84,33.0,0.554,included,51.0,0.607
+AFP,Afp3 position,31,5.43,82,17.0,0.823,included,65.0,0.793
+Diffocin,"frozen, as screened",35,17.71,58,8.0,1.444,sensitivity,50.0,0.862
+Diffocin,collinear frame,66,31.27,58,5.0,1.635,sensitivity,53.0,0.914
+Diffocin,primary (ambiguous genome removed),33,16.71,58,8.0,1.444,included,50.0,0.862

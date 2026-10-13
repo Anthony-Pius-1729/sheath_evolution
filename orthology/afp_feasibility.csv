@@ -1,0 +1,9 @@
+dataset,n_seq,genera,eff_genera,aln_cols,cols_per_ref_res,sites_total,sites_mapped,invariant,major_ge95,median_entropy,max_possible_entropy,median_occupancy,tree_length
+SF1_entero_Afp2,8,7,6.73,408,1.15,84,84,34,34,0.811,3.0,1.0,4.02
+SF1_entero_Afp3,8,7,6.73,599,1.33,82,82,29,29,0.677,3.0,1.0,6.17
+SF2_bacteroidota_Afp2,8,8,8.0,635,1.79,84,84,35,35,0.544,3.0,1.0,5.55
+SF2_bacteroidota_Afp3,7,7,7.0,514,1.14,82,82,34,34,0.592,2.81,1.0,3.71
+SF3_bacteroidota_Afp2,8,8,8.0,534,1.51,84,84,36,36,0.544,3.0,1.0,5.8
+SF3_bacteroidota_Afp3,34,34,34.0,919,2.04,82,82,22,31,0.546,5.09,1.0,29.32
+POOLED_Afp2_not_licensed,23,22,21.65,697,1.97,84,84,23,29,1.121,4.52,1.0,15.7
+POOLED_Afp3_not_licensed,54,53,52.63,1086,2.41,82,82,15,24,0.944,5.75,1.0,50.95

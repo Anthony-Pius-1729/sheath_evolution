@@ -1,0 +1,144 @@
+candidate,organism,nuc,protein_id,slot,slot_in_run,run_length,rel_strand,length_aa,positional_label,reason,anchored,offset,seq_best_hit,seq_best_hit_label,seq_bitscore,seq_pident
+A0ABW5LF18,Aquimarina rubra,NZ_JBHULE010000019.1,WP_378292375.1,0,0.0,1,+,547,afp2_like,,True,0.0,WP_010895805.1,afp3_like,204.0,51.053
+A0A3D9UFN9,Xenorhabdus cabanillasii,NZ_QTUB01000001.1,WP_115827053.1,-1,0.0,3,+,356,afp2_like,,True,-1.0,WP_010895804.1,afp2_like,362.0,51.515
+A0A3D9UFN9,Xenorhabdus cabanillasii,NZ_QTUB01000001.1,WP_115827054.1,0,1.0,3,+,464,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,444.0,48.394
+A0A3D9UFN9,Xenorhabdus cabanillasii,NZ_QTUB01000001.1,WP_170140416.1,1,2.0,3,+,412,third_like,,True,-1.0,WP_169558217.1,third_like,333.0,43.51
+A0A0T9PM91,Yersinia pekkanenii,NZ_CQAZ01000015.1,WP_049612715.1,-2,0.0,3,+,355,afp2_like,,True,-2.0,WP_010895804.1,afp2_like,343.0,49.3
+A0A0T9PM91,Yersinia pekkanenii,NZ_CQAZ01000015.1,WP_049612717.1,-1,1.0,3,+,463,afp3_like,,True,-2.0,WP_010895805.1,afp3_like,428.0,48.261
+A0A0T9PM91,Yersinia pekkanenii,NZ_CQAZ01000015.1,WP_082170744.1,0,2.0,3,+,409,third_like,,True,-2.0,WP_169558217.1,third_like,325.0,43.689
+A0A081KAN6,Endozoicomonas elysicola,NZ_JOJP01000001.1,WP_020582775.1,-2,0.0,1,+,496,unassigned,"locus not anchored (non-sheath anchors=12, modal share=6/12, rho=0.612960659796053)",False,-2.0,WP_010895805.1,afp3_like,239.0,32.86
+A0A081KAN6,Endozoicomonas elysicola,NZ_JOJP01000001.1,WP_020582777.1,0,,1,+,473,unassigned,"locus not anchored (non-sheath anchors=12, modal share=6/12, rho=0.612960659796053)",False,-2.0,WP_010895805.1,afp3_like,232.0,32.347
+A0ABX8LTV2,Photorhabdus akhurstii,NZ_CP020335.1,WP_217471596.1,-1,0.0,2,+,429,afp3_like,,True,-2.0,WP_010895805.1,afp3_like,409.0,49.127
+A0ABX8LTV2,Photorhabdus akhurstii,NZ_CP020335.1,WP_217471597.1,0,1.0,2,+,393,third_like,,True,-2.0,WP_169558217.1,third_like,332.0,43.35
+A0A926XV48,Spirosoma profusum,NZ_JACWZY010000005.1,WP_190886602.1,0,0.0,2,+,471,afp2_like,,True,0.0,WP_010895805.1,afp3_like,234.0,35.597
+A0A926XV48,Spirosoma profusum,NZ_JACWZY010000005.1,WP_190886603.1,1,1.0,2,+,685,afp3_like,,True,0.0,WP_010895805.1,afp3_like,200.0,48.677
+A0A1N6GJQ8,Algoriphagus halophilus,NZ_FSRC01000002.1,WP_074226052.1,0,0.0,2,+,575,afp2_like,,True,0.0,WP_010895805.1,afp3_like,205.0,51.795
+A0A1N6GJQ8,Algoriphagus halophilus,NZ_FSRC01000002.1,WP_074226051.1,1,1.0,2,+,495,afp3_like,,True,0.0,WP_010895805.1,afp3_like,255.0,34.971
+A0A494VLP9,Mucilaginibacter celer,NZ_CP032869.1,WP_119408238.1,-1,0.0,2,+,483,afp2_like,,True,-1.0,WP_010895805.1,afp3_like,231.0,34.122
+A0A494VLP9,Mucilaginibacter celer,NZ_CP032869.1,WP_119408239.1,0,1.0,2,+,664,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,200.0,50.526
+A0A419VZ83,Mangrovibacterium diazotrophicum,NZ_RAPN01000002.1,WP_120274536.1,0,0.0,2,+,587,afp2_like,,True,0.0,WP_010895805.1,afp3_like,222.0,55.729
+A0A419VZ83,Mangrovibacterium diazotrophicum,NZ_RAPN01000002.1,WP_120274535.1,1,1.0,2,+,462,afp3_like,,True,0.0,WP_010895805.1,afp3_like,253.0,36.134
+A0A2P5KD43,Mycetohabitans endofungorum,NZ_CP062178.1,WP_104076375.1,-1,0.0,3,+,404,unassigned,"locus not anchored (non-sheath anchors=11, modal share=6/11, rho=0.8610500699228079)",False,-1.0,WP_010895804.1,afp2_like,271.0,41.5
+A0A2P5KD43,Mycetohabitans endofungorum,NZ_CP062178.1,WP_104076376.1,0,1.0,3,+,472,unassigned,"locus not anchored (non-sheath anchors=11, modal share=6/11, rho=0.8610500699228079)",False,-1.0,WP_010895805.1,afp3_like,290.0,39.078
+A0A2P5KD43,Mycetohabitans endofungorum,NZ_CP062178.1,WP_146063959.1,1,2.0,3,+,457,unassigned,"locus not anchored (non-sheath anchors=11, modal share=6/11, rho=0.8610500699228079)",False,-1.0,WP_169558217.1,third_like,235.0,35.763
+D4EA08,Serratia odorifera DSM 4582,NZ_GG753568.1,WP_004966140.1,-1,0.0,3,+,366,afp2_like,,True,-1.0,WP_010895804.1,afp2_like,317.0,46.089
+D4EA08,Serratia odorifera DSM 4582,NZ_GG753568.1,WP_004966139.1,0,1.0,3,+,533,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,265.0,34.829
+D4EA08,Serratia odorifera DSM 4582,NZ_GG753568.1,WP_004966136.1,1,2.0,3,+,422,third_like,,True,-1.0,WP_169558217.1,third_like,187.0,33.735
+A0A239C6N9,Dokdonia pacifica,NZ_FZNY01000007.1,WP_089373160.1,-2,0.0,1,+,545,unassigned,"locus not anchored (non-sheath anchors=10, modal share=5/10, rho=0.024316221747202584)",False,-1.0,WP_010895805.1,afp3_like,198.0,44.094
+A0A239C6N9,Dokdonia pacifica,NZ_FZNY01000007.1,WP_089373158.1,0,,1,+,448,unassigned,"locus not anchored (non-sheath anchors=10, modal share=5/10, rho=0.024316221747202584)",False,-1.0,WP_010895805.1,afp3_like,244.0,36.306
+A0A1M6M6U8,Pseudozobellia thermophila,NZ_FQYU01000009.1,WP_072995091.1,-1,0.0,2,+,615,afp2_like,,True,-1.0,WP_010895805.1,afp3_like,201.0,45.327
+A0A1M6M6U8,Pseudozobellia thermophila,NZ_FQYU01000009.1,WP_072995090.1,0,1.0,2,+,483,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,250.0,34.879
+A0A4U3ETU9,Erwinia persicina,NZ_JACYNM010000035.1,WP_137270117.1,0,0.0,3,+,356,afp2_like,,True,0.0,WP_010895804.1,afp2_like,445.0,58.38
+A0A4U3ETU9,Erwinia persicina,NZ_JACYNM010000035.1,WP_137270118.1,1,1.0,3,+,439,afp3_like,,True,0.0,WP_010895805.1,afp3_like,553.0,60.706
+A0A4U3ETU9,Erwinia persicina,NZ_JACYNM010000035.1,WP_137270119.1,2,2.0,3,+,418,third_like,,True,0.0,WP_169558217.1,third_like,498.0,60.471
+A0A0C5VHY9,Gynuella sunshinyii YC6258,NZ_CP007142.1,WP_044616812.1,0,0.0,2,+,616,unassigned,"locus not anchored (non-sheath anchors=7, modal share=3/7, rho=0.25)",False,0.0,WP_010895805.1,afp3_like,205.0,52.128
+A0A0C5VHY9,Gynuella sunshinyii YC6258,NZ_CP007142.1,WP_044616811.1,1,1.0,2,+,463,unassigned,"locus not anchored (non-sheath anchors=7, modal share=3/7, rho=0.25)",False,0.0,WP_010895805.1,afp3_like,223.0,34.232
+A0ABT3PYY7,Fodinibius salicampi,NZ_BAABRS010000002.1,WP_265789545.1,-1,0.0,2,+,476,afp2_like,,True,-1.0,WP_010895805.1,afp3_like,231.0,34.2
+A0ABT3PYY7,Fodinibius salicampi,NZ_BAABRS010000002.1,WP_265789547.1,0,1.0,2,+,598,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,202.0,46.377
+A0ABV6TWS7,Streptomyces noboritoensis,NZ_JBIRSZ010000028.1,WP_394317358.1,0,0.0,1,+,367,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895804.1,afp2_like,245.0,40.274
+A0ABY3GK27,Pseudomonas saxonica,NZ_VFIO01000001.1,WP_146383569.1,0,0.0,5,+,377,unassigned,"locus not anchored (non-sheath anchors=10, modal share=5/10, rho=0.9999999999999999)",False,1.0,WP_010895804.1,afp2_like,288.0,43.396
+A0ABY3GK27,Pseudomonas saxonica,NZ_VFIO01000001.1,WP_146383568.1,1,1.0,5,+,149,unassigned,"locus not anchored (non-sheath anchors=10, modal share=5/10, rho=0.9999999999999999)",False,1.0,WP_010895804.1,afp2_like,53.9,32.11
+A0ABY3GK27,Pseudomonas saxonica,NZ_VFIO01000001.1,WP_158637841.1,2,2.0,5,+,244,unassigned,"locus not anchored (non-sheath anchors=10, modal share=5/10, rho=0.9999999999999999)",False,1.0,WP_010895804.1,afp2_like,234.0,51.064
+A0ABY3GK27,Pseudomonas saxonica,NZ_VFIO01000001.1,WP_146383566.1,3,3.0,5,+,499,unassigned,"locus not anchored (non-sheath anchors=10, modal share=5/10, rho=0.9999999999999999)",False,1.0,WP_010895805.1,afp3_like,287.0,37.931
+A0ABY3GK27,Pseudomonas saxonica,NZ_VFIO01000001.1,WP_122782825.1,4,4.0,5,+,417,unassigned,"locus not anchored (non-sheath anchors=10, modal share=5/10, rho=0.9999999999999999)",False,1.0,WP_169558217.1,third_like,186.0,31.477
+A0A9N8N207,Paraburkholderia domus,NZ_CAJNAS010000010.1,WP_201139139.1,0,0.0,3,+,367,unassigned,"locus not anchored (non-sheath anchors=14, modal share=13/14, rho=0.6)",False,0.0,WP_010895804.1,afp2_like,310.0,44.205
+A0A9N8N207,Paraburkholderia domus,NZ_CAJNAS010000010.1,WP_201139138.1,1,1.0,3,+,443,unassigned,"locus not anchored (non-sheath anchors=14, modal share=13/14, rho=0.6)",False,0.0,WP_010895805.1,afp3_like,367.0,44.035
+A0A9N8N207,Paraburkholderia domus,NZ_CAJNAS010000010.1,WP_201075390.1,2,2.0,3,+,406,unassigned,"locus not anchored (non-sheath anchors=14, modal share=13/14, rho=0.6)",False,0.0,WP_169558217.1,third_like,291.0,39.951
+A0A3E1NWC1,Chitinophaga silvisoli,NZ_QTJV01000010.1,WP_116856313.1,0,0.0,1,+,468,unassigned,"locus not anchored (non-sheath anchors=8, modal share=4/8, rho=1.0)",False,1.0,WP_010895805.1,afp3_like,234.0,34.719
+A0A2D0ND87,Flavilitoribacter nigricans (strain ATCC 23147 / DSM 23189 / NBRC 102662 / NCIMB 1420 / SS-2) (Lewinella nigricans),NZ_PDUD01000018.1,WP_099150351.1,0,0.0,2,+,502,afp2_like,,True,0.0,WP_010895805.1,afp3_like,215.0,32.171
+A0A2D0ND87,Flavilitoribacter nigricans (strain ATCC 23147 / DSM 23189 / NBRC 102662 / NCIMB 1420 / SS-2) (Lewinella nigricans),NZ_PDUD01000018.1,WP_099150350.1,1,1.0,2,+,593,afp3_like,,True,0.0,WP_010895805.1,afp3_like,217.0,45.607
+A0ABU3DVL8,Autumnicola psychrophila,NZ_JAVRHN010000014.1,WP_311501031.1,0,0.0,1,+,497,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895805.1,afp3_like,215.0,33.333
+A0A4R0P1R4,Pedobacter frigidisoli,NZ_SJSN01000006.1,WP_131557724.1,-1,0.0,2,+,592,afp2_like,,True,-1.0,WP_010895805.1,afp3_like,207.0,51.579
+A0A4R0P1R4,Pedobacter frigidisoli,NZ_SJSN01000006.1,WP_131557722.1,0,1.0,2,+,476,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,239.0,34.921
+A0A494XZK3,Pararobbsia silviterrae,NZ_RBZU01000004.1,WP_121086776.1,0,0.0,3,+,350,afp2_like,,True,0.0,WP_010895804.1,afp2_like,323.0,47.191
+A0A494XZK3,Pararobbsia silviterrae,NZ_RBZU01000004.1,WP_121086778.1,1,1.0,3,+,449,afp3_like,,True,0.0,WP_010895805.1,afp3_like,291.0,39.7
+A0A494XZK3,Pararobbsia silviterrae,NZ_RBZU01000004.1,WP_121086780.1,2,2.0,3,+,406,third_like,,True,0.0,WP_169558217.1,third_like,287.0,38.272
+L8JXY8,Fulvivirga imtechensis AK7,NZ_AMZN01000027.1,WP_009579260.1,-1,0.0,2,+,571,afp2_like,,True,-1.0,WP_010895805.1,afp3_like,216.0,50.237
+L8JXY8,Fulvivirga imtechensis AK7,NZ_AMZN01000027.1,WP_009579261.1,0,1.0,2,+,470,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,266.0,37.652
+A0ABY3X988,Lysobacter gummosus,NZ_CP011131.1,WP_083512741.1,-1,0.0,2,+,493,unassigned,"locus not anchored (non-sheath anchors=9, modal share=4/9, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,207.0,30.452
+A0ABY3X988,Lysobacter gummosus,NZ_CP011131.1,WP_083512740.1,0,1.0,2,+,686,unassigned,"locus not anchored (non-sheath anchors=9, modal share=4/9, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,209.0,51.613
+A0ABZ3B0Q6,Kosakonia calanthes,NZ_CP151800.1,WP_342320662.1,0,0.0,1,+,366,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895804.1,afp2_like,394.0,52.316
+A0A4R3KNV5,Anseongella ginsenosidimutans,NZ_SMAD01000008.1,WP_132129651.1,-1,0.0,2,+,477,afp2_like,,True,-1.0,WP_010895805.1,afp3_like,244.0,35.0
+A0A4R3KNV5,Anseongella ginsenosidimutans,NZ_SMAD01000008.1,WP_132129650.1,0,1.0,2,+,663,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,203.0,49.735
+A0A6L9EJF2,Poritiphilus flavus,NZ_WXYO01000009.1,WP_161437351.1,-1,0.0,2,+,461,afp2_like,,True,-1.0,WP_010895805.1,afp3_like,236.0,36.066
+A0A6L9EJF2,Poritiphilus flavus,NZ_WXYO01000009.1,WP_161437350.1,0,1.0,2,+,594,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,202.0,39.203
+A0A967AYL9,Pelagihabitans pacificus,NZ_VIKU02000003.1,WP_152574487.1,0,0.0,1,+,499,unassigned,"locus not anchored (non-sheath anchors=1, modal share=1/1, rho=None)",False,-12.0,WP_010895805.1,afp3_like,209.0,32.417
+A0ABT5UAH9,Spartinivicinus poritis,NZ_JAPMOU010000009.1,WP_274688493.1,0,0.0,1,+,467,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,225.0,33.673
+A0A9X1T9B5,Dyadobacter fanqingshengii,NZ_CP098806.1,WP_234612208.1,0,0.0,2,+,572,afp2_like,,True,0.0,WP_010895805.1,afp3_like,205.0,50.769
+A0A9X1T9B5,Dyadobacter fanqingshengii,NZ_CP098806.1,WP_234612209.1,1,1.0,2,+,483,afp3_like,,True,0.0,WP_010895805.1,afp3_like,267.0,37.959
+A0A3N2E0B7,Sinobacterium caligoides,NZ_RKHR01000003.1,WP_123711450.1,0,0.0,1,+,359,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895804.1,afp2_like,300.0,42.5
+A0A4S1CG52,Geomonas terrae,NZ_SRSC01000002.1,WP_135869795.1,0,0.0,1,+,478,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,239.0,35.189
+A0ABW0M7E4,Paraherbaspirillum soli,NZ_JBHSMT010000012.1,WP_378996468.1,0,0.0,1,+,352,unassigned,"locus not anchored (non-sheath anchors=2, modal share=1/2, rho=None)",False,0.0,WP_010895804.1,afp2_like,324.0,47.486
+A0A5B7SQW7,Aggregatimonas sangjinii,NZ_CP040710.1,WP_138853300.1,0,0.0,1,+,697,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,211.0,52.88
+A0A1M6M0S9,Malonomonas rubra DSM 5091,NZ_FQZT01000015.1,WP_072909677.1,0,0.0,1,+,669,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,200.0,49.474
+A0ACE2HT81,Tenacibaculum halocynthiae,NZ_CAZELG010000016.1,WP_218131768.1,0,0.0,1,+,631,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,214.0,53.368
+A0A1M7L208,Cyclobacterium lianum,NZ_FRCY01000003.1,WP_073093363.1,0,0.0,1,+,657,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,209.0,39.82
+A0ABV7NLS3,Sphingobium rhizovicinum,NZ_JBHRVU010000005.1,WP_380798677.1,0,0.0,1,+,514,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,213.0,47.297
+A0A1M5UNK8,Chryseolinea serpens,NZ_FQWQ01000003.1,WP_084138333.1,0,0.0,1,+,678,unassigned,"locus not anchored (non-sheath anchors=7, modal share=3/7, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,204.0,43.866
+A9DX97,Kordia algicida OT-1,NZ_CP142125.1,WP_007094048.1,0,0.0,1,+,694,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,207.0,50.777
+A0A4P9UQ72,Methylotuvimicrobium buryatense (Methylomicrobium buryatense),NZ_CP035467.1,WP_017839462.1,0,0.0,1,+,660,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,208.0,53.684
+A0A344LUQ8,Flavobacterium fluviale,NZ_CP030261.1,WP_113678597.1,0,0.0,1,+,699,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,216.0,54.404
+A0ABT6RD62,Pinibacter soli,NZ_JASBRG010000005.1,WP_282333889.1,0,0.0,1,+,506,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,229.0,31.693
+A0A1M7YV58,Vibrio quintilis,NZ_AP024897.1,WP_073582463.1,0,0.0,1,+,463,unassigned,"locus not anchored (non-sheath anchors=9, modal share=4/9, rho=0.39999999999999997)",False,-1.0,WP_010895805.1,afp3_like,230.0,35.565
+A0A5S3PSQ2,Maribacter algarum (ex Zhang et al. 2020),NZ_VATY01000001.1,WP_138655951.1,0,0.0,1,+,657,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,215.0,46.122
+A0A840E7I2,Neolewinella aquimaris,NZ_JACIFF010000005.1,WP_183495924.1,0,0.0,1,+,462,unassigned,"locus not anchored (non-sheath anchors=8, modal share=4/8, rho=1.0)",False,1.0,WP_010895805.1,afp3_like,238.0,34.836
+A0ABS0TIK4,Salegentibacter maritimus,NZ_JAEHNY010000012.1,WP_198639128.1,0,0.0,1,+,469,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895805.1,afp3_like,241.0,34.737
+A0A1V9FQD7,Niastella vici,NZ_LVYD01000060.1,WP_081152710.1,0,0.0,1,+,462,unassigned,"locus not anchored (non-sheath anchors=9, modal share=5/9, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,227.0,35.27
+A0ABU3Y2C7,Sphingomonas agrestis,NZ_JAWJEJ010000001.1,WP_317224617.1,0,0.0,1,+,540,unassigned,"locus not anchored (non-sheath anchors=11, modal share=6/11, rho=0.9977246841962695)",False,0.0,WP_010895805.1,afp3_like,204.0,45.872
+A0ABT8WQE9,Flavivirga jejuensis,NZ_BAABDA010000035.1,WP_303302394.1,0,0.0,1,+,680,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,203.0,51.562
+W0EWK7,Niabella soli DSM 19437,NZ_CP007035.1,WP_008584676.1,0,0.0,1,+,487,unassigned,"locus not anchored (non-sheath anchors=8, modal share=4/8, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,224.0,34.0
+A0A9X1UYG0,Christiangramia crocea,NZ_JAJSON010000025.1,WP_240099958.1,0,0.0,2,+,459,afp2_like,,True,0.0,WP_010895805.1,afp3_like,234.0,33.884
+A0A9X1UYG0,Christiangramia crocea,NZ_JAJSON010000025.1,WP_240099957.1,1,1.0,2,+,595,afp3_like,,True,0.0,WP_010895805.1,afp3_like,195.0,48.148
+A0A1I4IEX1,Rugamonas rubra,NZ_FOTW01000005.1,WP_093383353.1,0,0.0,1,+,472,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,228.0,34.553
+A0ABY2AJI1,Corallincola luteus,NZ_QPID01000004.1,WP_114338042.1,0,0.0,1,+,495,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,226.0,34.064
+A0A1D8D6N6,Chlorobaculum limnaeum,NZ_CP017305.1,WP_069809808.1,0,0.0,1,+,695,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,214.0,52.105
+A0ABR9EHV9,Pseudoalteromonas aurantia 208,NZ_AQGV01000015.1,WP_225738521.1,0,0.0,1,+,572,unassigned,"locus not anchored (non-sheath anchors=9, modal share=3/9, rho=0.5333333333333333)",False,-1.0,WP_010895804.1,afp2_like,201.0,54.301
+A0A1W2H012,Aquiflexum balticum DSM 16537,NZ_LT838813.1,WP_084118821.1,0,0.0,1,+,473,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,231.0,34.31
+A0ABW4ZMW6,Paradesertivirga mongoliensis,NZ_JBHUHZ010000002.1,WP_255901054.1,0,0.0,1,+,480,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,243.0,35.271
+A0A939EZK4,Hymenobacter telluris,NZ_JAFLQZ010000015.1,WP_206985962.1,0,0.0,1,+,478,unassigned,"locus not anchored (non-sheath anchors=2, modal share=1/2, rho=None)",False,-11.0,WP_010895805.1,afp3_like,236.0,36.439
+A0A1I2JGN5,Sunxiuqinia elliptica,NZ_FONW01000008.1,WP_093920616.1,0,0.0,1,+,469,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,255.0,37.166
+A0A8J7J2K7,Lusitaniella coriacea LEGE 07157,NZ_JADEWZ010000014.1,WP_194029485.1,0,0.0,1,+,563,unassigned,"locus not anchored (non-sheath anchors=10, modal share=6/10, rho=0.4545454545454545)",False,-1.0,WP_010895805.1,afp3_like,215.0,47.788
+A0A3M9N7M8,Hanamia caeni,NZ_RJJR01000016.1,WP_123122079.1,0,0.0,1,+,485,unassigned,sheath gene outside the mapped Afp2/Afp3/third slots,True,1.0,WP_010895805.1,afp3_like,227.0,32.454
+A0A514CKU5,Echinicola soli,NZ_CP041253.1,WP_141615656.1,0,0.0,1,+,656,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,211.0,53.125
+A0A8D4VQD1,Methylogaea oryzae,NZ_AP019782.1,WP_246598972.1,0,0.0,1,+,559,unassigned,"locus not anchored (non-sheath anchors=11, modal share=5/11, rho=0.9977246841962695)",False,1.0,WP_010895805.1,afp3_like,213.0,46.847
+A0A1A9LFH5,Aequorivita soesokkakensis,NZ_LXIE01000007.1,WP_068761249.1,0,0.0,1,+,474,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,255.0,34.969
+A0ABR8AI03,Calothrix parietina FACHB-288,NZ_CAWPNO010000093.1,WP_190548641.1,0,0.0,1,+,479,unassigned,"locus not anchored (non-sheath anchors=8, modal share=4/8, rho=0.3333333333333334)",False,-1.0,WP_010895805.1,afp3_like,245.0,35.614
+A0A4V3CG83,Marinomonas balearica,NZ_SNXC01000013.1,WP_133504201.1,0,0.0,1,+,477,unassigned,"locus not anchored (non-sheath anchors=11, modal share=4/11, rho=0.6727272727272727)",False,-1.0,WP_010895805.1,afp3_like,218.0,33.537
+A0ACD6B980,Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576),NC_003272.1,WP_010997476.1,0,0.0,1,+,484,unassigned,"locus not anchored (non-sheath anchors=8, modal share=4/8, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,241.0,33.198
+S2DQ50,Indibacter alkaliphilus (strain CCUG 57479 / KCTC 22604 / LW1),NZ_ALWO02000052.1,WP_009033199.1,0,0.0,1,+,471,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895805.1,afp3_like,229.0,32.427
+A0ABR7ZEG0,Anabaena cylindrica FACHB-318,NC_003272.1,WP_010997476.1,0,0.0,1,+,484,unassigned,"locus not anchored (non-sheath anchors=8, modal share=4/8, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,241.0,33.198
+M4ZAB5,Bradyrhizobium oligotrophicum S58,NC_020453.1,WP_015667367.1,0,0.0,1,+,562,unassigned,"locus not anchored (non-sheath anchors=11, modal share=6/11, rho=0.9977246841962695)",False,0.0,WP_010895805.1,afp3_like,200.0,45.413
+A0A2W2C005,Taibaiella soli,NZ_QKTW01000013.1,WP_110998456.1,0,0.0,1,+,481,unassigned,"locus not anchored (non-sheath anchors=8, modal share=4/8, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,207.0,33.814
+M7Y6B1,Mariniradius saccharolyticus AK6,NZ_AMZY02000011.1,WP_008627943.1,0,0.0,1,+,471,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,241.0,35.073
+A0A369QHI1,Adhaeribacter pallidiroseus,NZ_QASA01000001.1,WP_115372090.1,0,0.0,1,+,536,unassigned,"locus not anchored (non-sheath anchors=9, modal share=5/9, rho=0.39999999999999997)",False,-1.0,WP_010895805.1,afp3_like,207.0,42.857
+A0ABV0IPX9,Chromobacterium phragmitis,NZ_CP158160.1,WP_347937275.1,0,0.0,1,+,471,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,236.0,36.55
+A0A8J2U7A2,Neiella marina,NZ_NGNS01000018.1,WP_087506630.1,0,0.0,1,+,469,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,216.0,31.959
+A0A848J9F9,Marinigracilibium pacificum,NZ_JABBNU010000009.1,WP_271711636.1,-1,0.0,2,+,571,afp2_like,,True,-1.0,WP_010895805.1,afp3_like,214.0,49.289
+A0A848J9F9,Marinigracilibium pacificum,NZ_JABBNU010000009.1,WP_169683030.1,0,1.0,2,+,470,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,270.0,38.289
+A0ABW3K1B6,Ohtaekwangia kribbensis,NZ_JBHTKA010000002.1,WP_377578463.1,0,0.0,1,+,480,unassigned,"locus not anchored (non-sheath anchors=9, modal share=5/9, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,216.0,34.369
+A0A1G9NB11,Kriegella aquimaris,NZ_FNGV01000003.1,WP_176801359.1,0,0.0,1,+,651,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,207.0,49.223
+A0ABX1DDU9,Tamlana crocina,NZ_JAAVJS010000022.1,WP_167919185.1,0,0.0,1,+,481,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895805.1,afp3_like,228.0,32.179
+A0A1M4ZE10,Cnuella takakiae,NZ_FQUO01000005.1,WP_073041931.1,0,0.0,1,+,606,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,200.0,41.699
+A0ABS4BVU7,Mariniflexile gromovii,NZ_JAGJCB010000008.1,WP_209655092.1,0,0.0,1,+,465,unassigned,sheath gene outside the mapped Afp2/Afp3/third slots,True,1.0,WP_010895805.1,afp3_like,235.0,34.497
+A0A0D7W2C4,Neotamlana nanhaiensis,NZ_JTDV01000005.1,WP_044626120.1,0,0.0,1,+,493,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895805.1,afp3_like,202.0,31.621
+A0A7G3GEQ6,Iodobacter fluviatilis,NZ_CP025783.1,WP_130108403.1,0,0.0,1,+,465,unassigned,"locus not anchored (non-sheath anchors=7, modal share=4/7, rho=0.9910312089651149)",False,-1.0,WP_010895805.1,afp3_like,241.0,36.307
+A0A369WSM6,Motiliproteus coralliicola,NZ_QQOH01000001.1,WP_114694264.1,0,0.0,1,+,469,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,213.0,34.064
+A0A9X2F581,Solitalea agri,NZ_JAMWYS010000058.1,WP_252589485.1,0,0.0,1,+,470,unassigned,"locus not anchored (non-sheath anchors=10, modal share=6/10, rho=0.5106406566912542)",False,-1.0,WP_010895805.1,afp3_like,231.0,34.504
+A0ABW5LTV2,Pseudotenacibaculum haliotis,NZ_JBHULH010000004.1,WP_379666548.1,0,0.0,1,+,637,unassigned,"locus not anchored (non-sheath anchors=8, modal share=3/8, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,213.0,50.777
+A0ABS9KML1,Terrimonas ginsenosidimutans,NZ_JAKLTR010000002.1,WP_237868956.1,0,0.0,1,+,452,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895805.1,afp3_like,214.0,33.333
+Q21LX9,Saccharophagus degradans (strain 2-40 / ATCC 43961 / DSM 17024),NC_007912.1,WP_011467520.1,0,0.0,1,+,470,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,214.0,33.333
+A0A1I5YQG2,Parafilimonas terrae,NZ_FOXQ01000013.1,WP_090661952.1,0,0.0,1,+,503,unassigned,"locus not anchored (non-sheath anchors=7, modal share=4/7, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,233.0,33.792
+A0A3P1CVD2,Larkinella knui,NZ_BAAHBB010000007.1,WP_124903705.1,0,0.0,1,+,682,unassigned,"locus not anchored (non-sheath anchors=8, modal share=4/8, rho=1.0)",False,-1.0,WP_010895805.1,afp3_like,212.0,52.381
+A0A8H9G2F9,Sphingobacterium cellulitidis,NZ_BMKM01000003.1,WP_182498498.1,0,0.0,1,+,473,unassigned,sheath gene outside the mapped Afp2/Afp3/third slots,True,1.0,WP_010895805.1,afp3_like,221.0,32.716
+A0A3L9YEQ8,Ulvibacter antarcticus,NZ_REFC01000013.1,WP_121907810.1,0,0.0,1,+,482,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,243.0,34.608
+W0L4J4,Chania multitudinisentens RB-25,NZ_CP007044.2,WP_024913631.1,0,0.0,3,+,355,afp2_like,,True,0.0,WP_010895804.1,afp2_like,348.0,49.58
+W0L4J4,Chania multitudinisentens RB-25,NZ_CP007044.2,WP_335337005.1,1,1.0,3,+,471,afp3_like,,True,0.0,WP_010895805.1,afp3_like,426.0,47.3
+W0L4J4,Chania multitudinisentens RB-25,NZ_CP007044.2,WP_081758472.1,2,2.0,3,+,409,third_like,,True,0.0,WP_169558217.1,third_like,327.0,43.237
+A0AA97EKR5,Hwangdonia lutea,NZ_CP136521.1,WP_316982522.1,0,0.0,1,+,475,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,243.0,34.008
+A0A2S6GL82,Methylobacter tundripaludum,NZ_PTIY01000018.1,WP_104425100.1,0,0.0,1,+,558,unassigned,"locus not anchored (non-sheath anchors=11, modal share=5/11, rho=0.9977246841962695)",False,1.0,WP_010895805.1,afp3_like,214.0,50.685
+A6FZ77,Plesiocystis pacifica SIR-1,NZ_ABCS01000006.1,WP_006969776.1,0,0.0,1,+,541,unassigned,"locus not anchored (non-sheath anchors=9, modal share=3/9, rho=0.9958246164193105)",False,0.0,WP_010895805.1,afp3_like,207.0,44.298
+A0A1G7XD04,Psychroflexus sediminis,NZ_FNCW01000008.1,WP_093368114.1,0,0.0,1,+,486,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895805.1,afp3_like,208.0,47.222
+A0A3N0EVG4,Sinomicrobium pectinilyticum,NZ_RJTM01000025.1,WP_123214747.1,0,0.0,1,+,693,afp3_like,,True,-1.0,WP_010895805.1,afp3_like,203.0,50.794
+A0A432M9E6,Dyella choica,NZ_RYYV01000002.1,WP_126683268.1,0,0.0,2,+,386,afp2_like,,True,0.0,WP_010895804.1,afp2_like,300.0,43.333
+A0A432M9E6,Dyella choica,NZ_RYYV01000002.1,WP_230473384.1,1,1.0,2,+,418,afp3_like,,True,0.0,WP_169558217.1,third_like,284.0,39.518
+A0A2T0WT23,Mongoliibacter ruber,NZ_PVTR01000002.1,WP_106132520.1,0,0.0,1,+,472,unassigned,"locus not anchored (non-sheath anchors=0, modal share=0/0, rho=None)",False,,WP_010895805.1,afp3_like,233.0,33.472

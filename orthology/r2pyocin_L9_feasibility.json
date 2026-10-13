@@ -1,0 +1,85 @@
+{
+  "family": "r2pyocin",
+  "clade_level": 9,
+  "status": "feasibility diagnostics only -- no rates estimated",
+  "paralog_test": {
+    "dropped_paralogs_tested": 121,
+    "inside_clade_in_paralogs": 121,
+    "outside_clade": 0,
+    "clade_members_recovered": "355/355",
+    "in_paralog_topology": {
+      "mrca_leaves": 477,
+      "in_paralogs": 121,
+      "monophyletic": false
+    },
+    "in_paralog_pairs_sister_leaves": 11,
+    "in_paralog_pairs_tested": 121,
+    "in_paralog_median_patristic": 1.6074,
+    "verdict": "121 in-paralogs: the clade is not a clean ortholog set"
+  },
+  "n_orthologs": 355,
+  "phylogenetic_diversity": {
+    "tree_length": 106.748,
+    "mean_patristic_distance": 2.5564,
+    "median_patristic_distance": 2.7566,
+    "max_patristic_distance": 6.7085,
+    "identity_min": 0.3008,
+    "identity_median": 0.4509
+  },
+  "alignment": {
+    "columns": 1031,
+    "sequences": 356,
+    "columns_occupancy_ge_50pct": 388,
+    "reference_columns": 386
+  },
+  "structural_sites": {
+    "n_sites": 143,
+    "mapped_to_a_column": 143,
+    "occupancy_ge_80pct": 142,
+    "occupancy_ge_70pct": 143,
+    "occupancy_ge_90pct": 142,
+    "median_occupancy": 1.0,
+    "median_window_occupancy": 0.9224,
+    "sites_window_occupancy_lt_80pct": 36,
+    "invariant_sites": 1,
+    "sites_major_aa_ge_95pct": 13,
+    "median_distinct_aa": 11.0,
+    "median_entropy": 1.7939,
+    "entropy_quartiles": [
+      1.1807,
+      1.7939,
+      2.2542
+    ]
+  },
+  "branch_lengths": {
+    "median_tip": 0.06794,
+    "max_tip": 2.0438,
+    "outlier_tips_gt_q3_plus_3iqr": 16,
+    "outlier_labels": [
+      "A0A1N7LRF5",
+      "A0ABR8T9A4",
+      "A0A7L5BG64",
+      "I3D8W4",
+      "A0A345DE55",
+      "A0A1T4W573",
+      "A0A6B8KJH9",
+      "A0ABR9CKN6",
+      "A0A0H5CXN2",
+      "A0ABQ5V139",
+      "A0ABX7BLZ6",
+      "A0A4R2P7S3",
+      "A0A545T5U0",
+      "A0ABX2ZYG1",
+      "A0A3N2E0U0",
+      "A0A5S9P2P4"
+    ]
+  },
+  "taxonomic_redundancy": {
+    "distinct_species": 355,
+    "distinct_genera": 127,
+    "largest_genus": "Pseudomonas",
+    "largest_genus_frac": 0.346,
+    "genus_shannon": 3.542,
+    "effective_genera": 34.53
+  }
+}

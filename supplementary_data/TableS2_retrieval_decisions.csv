@@ -1,0 +1,5 @@
+system,pool,blast_hits,gated,species_dereplicated,decision
+R2 pyocin,8035,4593,1266,967,excluded: reference lineage ambiguous
+SalCIS,7592,4490,805,667,excluded: reference locus poorly recovered
+Diffocin,8005,930,192,165,retained: primary 33 sequences
+AFP joint route,8005,5470,not archived as a comparable single-query funnel,not applicable to joint route,retained: Afp2 27 / Afp3 31

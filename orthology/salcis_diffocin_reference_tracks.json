@@ -1,0 +1,471 @@
+{
+ "diffocin": {
+  "ref_protein": "WP_003438414.1",
+  "nuc": "NZ_AP031492.1",
+  "n_cds": 51,
+  "sheath_slots": [
+   0
+  ],
+  "track": [
+   {
+    "slot": -26,
+    "protein_id": "WP_009892977.1",
+    "product": "MurR/RpiR family transcriptional regulator",
+    "strand": "+",
+    "start": 134,
+    "stop": 886,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -25,
+    "protein_id": "WP_009902417.1",
+    "product": "6-phospho-alpha-glucosidase",
+    "strand": "+",
+    "start": 1019,
+    "stop": 2365,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -24,
+    "protein_id": "WP_003438357.1",
+    "product": "pyridoxal phosphate-dependent aminotransferase",
+    "strand": "-",
+    "start": 2477,
+    "stop": 3673,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -23,
+    "protein_id": "WP_009889113.1",
+    "product": "galactose-1-phosphate uridylyltransferase",
+    "strand": "+",
+    "start": 4058,
+    "stop": 5008,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -22,
+    "protein_id": "WP_003438367.1",
+    "product": "exodeoxyribonuclease III",
+    "strand": "+",
+    "start": 5169,
+    "stop": 5921,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -21,
+    "protein_id": "WP_009896237.1",
+    "product": "3'-5' exonuclease",
+    "strand": "-",
+    "start": 6013,
+    "stop": 6789,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -20,
+    "protein_id": "WP_003428202.1",
+    "product": "type I glutamate--ammonia ligase",
+    "strand": "+",
+    "start": 7104,
+    "stop": 9002,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -19,
+    "protein_id": "WP_003438374.1",
+    "product": "MGDG synthase family glycosyltransferase",
+    "strand": "-",
+    "start": 9130,
+    "stop": 10251,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -18,
+    "protein_id": "WP_009889116.1",
+    "product": "PadR family transcriptional regulator",
+    "strand": "+",
+    "start": 10450,
+    "stop": 10782,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -17,
+    "protein_id": "WP_021367719.1",
+    "product": "DUF1700 domain-containing protein",
+    "strand": "+",
+    "start": 10769,
+    "stop": 11827,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -16,
+    "protein_id": "WP_021364425.1",
+    "product": "DUF4097 family beta strand repeat-containing protein",
+    "strand": "+",
+    "start": 11820,
+    "stop": 12890,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -15,
+    "protein_id": "WP_003428196.1",
+    "product": "lipoprotein",
+    "strand": "+",
+    "start": 12992,
+    "stop": 13528,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -14,
+    "protein_id": "WP_009902422.1",
+    "product": "lantibiotic protection ABC transporter ATP-binding protein",
+    "strand": "+",
+    "start": 13644,
+    "stop": 14351,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -13,
+    "protein_id": "WP_009896246.1",
+    "product": "lantibiotic immunity ABC transporter MutE/EpiE family permease subunit",
+    "strand": "+",
+    "start": 14353,
+    "stop": 15069,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -12,
+    "protein_id": "WP_009902423.1",
+    "product": "lantibiotic immunity ABC transporter MutG family permease subunit",
+    "strand": "+",
+    "start": 15071,
+    "stop": 15829,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -11,
+    "protein_id": "WP_021364432.1",
+    "product": "two-component system sensor histidine kinase",
+    "strand": "+",
+    "start": 15964,
+    "stop": 17352,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -10,
+    "protein_id": "WP_021364435.1",
+    "product": "pyridoxamine kinase",
+    "strand": "-",
+    "start": 17428,
+    "stop": 18249,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -9,
+    "protein_id": "WP_009902426.1",
+    "product": "amidase domain-containing protein",
+    "strand": "+",
+    "start": 18500,
+    "stop": 19654,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -8,
+    "protein_id": "WP_003419624.1",
+    "product": "cold-shock protein",
+    "strand": "+",
+    "start": 19837,
+    "stop": 20037,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -7,
+    "protein_id": "WP_009889129.1",
+    "product": "CBS domain-containing protein",
+    "strand": "+",
+    "start": 20458,
+    "stop": 20886,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -6,
+    "protein_id": "WP_009889131.1",
+    "product": "peptidylprolyl isomerase",
+    "strand": "-",
+    "start": 21029,
+    "stop": 21784,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -5,
+    "protein_id": "WP_003428186.1",
+    "product": "ImmA/IrrE family metallo-endopeptidase",
+    "strand": "-",
+    "start": 22485,
+    "stop": 22991,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -4,
+    "protein_id": "WP_003428185.1",
+    "product": "XRE family transcriptional regulator",
+    "strand": "-",
+    "start": 23073,
+    "stop": 23393,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -3,
+    "protein_id": "WP_003419641.1",
+    "product": "helix-turn-helix transcriptional regulator",
+    "strand": "+",
+    "start": 23562,
+    "stop": 23759,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -2,
+    "protein_id": "WP_003428183.1",
+    "product": "hypothetical protein",
+    "strand": "+",
+    "start": 23864,
+    "stop": 24304,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": -1,
+    "protein_id": "WP_003438413.1",
+    "product": "phage tail terminator family protein",
+    "strand": "+",
+    "start": 24553,
+    "stop": 24996,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 0,
+    "protein_id": "WP_003438414.1",
+    "product": "phage tail sheath subtilisin-like domain-containing protein",
+    "strand": "+",
+    "start": 25001,
+    "stop": 26065,
+    "sheath_bits": 703.0
+   },
+   {
+    "slot": 1,
+    "protein_id": "WP_003419646.1",
+    "product": "phage tail tube protein",
+    "strand": "+",
+    "start": 26079,
+    "stop": 26507,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 2,
+    "protein_id": "WP_003419647.1",
+    "product": "phage tail assembly chaperone",
+    "strand": "+",
+    "start": 26621,
+    "stop": 27067,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 3,
+    "protein_id": "WP_003419648.1",
+    "product": "hypothetical protein",
+    "strand": "+",
+    "start": 27094,
+    "stop": 27261,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 4,
+    "protein_id": "WP_003438437.1",
+    "product": "phage tail family protein",
+    "strand": "+",
+    "start": 27261,
+    "stop": 29714,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 5,
+    "protein_id": "WP_003428168.1",
+    "product": "phage baseplate protein",
+    "strand": "+",
+    "start": 29714,
+    "stop": 30136,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 6,
+    "protein_id": "WP_422389653.1",
+    "product": "XkdQ/YqbQ family protein",
+    "strand": "+",
+    "start": 30322,
+    "stop": 31947,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 7,
+    "protein_id": "WP_003438447.1",
+    "product": "DUF2577 domain-containing protein",
+    "strand": "+",
+    "start": 31963,
+    "stop": 32289,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 8,
+    "protein_id": "WP_003438449.1",
+    "product": "DUF2634 domain-containing protein",
+    "strand": "+",
+    "start": 32289,
+    "stop": 32717,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 9,
+    "protein_id": "WP_003438450.1",
+    "product": "baseplate J/gp47 family protein",
+    "strand": "+",
+    "start": 32710,
+    "stop": 33762,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 10,
+    "protein_id": "WP_003438451.1",
+    "product": "putative phage tail protein",
+    "strand": "+",
+    "start": 33759,
+    "stop": 34457,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 11,
+    "protein_id": "WP_003438452.1",
+    "product": "phage tail protein",
+    "strand": "+",
+    "start": 34458,
+    "stop": 35441,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 12,
+    "protein_id": "WP_021364429.1",
+    "product": "RCC1 domain-containing protein",
+    "strand": "+",
+    "start": 35458,
+    "stop": 40779,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 13,
+    "protein_id": "WP_021364427.1",
+    "product": "CD1375 family protein",
+    "strand": "+",
+    "start": 40796,
+    "stop": 41149,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 14,
+    "protein_id": "WP_003419670.1",
+    "product": "hypothetical protein",
+    "strand": "+",
+    "start": 41412,
+    "stop": 41672,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 15,
+    "protein_id": "WP_003419674.1",
+    "product": "hypothetical protein",
+    "strand": "-",
+    "start": 41879,
+    "stop": 42334,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 16,
+    "protein_id": "WP_003438466.1",
+    "product": "helix-turn-helix domain-containing protein",
+    "strand": "-",
+    "start": 42562,
+    "stop": 42981,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 17,
+    "protein_id": "WP_003428146.1",
+    "product": "helix-turn-helix transcriptional regulator",
+    "strand": "+",
+    "start": 43280,
+    "stop": 43489,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 18,
+    "protein_id": "WP_009889160.1",
+    "product": "hypothetical protein",
+    "strand": "+",
+    "start": 43521,
+    "stop": 43730,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 19,
+    "protein_id": "WP_021403541.1",
+    "product": "helix-turn-helix domain-containing protein",
+    "strand": "-",
+    "start": 43947,
+    "stop": 44279,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 20,
+    "protein_id": "WP_009896283.1",
+    "product": "MFS transporter",
+    "strand": "-",
+    "start": 44766,
+    "stop": 47258,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 21,
+    "protein_id": "WP_003438468.1",
+    "product": "TetR/AcrR family transcriptional regulator",
+    "strand": "-",
+    "start": 47272,
+    "stop": 47814,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 22,
+    "protein_id": "WP_009893012.1",
+    "product": "glycerol kinase GlpK",
+    "strand": "+",
+    "start": 48058,
+    "stop": 49572,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 23,
+    "protein_id": "WP_021364430.1",
+    "product": "GntR family transcriptional regulator",
+    "strand": "-",
+    "start": 49686,
+    "stop": 50315,
+    "sheath_bits": 0.0
+   },
+   {
+    "slot": 24,
+    "protein_id": "WP_021362508.1",
+    "product": "LamB/YcsF family protein",
+    "strand": "+",
+    "start": 50903,
+    "stop": 51065,
+    "sheath_bits": 0.0
+   }
+  ]
+ }
+}

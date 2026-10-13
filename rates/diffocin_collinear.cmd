@@ -1,0 +1,1 @@
+./tools/rate4site -s orthology/diffocin_collinear_frame.afa -t phylo/diffocin_collinear.r4s.nwk -o rates/diffocin_collinear.res -x rates/diffocin_collinear.tree -y rates/diffocin_collinear.unnorm -a REF -Mw -ib -k 16 -l rates/diffocin_collinear.log

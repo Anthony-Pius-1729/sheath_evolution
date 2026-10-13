@@ -1,0 +1,179 @@
+IQ-TREE version 3.1.4 for MacOS ARM 64-bit built Sep 29 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    Anthonys-MacBook-Air.local (SSE4.2, 16 GB RAM)
+Command: iqtree -s orthology/afp_sf1_afp3_like.afa -m MFP -B 1000 -alrt 1000 -T 4 --prefix phylo/afp_Afp3 -quiet -redo
+Seed:    566977 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Oct 13 19:33:22 2026
+Kernel:  SSE2 - 4 threads (8 CPU cores detected)
+
+Reading alignment file orthology/afp_sf1_afp3_like.afa ... Fasta format detected
+Reading fasta file: done in 0.000240088 secs using 89.97% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000448942 secs using 70.61% CPU
+Alignment has 31 sequences with 708 columns, 605 distinct patterns
+370 parsimony-informative, 128 singleton sites, 210 constant sites
+                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.31266e-05 secs using 168.6% CPU
+   1  WP_004721432_1   34.18%    passed     87.22%
+   2  WP_166285397_1   33.62%    passed     77.39%
+   3  WP_099119057_1   49.44%    passed     84.56%
+   4  WP_065390782_1   36.58%    passed     71.69%
+   5  WP_015834382_1   35.45%    passed     94.40%
+   6  WP_038240591_1   37.71%    passed     73.99%
+   7  WP_133814581_1   34.04%    passed     96.96%
+   8  WP_209027383_1   32.77%    passed     78.31%
+   9  WP_105395972_1   36.30%    passed     85.11%
+  10  WP_092508645_1   37.71%    passed     93.00%
+  11  WP_023046337_1   33.62%    passed     99.63%
+  12  WP_099124257_1   34.32%    passed     90.85%
+  13  WP_121086778_1   36.58%    passed      5.05%
+  14  WP_047961453_1   32.49%    passed     89.92%
+  15  WP_162120286_1   29.52%    passed     45.57%
+  16  WP_115827054_1   34.46%    passed     99.99%
+  17  WP_063197012_1   36.16%    passed     86.26%
+  18  WP_038246062_1   34.75%    passed     75.38%
+  19  WP_228939963_1   35.03%    passed     98.67%
+  20  WP_099113911_1   33.05%    passed     79.52%
+  21  WP_050104390_1   34.60%    passed     99.16%
+  22  WP_065822930_1   34.32%    passed     83.82%
+  23  WP_011146622_1   39.27%    passed     79.01%
+  24  WP_004966139_1   24.72%    failed      1.85%
+  25  WP_049612717_1   34.60%    passed     95.84%
+  26  WP_137270118_1   37.99%    passed     19.77%
+  27  REF              36.30%    passed     56.65%
+  28  WP_335337005_1   33.47%    passed     39.42%
+  29  WP_026636668_1   34.75%    passed     16.56%
+  30  WP_230473384_1   40.96%    failed      1.03%
+  31  WP_092550549_1   49.86%    passed     65.05%
+****  TOTAL            35.76%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 6.19888e-05 secs using 79.05% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -16462.831
+Optimal log-likelihood: -16462.642
+Proportion of invariable sites: 0.068
+Gamma shape alpha: 0.951
+Parameters optimization took 1 rounds (0.033 sec)
+Time for fast ML tree search: 0.320 seconds
+
+NOTE: ModelFinder requires 32 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 708 epsilon: 0.100) ...
+Akaike Information Criterion:           WAG+F+I+G4
+Corrected Akaike Information Criterion: WAG+F+I+G4
+Bayesian Information Criterion:         WAG+I+G4
+Best-fit model: WAG+I+G4 chosen according to BIC
+
+All model information printed to phylo/afp_Afp3.model.gz
+CPU time for ModelFinder: 34.078 seconds (0h:0m:34s)
+Wall-clock time for ModelFinder: 11.932 seconds (0h:0m:11s)
+Generating 1000 samples for ultrafast bootstrap (seed: 566977)...
+
+NOTE: 14 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.041 / Estimate: 0.000, 0.766 / LogL: -16414.434
+Init pinv, alpha: 0.033, 1.041 / Estimate: 0.067, 1.105 / LogL: -16402.269
+Init pinv, alpha: 0.066, 1.041 / Estimate: 0.070, 1.116 / LogL: -16402.242
+Init pinv, alpha: 0.099, 1.041 / Estimate: 0.073, 1.130 / LogL: -16402.272
+Init pinv, alpha: 0.132, 1.041 / Estimate: 0.073, 1.128 / LogL: -16402.264
+Init pinv, alpha: 0.165, 1.041 / Estimate: 0.072, 1.125 / LogL: -16402.251
+Init pinv, alpha: 0.198, 1.041 / Estimate: 0.072, 1.126 / LogL: -16402.255
+Init pinv, alpha: 0.231, 1.041 / Estimate: 0.073, 1.127 / LogL: -16402.257
+Init pinv, alpha: 0.264, 1.041 / Estimate: 0.073, 1.128 / LogL: -16402.261
+Init pinv, alpha: 0.297, 1.041 / Estimate: 0.073, 1.129 / LogL: -16402.265
+Optimal pinv,alpha: 0.070, 1.116 / LogL: -16402.242
+
+Parameters optimization took 2.265 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0605462 secs using 377.2% CPU
+Computing ML distances took 0.060691 sec (of wall-clock time) 0.228503 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 8.4877e-05 secs using 76.58% CPU
+Constructing RapidNJ tree: done in 0.00118017 secs using 45.16% CPU
+Computing RapidNJ tree took 0.001286 sec (of wall-clock time) 0.000612 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -16404.863
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.254 second
+Computing log-likelihood of 98 initial trees ... 1.288 seconds
+Current best score: -16402.242
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -16401.537
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -16398.089
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 6: -16397.308
+Iteration 10 / LogL: -16400.930 / Time: 0h:0m:17s
+Iteration 20 / LogL: -16398.159 / Time: 0h:0m:20s
+Finish initializing candidate tree set (8)
+Current best tree score: -16397.308 / CPU time: 5.893
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -16398.453 / Time: 0h:0m:22s (0h:0m:28s left)
+Iteration 40 / LogL: -16398.794 / Time: 0h:0m:25s (0h:0m:22s left)
+Iteration 50 / LogL: -16398.100 / Time: 0h:0m:27s (0h:0m:18s left)
+Log-likelihood cutoff on original alignment: -16434.062
+Iteration 60 / LogL: -16399.800 / Time: 0h:0m:30s (0h:0m:14s left)
+Iteration 70 / LogL: -16400.463 / Time: 0h:0m:33s (0h:0m:11s left)
+Iteration 80 / LogL: -16405.033 / Time: 0h:0m:35s (0h:0m:7s left)
+Iteration 90 / LogL: -16398.199 / Time: 0h:0m:37s (0h:0m:4s left)
+Iteration 100 / LogL: -16398.210 / Time: 0h:0m:40s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -16433.797
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 107 ITERATIONS / Time: 0h:0m:42s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -16397.308
+Optimal log-likelihood: -16397.308
+Proportion of invariable sites: 0.072
+Gamma shape alpha: 1.143
+Parameters optimization took 1 rounds (0.034 sec)
+BEST SCORE FOUND : -16397.308
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.106 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file phylo/afp_Afp3.splits.nex
+Total tree length: 16.446
+
+Total number of iterations: 107
+CPU time used for tree search: 66.196 sec (0h:1m:6s)
+Wall-clock time used for tree search: 27.661 sec (0h:0m:27s)
+Total CPU time used: 107.576 sec (0h:1m:47s)
+Total wall-clock time used: 42.188 sec (0h:0m:42s)
+
+Computing bootstrap consensus tree...
+Reading input file phylo/afp_Afp3.splits.nex...
+31 taxa and 166 splits.
+Consensus tree written to phylo/afp_Afp3.contree
+Reading input trees file phylo/afp_Afp3.contree
+Log-likelihood of consensus tree: -16398.094
+
+Analysis results written to: 
+  IQ-TREE report:                phylo/afp_Afp3.iqtree
+  Maximum-likelihood tree:       phylo/afp_Afp3.treefile
+  Likelihood distances:          phylo/afp_Afp3.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          phylo/afp_Afp3.splits.nex
+  Consensus tree:                phylo/afp_Afp3.contree
+  Screen log file:               phylo/afp_Afp3.log
+
+Date and Time: Tue Oct 13 19:34:04 2026

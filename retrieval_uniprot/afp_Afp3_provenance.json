@@ -1,0 +1,54 @@
+{
+  "family": "afp_Afp3",
+  "retrieved_at": "2026-10-13T10:53:34Z",
+  "route": "uniprotkb_pfam_family_scan",
+  "reference": {
+    "uniprot": "Q6HAD6",
+    "length": 451,
+    "organism": "Serratia entomophila",
+    "taxid": 42906,
+    "pdb": "6RBN",
+    "pfam_signatures": [
+      "PF04984",
+      "PF17482"
+    ],
+    "sequence_sha256": "9a91ab97c448ee93e858d6949d513d83b3deb60ff8f4fbcde0ce51ccf4f691dd"
+  },
+  "query": "(xref:pfam-PF04984 OR xref:pfam-PF17482) AND taxonomy_id:2",
+  "taxon_scope": 2,
+  "uniprot_release": "2026_03",
+  "uniprot_release_date": "02-September-2026",
+  "server_total_results": "8005",
+  "pages_fetched": 17,
+  "records_written": 8005,
+  "reference_in_candidate_set": true,
+  "with_refseq_xref": 7474,
+  "with_embl_xref": 8002,
+  "fields": [
+    "accession",
+    "id",
+    "reviewed",
+    "protein_name",
+    "organism_name",
+    "organism_id",
+    "length",
+    "sequence",
+    "xref_refseq",
+    "xref_embl",
+    "xref_proteomes",
+    "lineage",
+    "xref_pfam",
+    "xref_interpro"
+  ],
+  "files": {
+    "afp_Afp3_candidates.fasta": {
+      "bytes": 4319741,
+      "sha256": "0b1067cc034be373d4a11a9779d92ff85e3c904571faf96a86c45929b97c5051"
+    },
+    "afp_Afp3_candidates.tsv": {
+      "bytes": 7441828,
+      "sha256": "04553e05cea0c643eb664b96ee657a8c184e3d10b691a7595afb2158cf40eeda"
+    }
+  },
+  "note": "retrieval only -- no identity, coverage, length or dereplication filter applied here"
+}

@@ -1,0 +1,30 @@
+candidate,organism,nuc,n_cds,n_sheath_like,n_runs,longest_run,run_slots,run_strands,run_intergenic_bp,non_sheath_anchors,modal_offset,modal_anchor_share,collinearity_rho,anchored,flanking_ref_slots
+A0AB39IWX9,Dickeya oryzae,NZ_CP162670.1,36,1,1,1,0,+,,12,1,0.75,1.0,True,-2;1;2;3;4;5;6;7;8;9;10;11
+E0SFB0,Dickeya dadantii (strain 3937) (Erwinia chrysanthemi (strain 3937)),NC_014500.1,37,1,1,1,0,+,,12,1,0.75,1.0,True,-2;1;2;3;4;5;6;7;8;9;10;11
+C6CJY0,Dickeya chrysanthemi (strain Ech1591) (Dickeya zeae (strain Ech1591)),NC_012912.1,38,1,1,1,0,+,,13,1,0.692,1.0,True,-2;-1;1;2;3;4;5;6;7;8;9;10;11
+A0ABU4EIV2,Dickeya solani,NZ_CP104920.1,41,1,1,1,0,+,,12,1,0.75,1.0,True,-2;1;2;3;4;5;6;7;8;9;10;11
+A0AAE6YWU6,Dickeya zeae,NZ_CM001977.1,37,1,1,1,0,+,,12,1,0.75,1.0,True,-2;1;2;3;4;5;6;7;8;9;10;11
+A0A1A8XPD8,Candidatus Propionivibrio aalborgensis,NZ_FLQY01000120.1,10,1,1,1,0,+,,7,1,0.714,1.0,True,1;2;3;4;5;6;7
+A0ABY8G4Q2,Dickeya lacustris,NZ_CP114280.1,37,1,1,1,0,+,,12,1,0.75,1.0,True,-2;1;2;3;4;5;6;7;8;9;10;11
+A0A375AFZ1,Dickeya aquatica,NZ_CM001973.2,39,1,1,1,0,+,,12,1,0.75,1.0,True,-2;1;2;3;4;5;6;7;8;9;10;11
+A0ABV3MXT5,Erwinia papayae,NZ_CM183954.1,46,1,1,1,0,+,,15,1,0.6,1.0,True,-2;-1;1;2;3;4;5;6;7;8;9;10;11;13;14
+A0A7X5QC79,Photorhabdus cinerea,NZ_CAWPIB010000004.1,46,6,2,3,-1;0;1,+;+;+,-2456;-2636,10,1,0.4,0.511,False,1;2;3;4;6;7;9;10;14
+A0A3D9UFN9,Xenorhabdus cabanillasii,NZ_QTUB01000001.1,43,3,1,3,-1;0;1,+;+;+,12;66,11,1,0.364,0.998,False,-13;1;2;3;4;6;7;9;10;14
+A0ABZ3B5A1,Kosakonia calanthes,NZ_CP151800.1,46,3,1,3,-1;0;1,+;+;+,18;46,10,1,0.5,0.994,False,1;3;4;6;7;9;10;14
+A0A2S8PZG9,Photorhabdus hindustanensis,NZ_CAWNTA010000096.1,32,3,1,3,-1;0;1,+;+;+,-2455;-2597,6,1,0.5,1.0,False,1;2;3;4;6;7
+A0A1B8YGJ0,Photorhabdus namnaonensis,NZ_CAWMQN010000072.1,46,3,1,3,-1;0;1,+;+;+,16;55,9,0,0.444,1.0,False,1;2;3;4;6;7;9;10;14
+Q7N4F2,Photorhabdus laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / TT01) (Photorhabdus luminescens subsp. laumondii),NC_005126.1,52,3,1,3,-1;0;1,+;+;+,58;55,9,0,0.444,1.0,False,1;2;3;4;6;7;9;10;14
+A0A077PCV0,Xenorhabdus bovienii str. kraussei Quebec,NZ_CAWLZI010000123.1,34,3,1,3,-1;0;1,+;+;+,23;67,10,1,0.4,0.784,False,1;2;3;4;6;7;9;10;14
+A0A1G5PPD4,Photorhabdus luminescens (Xenorhabdus luminescens),NZ_CAWQXX010000035.1,42,2,1,2,0;1,+;+,-2531,9,0,0.444,1.0,False,1;2;3;4;6;7;9;10;14
+A0A3D9BAV8,Candidatus Chryseobacterium massiliense,NZ_JACLCS010000006.1,41,3,2,2,-3;-2,+;+,80,11,1,0.455,0.497,False,-2;1;2;3;4;5;6;7;9;10
+A0ABX8LTG3,Photorhabdus akhurstii,NZ_CP020335.1,44,2,1,2,0;1,+;+,55,9,0,0.444,1.0,False,1;2;3;4;6;7;9;10;14
+A0A2K8QLI8,Dickeya fangzhongdai,NZ_CP025003.1,42,1,1,1,0,+,,12,0,0.417,0.993,False,-2;1;2;3;4;5;6;7;9;10;13;14
+A0AAP6RZ33,Dickeya dianthicola,NZ_CM001838.1,38,1,1,1,0,+,,12,2,0.583,1.0,False,-2;1;2;3;4;5;6;7;8;9;10;11
+A0ABW1PXT6,Citrobacter bitternis,NZ_CP027225.1,39,1,1,1,0,+,,12,1,0.5,0.993,False,-2;1;2;3;4;5;6;7;9;10;13;14
+A0ABN6LPM4,Phytobacter diazotrophicus,NZ_AP018756.1,39,1,1,1,0,+,,12,1,0.5,0.993,False,-2;1;2;3;4;5;6;7;9;10;13;14
+A0AB35X4R0,Kluyvera ascorbata,NZ_JAZKKV010000001.1,44,1,1,1,0,+,,32,-3,0.375,1.0,False,-20;-17;-16;-15;-14;-13;-12;-11;-10;-9;-8;-7;-6;-5;-4;-2;-1;1;2;3;4;5;6;7;8;9;10;11;13;14
+G2H0F4,Candidatus Regiella insecticola 5.15,NZ_AGCA01000361.1,19,1,1,1,0,+,,12,1,0.417,0.989,False,1;3;4;6;7;8;9;10;13;14
+A0ABU9V2Z5,Phytobacter palmae,NZ_JBCIVJ010000004.1,38,1,1,1,0,+,,13,1,0.538,0.993,False,-2;1;2;3;4;5;6;7;9;10;13;14
+A0A1V6LWY3,Candidatus Brocadia sapporoensis,NZ_MJUW02000120.1,28,1,1,1,0,+,,11,2,0.545,1.0,False,-2;1;2;3;4;5;6;7;9;10;14
+A0ABN6DJ88,Erwinia rhapontici (Pectobacterium rhapontici),NZ_AP024329.1,44,1,1,1,0,+,,31,1,0.387,0.999,False,-18;-17;-16;-15;-14;-13;-12;-11;-10;-9;-8;-7;-6;-5;-4;-3;-2;-1;1;2;3;4;5;6;7;8;9;10;11;13;14
+A0A2Z3LHX7,Candidatus Cardinium hertigii,NZ_CP029619.1,42,1,1,1,0,+,,4,-22,0.25,-0.2,False,-2;2;3;10

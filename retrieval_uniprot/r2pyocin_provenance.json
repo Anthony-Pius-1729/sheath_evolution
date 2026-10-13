@@ -1,0 +1,55 @@
+{
+  "family": "r2pyocin",
+  "retrieved_at": "2026-10-13T06:37:30Z",
+  "route": "uniprotkb_pfam_family_scan",
+  "reference": {
+    "uniprot": "Q9S574",
+    "length": 386,
+    "organism": "Pseudomonas aeruginosa",
+    "taxid": 287,
+    "pdb": "3J9Q",
+    "pfam_signatures": [
+      "PF04984",
+      "PF17482",
+      "PF22671"
+    ],
+    "sequence_sha256": "8aa6af8a877e4e51af4f9e719dde2617ae61b94227d768263306ffcbdeebdcb9"
+  },
+  "query": "(xref:pfam-PF04984 OR xref:pfam-PF17482 OR xref:pfam-PF22671) AND taxonomy_id:2",
+  "taxon_scope": 2,
+  "uniprot_release": "2026_03",
+  "uniprot_release_date": "02-September-2026",
+  "server_total_results": "8035",
+  "pages_fetched": 17,
+  "records_written": 8035,
+  "reference_in_candidate_set": true,
+  "with_refseq_xref": 7489,
+  "with_embl_xref": 8032,
+  "fields": [
+    "accession",
+    "id",
+    "reviewed",
+    "protein_name",
+    "organism_name",
+    "organism_id",
+    "length",
+    "sequence",
+    "xref_refseq",
+    "xref_embl",
+    "xref_proteomes",
+    "lineage",
+    "xref_pfam",
+    "xref_interpro"
+  ],
+  "files": {
+    "r2pyocin_candidates.fasta": {
+      "bytes": 4327760,
+      "sha256": "432855b9538ba117749da37d791f6e5ba777399f974900472793d7beffc4b747"
+    },
+    "r2pyocin_candidates.tsv": {
+      "bytes": 7460994,
+      "sha256": "0530540b45c7943c62f0f3cd8be7a36a97f96ce0fef693ea93de507894d99db2"
+    }
+  },
+  "note": "retrieval only -- no identity, coverage, length or dereplication filter applied here"
+}

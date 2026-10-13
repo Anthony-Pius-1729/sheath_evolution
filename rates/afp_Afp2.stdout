@@ -1,0 +1,25 @@
+
+ =======================================================
+ the rate for site project:                             
+ Version: 2.01. Last updated 6.11.06                     
+ Tal Pupko and his lab:     talp@post.tau.ac.il         
+ Nir Ben-Tal and his lab:   bental@ashtoret.tau.ac.il   
+ Itay Mayrose:  itayMay@post.tau.ac.il                  
+ For program support, please contact Itay Mayrose       
+ =======================================================
+
+
+ ---------------------- THE PARAMETERS ----------------------------
+tree file is: phylo/afp_Afp2.r4s.nwk
+seq file is: orthology/afp_sf1_afp2_like.afa
+output file is: rates/afp_Afp2.res
+reference sequence is: REF
+rate inference method is: empirical Bayesian estimate
+using a Gamma prior distribution with: 16 discrete categories
+probablistic_model is: WAG
+branch lengths optimization is ML using a gamma model
+
+ -----------------------------------------------------------------
+Optimizing branch lengths and alpha...
+The tree was written to a file name called rates/afp_Afp2.tree
+Computing the rates...

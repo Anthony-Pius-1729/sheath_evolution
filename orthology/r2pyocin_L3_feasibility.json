@@ -1,0 +1,78 @@
+{
+  "family": "r2pyocin",
+  "clade_level": 3,
+  "status": "feasibility diagnostics only -- no rates estimated",
+  "paralog_test": {
+    "dropped_paralogs_tested": 68,
+    "inside_clade_in_paralogs": 39,
+    "outside_clade": 29,
+    "clade_members_recovered": "145/146",
+    "in_paralog_topology": {
+      "mrca_leaves": 185,
+      "in_paralogs": 39,
+      "monophyletic": false
+    },
+    "in_paralog_pairs_sister_leaves": 3,
+    "in_paralog_pairs_tested": 39,
+    "in_paralog_median_patristic": 0.2531,
+    "verdict": "39 in-paralogs: the clade is not a clean ortholog set"
+  },
+  "n_orthologs": 146,
+  "phylogenetic_diversity": {
+    "tree_length": 9.608,
+    "mean_patristic_distance": 0.4693,
+    "median_patristic_distance": 0.4574,
+    "max_patristic_distance": 0.9632,
+    "identity_min": 0.6481,
+    "identity_median": 0.7487
+  },
+  "alignment": {
+    "columns": 417,
+    "sequences": 147,
+    "columns_occupancy_ge_50pct": 388,
+    "reference_columns": 386
+  },
+  "structural_sites": {
+    "n_sites": 143,
+    "mapped_to_a_column": 143,
+    "occupancy_ge_80pct": 143,
+    "occupancy_ge_70pct": 143,
+    "occupancy_ge_90pct": 143,
+    "median_occupancy": 1.0,
+    "median_window_occupancy": 1.0,
+    "sites_window_occupancy_lt_80pct": 2,
+    "invariant_sites": 43,
+    "sites_major_aa_ge_95pct": 81,
+    "median_distinct_aa": 2.0,
+    "median_entropy": 0.246,
+    "entropy_quartiles": [
+      -0.0,
+      0.246,
+      0.9424
+    ]
+  },
+  "branch_lengths": {
+    "median_tip": 0.01955,
+    "max_tip": 0.41823,
+    "outlier_tips_gt_q3_plus_3iqr": 9,
+    "outlier_labels": [
+      "H8L2K5",
+      "A0ACG2QC83",
+      "A0A4U1HQS9",
+      "A0A024HAN5",
+      "REFERENCE",
+      "A0A1Y3NZM6",
+      "A0ABR7ATL5",
+      "A0A2S6FJB5",
+      "A0A1H2N8N9"
+    ]
+  },
+  "taxonomic_redundancy": {
+    "distinct_species": 146,
+    "distinct_genera": 7,
+    "largest_genus": "Pseudomonas",
+    "largest_genus_frac": 0.842,
+    "genus_shannon": 0.665,
+    "effective_genera": 1.95
+  }
+}

@@ -1,0 +1,133 @@
+candidate,organism,nuc,protein_id,slot,slot_in_run,run_length,rel_strand,length_aa,positional_label,reason,anchored,offset,seq_best_hit,seq_best_hit_label,seq_bitscore,seq_pident
+A0A0A8VLZ9,Yersinia ruckeri,NZ_ACCC01000029.1,WP_004721434.1,-1,0.0,3,+,356,afp2_like,,True,-1,WP_010895804.1,afp2_like,355.0,50.559
+A0A0A8VLZ9,Yersinia ruckeri,NZ_ACCC01000029.1,WP_004721432.1,0,1.0,3,+,466,afp3_like,,True,-1,WP_010895805.1,afp3_like,425.0,47.447
+A0A0A8VLZ9,Yersinia ruckeri,NZ_ACCC01000029.1,WP_004721430.1,1,2.0,3,+,409,third_like,,True,-1,WP_169558217.1,third_like,330.0,43.614
+A0A7X5TK21,Photorhabdus stackebrandtii,NZ_CAWPIE010000002.1,WP_166285395.1,-2,0.0,3,+,359,afp2_like,,True,-2,WP_010895804.1,afp2_like,368.0,51.253
+A0A7X5TK21,Photorhabdus stackebrandtii,NZ_CAWPIE010000002.1,WP_166285397.1,-1,1.0,3,+,470,afp3_like,,True,-2,WP_010895805.1,afp3_like,433.0,48.554
+A0A7X5TK21,Photorhabdus stackebrandtii,NZ_CAWPIE010000002.1,WP_166285399.1,0,2.0,3,+,401,third_like,,True,-2,WP_169558217.1,third_like,352.0,45.906
+A0A2D0KAI0,Xenorhabdus ishibashii,NZ_NJAK01000002.1,WP_099119057.1,0,0.0,2,+,358,afp3_like,,True,-1,WP_010895804.1,afp2_like,360.0,50.556
+A0A2D0KAI0,Xenorhabdus ishibashii,NZ_NJAK01000002.1,WP_099119058.1,1,1.0,2,+,411,third_like,,True,-1,WP_169558217.1,third_like,308.0,39.952
+A0A7X5QC79,Photorhabdus cinerea,NZ_CAWPIB010000004.1,WP_166303450.1,-1,0.0,3,+,357,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.32886518940665577)",False,-1,WP_010895804.1,afp2_like,370.0,51.657
+A0A7X5QC79,Photorhabdus cinerea,NZ_CAWPIB010000004.1,WP_166303447.1,0,1.0,3,+,456,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.32886518940665577)",False,-1,WP_010895805.1,afp3_like,418.0,49.247
+A0A7X5QC79,Photorhabdus cinerea,NZ_CAWPIB010000004.1,WP_166303444.1,1,2.0,3,+,403,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.32886518940665577)",False,-1,WP_169558217.1,third_like,317.0,40.686
+A0A7X5QC79,Photorhabdus cinerea,NZ_CAWPIB010000004.1,WP_166303394.1,18,,3,+,360,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.32886518940665577)",False,-1,WP_010895804.1,afp2_like,384.0,51.934
+A0A7X5QC79,Photorhabdus cinerea,NZ_CAWPIB010000004.1,WP_166303391.1,19,,3,+,469,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.32886518940665577)",False,-1,WP_010895805.1,afp3_like,442.0,47.158
+A0A7X5QC79,Photorhabdus cinerea,NZ_CAWPIB010000004.1,WP_166303388.1,20,,3,+,397,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.32886518940665577)",False,-1,WP_169558217.1,third_like,345.0,45.297
+A0A1B8YGV0,Photorhabdus namnaonensis,NZ_CAWMQN010000072.1,WP_065390781.1,0,0.0,3,+,354,afp2_like,,True,0,WP_010895804.1,afp2_like,369.0,53.333
+A0A1B8YGV0,Photorhabdus namnaonensis,NZ_CAWMQN010000072.1,WP_065390782.1,1,1.0,3,+,449,afp3_like,,True,0,WP_010895805.1,afp3_like,378.0,45.877
+A0A1B8YGV0,Photorhabdus namnaonensis,NZ_CAWMQN010000072.1,WP_065390783.1,2,2.0,3,+,404,third_like,,True,0,WP_169558217.1,third_like,349.0,43.951
+A0ABX9SQQ6,Photorhabdus asymbiotica,NC_012962.1,WP_015834382.1,-1,0.0,2,+,457,afp3_like,,True,-2,WP_010895805.1,afp3_like,363.0,42.647
+A0ABX9SQQ6,Photorhabdus asymbiotica,NC_012962.1,WP_015834381.1,0,1.0,2,+,388,third_like,,True,-2,WP_169558217.1,third_like,303.0,44.963
+W1J3N0,Xenorhabdus szentirmaii DSM 16338,NZ_CAWLWS010000110.1,WP_038240590.1,0,0.0,3,+,356,afp2_like,,True,0,WP_010895804.1,afp2_like,355.0,50.0
+W1J3N0,Xenorhabdus szentirmaii DSM 16338,NZ_CAWLWS010000110.1,WP_038240591.1,1,1.0,3,+,441,afp3_like,,True,0,WP_010895805.1,afp3_like,421.0,48.908
+W1J3N0,Xenorhabdus szentirmaii DSM 16338,NZ_CAWLWS010000110.1,WP_038240592.1,2,2.0,3,+,404,third_like,,True,0,WP_169558217.1,third_like,341.0,44.417
+A0ABX0GIG9,Photorhabdus tasmaniensis,NZ_CAWPIF010000016.1,WP_133814582.1,-2,0.0,3,+,363,afp2_like,,True,-2,WP_010895804.1,afp2_like,374.0,50.959
+A0ABX0GIG9,Photorhabdus tasmaniensis,NZ_CAWPIF010000016.1,WP_133814581.1,-1,1.0,3,+,467,afp3_like,,True,-2,WP_010895805.1,afp3_like,432.0,47.368
+A0ABX0GIG9,Photorhabdus tasmaniensis,NZ_CAWPIF010000016.1,WP_133814580.1,0,2.0,3,+,402,third_like,,True,-2,WP_169558217.1,third_like,349.0,44.527
+A0ABR5KA89,Photorhabdus heterorhabditis,NZ_CAWMRL010000044.1,WP_054480020.1,-2,0.0,3,+,359,unassigned,"locus not anchored (non-sheath anchors=19, modal share=13/19, rho=0.1723840653122437)",False,-2,WP_010895804.1,afp2_like,374.0,51.253
+A0ABR5KA89,Photorhabdus heterorhabditis,NZ_CAWMRL010000044.1,WP_054480023.1,-1,1.0,3,+,470,unassigned,"locus not anchored (non-sheath anchors=19, modal share=13/19, rho=0.1723840653122437)",False,-2,WP_010895805.1,afp3_like,457.0,47.789
+A0ABR5KA89,Photorhabdus heterorhabditis,NZ_CAWMRL010000044.1,WP_054480019.1,0,2.0,3,+,397,unassigned,"locus not anchored (non-sheath anchors=19, modal share=13/19, rho=0.1723840653122437)",False,-2,WP_169558217.1,third_like,342.0,45.074
+A0ABR5KA89,Photorhabdus heterorhabditis,NZ_CAWMRL010000044.1,WP_054480003.1,16,,3,+,360,unassigned,"locus not anchored (non-sheath anchors=19, modal share=13/19, rho=0.1723840653122437)",False,-2,WP_010895804.1,afp2_like,365.0,51.105
+A0ABR5KA89,Photorhabdus heterorhabditis,NZ_CAWMRL010000044.1,WP_054480022.1,17,,3,+,477,unassigned,"locus not anchored (non-sheath anchors=19, modal share=13/19, rho=0.1723840653122437)",False,-2,WP_010895805.1,afp3_like,433.0,47.844
+A0ABR5KA89,Photorhabdus heterorhabditis,NZ_CAWMRL010000044.1,WP_054480002.1,18,,3,+,406,unassigned,"locus not anchored (non-sheath anchors=19, modal share=13/19, rho=0.1723840653122437)",False,-2,WP_169558217.1,third_like,350.0,45.232
+A0A1G5PPD4,Photorhabdus luminescens (Xenorhabdus luminescens),NZ_CAWQXX010000035.1,WP_074524797.1,0,0.0,2,+,435,unassigned,"locus not anchored (non-sheath anchors=12, modal share=8/12, rho=0.5384615384615385)",False,-1,WP_010895805.1,afp3_like,397.0,47.845
+A0A1G5PPD4,Photorhabdus luminescens (Xenorhabdus luminescens),NZ_CAWQXX010000035.1,WP_049581484.1,1,1.0,2,+,389,unassigned,"locus not anchored (non-sheath anchors=12, modal share=8/12, rho=0.5384615384615385)",False,-1,WP_169558217.1,third_like,346.0,43.35
+A0ABX7VKZ5,Xenorhabdus budapestensis,NZ_CP072455.1,WP_209027384.1,-1,0.0,3,+,355,afp2_like,,True,-1,WP_010895804.1,afp2_like,357.0,50.418
+A0ABX7VKZ5,Xenorhabdus budapestensis,NZ_CP072455.1,WP_209027383.1,0,1.0,3,+,476,afp3_like,,True,-1,WP_010895805.1,afp3_like,429.0,47.51
+A0ABX7VKZ5,Xenorhabdus budapestensis,NZ_CP072455.1,WP_209027382.1,1,2.0,3,+,402,third_like,,True,-1,WP_169558217.1,third_like,330.0,43.137
+A0A2S8PZG9,Photorhabdus hindustanensis,NZ_CAWNTA010000096.1,WP_105395973.1,-1,0.0,3,+,362,afp2_like,,True,-1,WP_010895804.1,afp2_like,380.0,52.589
+A0A2S8PZG9,Photorhabdus hindustanensis,NZ_CAWNTA010000096.1,WP_105395972.1,0,1.0,3,+,451,afp3_like,,True,-1,WP_010895805.1,afp3_like,452.0,50.217
+A0A2S8PZG9,Photorhabdus hindustanensis,NZ_CAWNTA010000096.1,WP_105395971.1,1,2.0,3,+,395,third_like,,True,-1,WP_169558217.1,third_like,337.0,42.716
+A0A1I3LVP6,Xenorhabdus mauleonii,NZ_CAWNQB010000012.1,WP_092508647.1,-1,0.0,3,+,356,afp2_like,,True,-1,WP_010895804.1,afp2_like,357.0,50.696
+A0A1I3LVP6,Xenorhabdus mauleonii,NZ_CAWNQB010000012.1,WP_092508645.1,0,1.0,3,+,441,afp3_like,,True,-1,WP_010895805.1,afp3_like,419.0,46.507
+A0A1I3LVP6,Xenorhabdus mauleonii,NZ_CAWNQB010000012.1,WP_169924663.1,1,2.0,3,+,402,third_like,,True,-1,WP_169558217.1,third_like,318.0,41.809
+A0ABX8LV62,Photorhabdus akhurstii,NZ_CP020335.1,WP_036807746.1,-19,,3,+,393,unassigned,"locus not anchored (non-sheath anchors=27, modal share=12/27, rho=0.2553912372362194)",False,-21,WP_169558217.1,third_like,315.0,41.294
+A0ABX8LV62,Photorhabdus akhurstii,NZ_CP020335.1,WP_217471314.1,-2,0.0,3,+,359,unassigned,"locus not anchored (non-sheath anchors=27, modal share=12/27, rho=0.2553912372362194)",False,-21,WP_010895804.1,afp2_like,364.0,50.0
+A0ABX8LV62,Photorhabdus akhurstii,NZ_CP020335.1,WP_040149119.1,-1,1.0,3,+,465,unassigned,"locus not anchored (non-sheath anchors=27, modal share=12/27, rho=0.2553912372362194)",False,-21,WP_010895805.1,afp3_like,443.0,46.482
+A0ABX8LV62,Photorhabdus akhurstii,NZ_CP020335.1,WP_040149121.1,0,2.0,3,+,401,unassigned,"locus not anchored (non-sheath anchors=27, modal share=12/27, rho=0.2553912372362194)",False,-21,WP_169558217.1,third_like,350.0,45.025
+U7QS18,Photorhabdus temperata J3,NZ_CAWLZT010000282.1,WP_023046336.1,0,0.0,3,+,366,afp2_like,,True,0,WP_010895804.1,afp2_like,367.0,50.546
+U7QS18,Photorhabdus temperata J3,NZ_CAWLZT010000282.1,WP_023046337.1,1,1.0,3,+,470,afp3_like,,True,0,WP_010895805.1,afp3_like,429.0,47.292
+U7QS18,Photorhabdus temperata J3,NZ_CAWLZT010000282.1,WP_021326048.1,2,2.0,3,+,402,third_like,,True,0,WP_169558217.1,third_like,351.0,44.279
+A0A2D0KTI0,Xenorhabdus stockiae,NZ_CAWNRH010000148.1,WP_099124256.1,-2,0.0,3,+,352,afp2_like,,True,-2,WP_010895804.1,afp2_like,345.0,49.167
+A0A2D0KTI0,Xenorhabdus stockiae,NZ_CAWNRH010000148.1,WP_099124257.1,-1,1.0,3,+,465,afp3_like,,True,-2,WP_010895805.1,afp3_like,393.0,45.435
+A0A2D0KTI0,Xenorhabdus stockiae,NZ_CAWNRH010000148.1,WP_169926589.1,0,2.0,3,+,397,third_like,,True,-2,WP_169558217.1,third_like,323.0,43.032
+A0A494XZK3,Pararobbsia silviterrae,NZ_RBZU01000004.1,WP_121086776.1,0,0.0,3,+,350,afp2_like,,True,0,WP_010895804.1,afp2_like,323.0,47.191
+A0A494XZK3,Pararobbsia silviterrae,NZ_RBZU01000004.1,WP_121086778.1,1,1.0,3,+,449,afp3_like,,True,0,WP_010895805.1,afp3_like,291.0,39.7
+A0A494XZK3,Pararobbsia silviterrae,NZ_RBZU01000004.1,WP_121086780.1,2,2.0,3,+,406,third_like,,True,0,WP_169558217.1,third_like,287.0,38.272
+A0A0J5FXY2,Xenorhabdus khoisanae,NZ_CAWMBG010000002.1,WP_047961454.1,0,0.0,3,+,355,afp2_like,,True,0,WP_010895804.1,afp2_like,362.0,50.7
+A0A0J5FXY2,Xenorhabdus khoisanae,NZ_CAWMBG010000002.1,WP_047961453.1,1,1.0,3,+,478,afp3_like,,True,0,WP_010895805.1,afp3_like,402.0,44.842
+A0A0J5FXY2,Xenorhabdus khoisanae,NZ_CAWMBG010000002.1,WP_047961452.1,2,2.0,3,+,402,third_like,,True,0,WP_169558217.1,third_like,338.0,43.627
+W3V223,Photorhabdus khanii NC19,NZ_AYSJ01000014.1,WP_036848684.1,-1,0.0,3,+,364,unassigned,"locus not anchored (non-sheath anchors=18, modal share=13/18, rho=-0.11082413573845194)",False,-1,WP_010895804.1,afp2_like,371.0,51.781
+W3V223,Photorhabdus khanii NC19,NZ_AYSJ01000014.1,WP_036848682.1,0,1.0,3,+,470,unassigned,"locus not anchored (non-sheath anchors=18, modal share=13/18, rho=-0.11082413573845194)",False,-1,WP_010895805.1,afp3_like,432.0,46.973
+W3V223,Photorhabdus khanii NC19,NZ_AYSJ01000014.1,WP_036848679.1,1,2.0,3,+,402,unassigned,"locus not anchored (non-sheath anchors=18, modal share=13/18, rho=-0.11082413573845194)",False,-1,WP_169558217.1,third_like,352.0,44.279
+W3V223,Photorhabdus khanii NC19,NZ_AYSJ01000014.1,WP_036848640.1,18,,3,+,360,unassigned,"locus not anchored (non-sheath anchors=18, modal share=13/18, rho=-0.11082413573845194)",False,-1,WP_010895804.1,afp2_like,376.0,52.762
+W3V223,Photorhabdus khanii NC19,NZ_AYSJ01000014.1,WP_036848638.1,19,,3,+,464,unassigned,"locus not anchored (non-sheath anchors=18, modal share=13/18, rho=-0.11082413573845194)",False,-1,WP_010895805.1,afp3_like,443.0,47.966
+W3V223,Photorhabdus khanii NC19,NZ_AYSJ01000014.1,WP_036848635.1,20,,3,+,396,unassigned,"locus not anchored (non-sheath anchors=18, modal share=13/18, rho=-0.11082413573845194)",False,-1,WP_169558217.1,third_like,357.0,45.409
+A0AA93BZ86,Serratia inhibens,NZ_QYYG01000001.1,WP_119803848.1,0,,4,+,355,unassigned,"locus not anchored (non-sheath anchors=15, modal share=12/15, rho=0.6237714733854502)",False,3,WP_010895804.1,afp2_like,404.0,56.022
+A0AA93BZ86,Serratia inhibens,NZ_QYYG01000001.1,WP_119803845.1,2,0.0,4,+,356,unassigned,"locus not anchored (non-sheath anchors=15, modal share=12/15, rho=0.6237714733854502)",False,3,WP_010895804.1,afp2_like,412.0,57.735
+A0AA93BZ86,Serratia inhibens,NZ_QYYG01000001.1,WP_119803843.1,3,1.0,4,+,363,unassigned,"locus not anchored (non-sheath anchors=15, modal share=12/15, rho=0.6237714733854502)",False,3,WP_010895805.1,afp3_like,426.0,51.441
+A0AA93BZ86,Serratia inhibens,NZ_QYYG01000001.1,WP_119803841.1,4,2.0,4,+,398,unassigned,"locus not anchored (non-sheath anchors=15, modal share=12/15, rho=0.6237714733854502)",False,3,WP_010895805.1,afp3_like,458.0,53.761
+A0AA93BZ86,Serratia inhibens,NZ_QYYG01000001.1,WP_119803839.1,5,3.0,4,+,410,unassigned,"locus not anchored (non-sheath anchors=15, modal share=12/15, rho=0.6237714733854502)",False,3,WP_169558217.1,third_like,510.0,62.981
+A0ABX0B6R5,Photorhabdus kayaii,NZ_CAWNWY010000023.1,WP_113043147.1,0,0.0,3,+,358,unassigned,"locus not anchored (non-sheath anchors=17, modal share=12/17, rho=0.1523346121462914)",False,0,WP_010895804.1,afp2_like,359.0,49.861
+A0ABX0B6R5,Photorhabdus kayaii,NZ_CAWNWY010000023.1,WP_113043148.1,1,1.0,3,+,465,unassigned,"locus not anchored (non-sheath anchors=17, modal share=12/17, rho=0.1523346121462914)",False,0,WP_010895805.1,afp3_like,441.0,47.122
+A0ABX0B6R5,Photorhabdus kayaii,NZ_CAWNWY010000023.1,WP_113043149.1,2,2.0,3,+,397,unassigned,"locus not anchored (non-sheath anchors=17, modal share=12/17, rho=0.1523346121462914)",False,0,WP_169558217.1,third_like,348.0,45.545
+A0ABX0B6R5,Photorhabdus kayaii,NZ_CAWNWY010000023.1,WP_113043165.1,20,,3,+,391,unassigned,"locus not anchored (non-sheath anchors=17, modal share=12/17, rho=0.1523346121462914)",False,0,WP_169558217.1,third_like,341.0,44.279
+A0ABX0AKQ4,Photorhabdus bodei,NZ_CAWPJS010000018.1,WP_162120287.1,-1,0.0,3,+,359,afp2_like,,True,-1,WP_010895804.1,afp2_like,368.0,50.0
+A0ABX0AKQ4,Photorhabdus bodei,NZ_CAWPJS010000018.1,WP_162120286.1,0,1.0,3,+,499,afp3_like,,True,-1,WP_010895805.1,afp3_like,435.0,44.862
+A0ABX0AKQ4,Photorhabdus bodei,NZ_CAWPJS010000018.1,WP_112895168.1,1,2.0,3,+,397,third_like,,True,-1,WP_169558217.1,third_like,344.0,45.432
+A0A3D9UFN9,Xenorhabdus cabanillasii,NZ_QTUB01000001.1,WP_115827053.1,-1,0.0,3,+,356,afp2_like,,True,-1,WP_010895804.1,afp2_like,362.0,51.515
+A0A3D9UFN9,Xenorhabdus cabanillasii,NZ_QTUB01000001.1,WP_115827054.1,0,1.0,3,+,464,afp3_like,,True,-1,WP_010895805.1,afp3_like,444.0,48.394
+A0A3D9UFN9,Xenorhabdus cabanillasii,NZ_QTUB01000001.1,WP_170140416.1,1,2.0,3,+,412,third_like,,True,-1,WP_169558217.1,third_like,333.0,43.51
+A0A7T2SR73,Serratia plymuthica,NZ_CAMITG010000005.1,WP_063197010.1,-1,0.0,3,+,354,afp2_like,,True,-1,WP_010895804.1,afp2_like,654.0,92.938
+A0A7T2SR73,Serratia plymuthica,NZ_CAMITG010000005.1,WP_063197012.1,0,1.0,3,+,452,afp3_like,,True,-1,WP_010895805.1,afp3_like,780.0,85.339
+A0A7T2SR73,Serratia plymuthica,NZ_CAMITG010000005.1,WP_063197014.1,1,2.0,3,+,415,third_like,,True,-1,WP_169558217.1,third_like,758.0,90.647
+A0A077PCV0,Xenorhabdus bovienii str. kraussei Quebec,NZ_CAWLZI010000123.1,WP_038246059.1,-1,0.0,3,+,355,afp2_like,,True,-1,WP_010895804.1,afp2_like,352.0,49.304
+A0A077PCV0,Xenorhabdus bovienii str. kraussei Quebec,NZ_CAWLZI010000123.1,WP_038246062.1,0,1.0,3,+,462,afp3_like,,True,-1,WP_010895805.1,afp3_like,447.0,50.964
+A0A077PCV0,Xenorhabdus bovienii str. kraussei Quebec,NZ_CAWLZI010000123.1,WP_038246064.1,1,2.0,3,+,402,third_like,,True,-1,WP_169558217.1,third_like,336.0,42.822
+A0A0F7LS89,Photorhabdus thracensis,NZ_CAWQPG010000327.1,WP_046975719.1,0,0.0,3,+,366,afp2_like,,True,0,WP_010895804.1,afp2_like,371.0,51.366
+A0A0F7LS89,Photorhabdus thracensis,NZ_CAWQPG010000327.1,WP_228939963.1,1,1.0,3,+,460,afp3_like,,True,0,WP_010895805.1,afp3_like,438.0,47.983
+A0A0F7LS89,Photorhabdus thracensis,NZ_CAWQPG010000327.1,WP_228939962.1,2,2.0,3,+,402,third_like,,True,0,WP_169558217.1,third_like,350.0,44.03
+A0A2D0JSK4,Xenorhabdus miraniensis,NZ_CAWNQI010000095.1,WP_099113910.1,0,0.0,3,+,355,afp2_like,,True,0,WP_010895804.1,afp2_like,350.0,49.58
+A0A2D0JSK4,Xenorhabdus miraniensis,NZ_CAWNQI010000095.1,WP_099113911.1,1,1.0,3,+,474,afp3_like,,True,0,WP_010895805.1,afp3_like,413.0,46.809
+A0A2D0JSK4,Xenorhabdus miraniensis,NZ_CAWNQI010000095.1,WP_167385956.1,2,2.0,3,+,400,third_like,,True,0,WP_169558217.1,third_like,338.0,43.447
+A0A022PG15,Photorhabdus aegyptia,NZ_CAWLTM010000068.1,WP_036780557.1,-1,0.0,3,+,360,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.32350325697067767)",False,-1,WP_010895804.1,afp2_like,379.0,53.315
+A0A022PG15,Photorhabdus aegyptia,NZ_CAWLTM010000068.1,WP_036780554.1,0,1.0,3,+,464,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.32350325697067767)",False,-1,WP_010895805.1,afp3_like,442.0,48.188
+A0A022PG15,Photorhabdus aegyptia,NZ_CAWLTM010000068.1,WP_036780543.1,1,2.0,3,+,391,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.32350325697067767)",False,-1,WP_169558217.1,third_like,339.0,44.913
+A0A0T9QV39,Yersinia similis,NZ_CABIHS010000323.1,WP_025381280.1,0,0.0,3,+,355,afp2_like,,True,0,WP_010895804.1,afp2_like,348.0,49.441
+A0A0T9QV39,Yersinia similis,NZ_CABIHS010000323.1,WP_050104390.1,1,1.0,3,+,463,afp3_like,,True,0,WP_010895805.1,afp3_like,438.0,49.348
+A0A0T9QV39,Yersinia similis,NZ_CABIHS010000323.1,WP_315850879.1,2,2.0,3,+,410,third_like,,True,0,WP_169558217.1,third_like,329.0,43.659
+A0A1C0U562,Photorhabdus australis subsp. thailandensis,NZ_CAWMQZ010000065.1,WP_065822931.1,-1,0.0,3,+,360,afp2_like,,True,-1,WP_010895804.1,afp2_like,366.0,50.552
+A0A1C0U562,Photorhabdus australis subsp. thailandensis,NZ_CAWMQZ010000065.1,WP_065822930.1,0,1.0,3,+,465,afp3_like,,True,-1,WP_010895805.1,afp3_like,438.0,48.008
+A0A1C0U562,Photorhabdus australis subsp. thailandensis,NZ_CAWMQZ010000065.1,WP_065822929.1,1,2.0,3,+,401,third_like,,True,-1,WP_169558217.1,third_like,355.0,46.154
+Q7N4F2,Photorhabdus laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / TT01) (Photorhabdus luminescens subsp. laumondii),NC_005126.1,WP_011146621.1,-1,0.0,3,+,358,afp2_like,,True,-1,WP_010895804.1,afp2_like,351.0,48.895
+Q7N4F2,Photorhabdus laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / TT01) (Photorhabdus luminescens subsp. laumondii),NC_005126.1,WP_011146622.1,0,1.0,3,+,430,afp3_like,,True,-1,WP_010895805.1,afp3_like,400.0,49.339
+Q7N4F2,Photorhabdus laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / TT01) (Photorhabdus luminescens subsp. laumondii),NC_005126.1,WP_011146623.1,1,2.0,3,+,388,third_like,,True,-1,WP_169558217.1,third_like,337.0,43.176
+A0A1Y2SLR5,Xenorhabdus vietnamensis,NZ_CAWNGD010000001.1,WP_086107673.1,-1,0.0,3,+,355,unassigned,"locus not anchored (non-sheath anchors=14, modal share=13/14, rho=0.6)",False,-1,WP_010895804.1,afp2_like,353.0,48.611
+A0A1Y2SLR5,Xenorhabdus vietnamensis,NZ_CAWNGD010000001.1,WP_086107672.1,0,1.0,3,+,476,unassigned,"locus not anchored (non-sheath anchors=14, modal share=13/14, rho=0.6)",False,-1,WP_010895805.1,afp3_like,415.0,45.912
+A0A1Y2SLR5,Xenorhabdus vietnamensis,NZ_CAWNGD010000001.1,WP_167376213.1,1,2.0,3,+,415,unassigned,"locus not anchored (non-sheath anchors=14, modal share=13/14, rho=0.6)",False,-1,WP_169558217.1,third_like,333.0,43.095
+D4EA08,Serratia odorifera DSM 4582,NZ_GG753568.1,WP_004966140.1,-1,0.0,3,+,366,afp2_like,,True,-1,WP_010895804.1,afp2_like,317.0,46.089
+D4EA08,Serratia odorifera DSM 4582,NZ_GG753568.1,WP_004966139.1,0,1.0,3,+,533,afp3_like,,True,-1,WP_010895805.1,afp3_like,265.0,34.829
+D4EA08,Serratia odorifera DSM 4582,NZ_GG753568.1,WP_004966136.1,1,2.0,3,+,422,third_like,,True,-1,WP_169558217.1,third_like,187.0,33.735
+A0A0T9PMG0,Yersinia pekkanenii,NZ_CAWMMU010000017.1,WP_049612715.1,0,0.0,3,+,355,afp2_like,,True,0,WP_010895804.1,afp2_like,343.0,49.3
+A0A0T9PMG0,Yersinia pekkanenii,NZ_CAWMMU010000017.1,WP_049612717.1,1,1.0,3,+,463,afp3_like,,True,0,WP_010895805.1,afp3_like,428.0,48.261
+A0A0T9PMG0,Yersinia pekkanenii,NZ_CAWMMU010000017.1,WP_328286897.1,2,2.0,3,+,399,third_like,,True,0,WP_169558217.1,third_like,319.0,45.385
+A0ABU4SLH9,Xenorhabdus littoralis,NZ_VCDP01000034.1,WP_319926228.1,-1,0.0,3,+,355,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.44682770299817365)",False,-1,WP_010895804.1,afp2_like,366.0,52.486
+A0ABU4SLH9,Xenorhabdus littoralis,NZ_VCDP01000034.1,WP_319926229.1,0,1.0,3,+,475,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.44682770299817365)",False,-1,WP_010895805.1,afp3_like,418.0,46.362
+A0ABU4SLH9,Xenorhabdus littoralis,NZ_VCDP01000034.1,WP_319926230.1,1,2.0,3,+,417,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.44682770299817365)",False,-1,WP_169558217.1,third_like,332.0,43.333
+A0A4U3EST4,Erwinia persicina,NZ_JACYNM010000035.1,WP_137270117.1,-1,0.0,3,+,356,afp2_like,,True,-1,WP_010895804.1,afp2_like,445.0,58.38
+A0A4U3EST4,Erwinia persicina,NZ_JACYNM010000035.1,WP_137270118.1,0,1.0,3,+,439,afp3_like,,True,-1,WP_010895805.1,afp3_like,553.0,60.706
+A0A4U3EST4,Erwinia persicina,NZ_JACYNM010000035.1,WP_137270119.1,1,2.0,3,+,418,third_like,,True,-1,WP_169558217.1,third_like,498.0,60.471
+A0ABS0U6Z3,Xenorhabdus lircayensis,NZ_CAWPUD010000043.1,WP_198690416.1,-2,0.0,3,+,355,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.44682770299817365)",False,-2,WP_010895804.1,afp2_like,368.0,50.7
+A0ABS0U6Z3,Xenorhabdus lircayensis,NZ_CAWPUD010000043.1,WP_198690415.1,-1,1.0,3,+,477,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.44682770299817365)",False,-2,WP_010895805.1,afp3_like,414.0,46.383
+A0ABS0U6Z3,Xenorhabdus lircayensis,NZ_CAWPUD010000043.1,WP_198690414.1,0,2.0,3,+,417,unassigned,"locus not anchored (non-sheath anchors=15, modal share=13/15, rho=0.44682770299817365)",False,-2,WP_169558217.1,third_like,338.0,43.095
+Q6HAD7,Serratia entomophila,NC_002523.5,WP_010895804.1,0,0.0,3,+,354,afp2_like,,True,0,WP_010895804.1,afp2_like,727.0,100.0
+Q6HAD7,Serratia entomophila,NC_002523.5,WP_010895805.1,1,1.0,3,+,451,afp3_like,,True,0,WP_010895805.1,afp3_like,916.0,100.0
+Q6HAD7,Serratia entomophila,NC_002523.5,WP_169558217.1,2,2.0,3,+,415,third_like,,True,0,WP_169558217.1,third_like,843.0,100.0
+W0L4J4,Chania multitudinisentens RB-25,NZ_CP007044.2,WP_024913631.1,0,0.0,3,+,355,afp2_like,,True,0,WP_010895804.1,afp2_like,348.0,49.58
+W0L4J4,Chania multitudinisentens RB-25,NZ_CP007044.2,WP_335337005.1,1,1.0,3,+,471,afp3_like,,True,0,WP_010895805.1,afp3_like,426.0,47.3
+W0L4J4,Chania multitudinisentens RB-25,NZ_CP007044.2,WP_081758472.1,2,2.0,3,+,409,third_like,,True,0,WP_169558217.1,third_like,327.0,43.237
+A0A1I1ZHT4,Dyella marensis,NZ_FONH01000002.1,WP_026636668.1,0,0.0,1,+,462,afp3_like,,True,-1,WP_010895805.1,afp3_like,208.0,33.195
+A0A432M9E6,Dyella choica,NZ_RYYV01000002.1,WP_126683268.1,0,0.0,2,+,386,afp2_like,,True,0,WP_010895804.1,afp2_like,300.0,43.333
+A0A432M9E6,Dyella choica,NZ_RYYV01000002.1,WP_230473384.1,1,1.0,2,+,418,afp3_like,,True,0,WP_169558217.1,third_like,284.0,39.518
+A0A1I7HKA3,Xenorhabdus koppenhoeferi,NZ_CAWRBG010000032.1,WP_092550549.1,0,0.0,2,+,355,afp3_like,,True,-1,WP_010895804.1,afp2_like,339.0,47.486
+A0A1I7HKA3,Xenorhabdus koppenhoeferi,NZ_CAWRBG010000032.1,WP_177216204.1,1,1.0,2,+,407,third_like,,True,-1,WP_169558217.1,third_like,331.0,42.131

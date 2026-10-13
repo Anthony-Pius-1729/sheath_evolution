@@ -1,0 +1,4 @@
+dataset,n_seq,aln_cols,all_rows_equal_len,ref_ungapped_len,reference_len,ref_matches_pdb_seqres,structural_sites,max_site_index,sites_within_reference
+diffocin,33,515,True,354,354,True,58,354,True
+afp_Afp2,27,415,True,354,354,True,84,351,True
+afp_Afp3,31,708,True,451,451,True,82,447,True

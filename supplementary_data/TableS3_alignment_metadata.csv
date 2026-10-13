@@ -1,0 +1,6 @@
+dataset,sequences,alignment_columns,reference_length,fitted_sites,variable_sites,min_fitted_occupancy,IQTREE_model,alignment
+AFP Afp2,27,415,354,84,51,1.0,WAG+I+G4,orthology/afp_sf1_afp2_like.afa
+AFP Afp3,31,708,451,81,64,0.9032258064516129,WAG+I+G4,orthology/afp_sf1_afp3_like.afa
+Diffocin,33,515,354,58,50,0.9696969696969697,LG+F+I+G4,orthology/diffocin_primary.afa
+diffocin asscreened,35,535,354,58,50,0.9714285714285714,Q.PFAM+F+G4,orthology/diffocin_frozen_offset0.afa
+diffocin collinear,66,565,354,58,53,0.9848484848484849,Q.PFAM+F+G4,orthology/diffocin_collinear_frame.afa

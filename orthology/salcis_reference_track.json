@@ -1,0 +1,388 @@
+{
+ "nuc": "DAAMGA010000009.1",
+ "ref_protein": "HAC6515972.1",
+ "n_cds": 42,
+ "sheath_slots": [
+  0
+ ],
+ "track": [
+  {
+   "slot": -25,
+   "protein_id": "HAC6515995.1",
+   "product": "NarK family nitrate/nitrite MFS transporter",
+   "strand": "-",
+   "start": 183649,
+   "stop": 185047,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -24,
+   "protein_id": "G0C45_16510",
+   "product": "hypothetical protein",
+   "strand": "-",
+   "start": 183376,
+   "stop": 183562,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -23,
+   "protein_id": "HAC6515994.1",
+   "product": "nitrate/nitrite two-component system sensor histidine kinase NarX",
+   "strand": "+",
+   "start": 181512,
+   "stop": 183309,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -22,
+   "protein_id": "HAC6515993.1",
+   "product": "two-component system response regulator NarL",
+   "strand": "+",
+   "start": 180869,
+   "stop": 181520,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -21,
+   "protein_id": "HAC6515992.1",
+   "product": "YchO/YchP family invasin",
+   "strand": "-",
+   "start": 179444,
+   "stop": 180869,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -20,
+   "protein_id": "HAC6515991.1",
+   "product": "hypothetical protein",
+   "strand": "+",
+   "start": 178914,
+   "stop": 179268,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -19,
+   "protein_id": "G0C45_16485",
+   "product": "gamma-glutamylcyclotransferase",
+   "strand": "-",
+   "start": 178751,
+   "stop": 178829,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -18,
+   "protein_id": "HAC6515990.1",
+   "product": "putative cation transport regulator ChaB",
+   "strand": "-",
+   "start": 178325,
+   "stop": 178556,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -17,
+   "protein_id": "HAC6515989.1",
+   "product": "sodium-potassium/proton antiporter ChaA",
+   "strand": "+",
+   "start": 176957,
+   "stop": 178058,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -16,
+   "protein_id": "HAC6515988.1",
+   "product": "3-deoxy-8-phosphooctulonate synthase",
+   "strand": "-",
+   "start": 176049,
+   "stop": 176904,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -15,
+   "protein_id": "HAC6515987.1",
+   "product": "tetratricopeptide repeat-containing protein",
+   "strand": "-",
+   "start": 175202,
+   "stop": 176012,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -14,
+   "protein_id": "HAC6515986.1",
+   "product": "SirB family protein",
+   "strand": "-",
+   "start": 174809,
+   "stop": 175199,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -13,
+   "protein_id": "HAC6515985.1",
+   "product": "peptide chain release factor N(5)-glutamine methyltransferase",
+   "strand": "-",
+   "start": 173979,
+   "stop": 174813,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -12,
+   "protein_id": "HAC6515984.1",
+   "product": "peptide chain release factor 1",
+   "strand": "-",
+   "start": 172897,
+   "stop": 173980,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -11,
+   "protein_id": "HAC6515983.1",
+   "product": "glutamyl-tRNA reductase",
+   "strand": "-",
+   "start": 171600,
+   "stop": 172857,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -10,
+   "protein_id": "HAC6515982.1",
+   "product": "lipoprotein localization protein LolB",
+   "strand": "+",
+   "start": 170663,
+   "stop": 171287,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -9,
+   "protein_id": "HAC6515981.1",
+   "product": "4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase",
+   "strand": "+",
+   "start": 169815,
+   "stop": 170667,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -8,
+   "protein_id": "HAC6515980.1",
+   "product": "ribose-phosphate pyrophosphokinase",
+   "strand": "+",
+   "start": 168602,
+   "stop": 169550,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -7,
+   "protein_id": "HAC6515979.1",
+   "product": "C4-dicarboxylic acid transporter DauA",
+   "strand": "+",
+   "start": 166792,
+   "stop": 168478,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -6,
+   "protein_id": "HAC6515978.1",
+   "product": "DUF2583 domain-containing protein",
+   "strand": "-",
+   "start": 166469,
+   "stop": 166748,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -5,
+   "protein_id": "HAC6515977.1",
+   "product": "aminoacyl-tRNA hydrolase",
+   "strand": "+",
+   "start": 165608,
+   "stop": 166193,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -4,
+   "protein_id": "HAC6515976.1",
+   "product": "redox-regulated ATPase YchF",
+   "strand": "+",
+   "start": 164400,
+   "stop": 165492,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -3,
+   "protein_id": "HAC6515975.1",
+   "product": "hypothetical protein",
+   "strand": "-",
+   "start": 163077,
+   "stop": 164256,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -2,
+   "protein_id": "HAC6515974.1",
+   "product": "DUF4255 domain-containing protein",
+   "strand": "+",
+   "start": 162169,
+   "stop": 162754,
+   "sheath_bits": 0
+  },
+  {
+   "slot": -1,
+   "protein_id": "HAC6515973.1",
+   "product": "hypothetical protein",
+   "strand": "+",
+   "start": 161386,
+   "stop": 162169,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 0,
+   "protein_id": "HAC6515972.1",
+   "product": "phage tail sheath family protein",
+   "strand": "+",
+   "start": 159388,
+   "stop": 160948,
+   "sheath_bits": 1066.0
+  },
+  {
+   "slot": 1,
+   "protein_id": "HAC6515971.1",
+   "product": "phage tail protein",
+   "strand": "+",
+   "start": 158839,
+   "stop": 159310,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 2,
+   "protein_id": "HAC6515970.1",
+   "product": "phage tail protein",
+   "strand": "+",
+   "start": 158313,
+   "stop": 158790,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 3,
+   "protein_id": "HAC6515969.1",
+   "product": "peptidoglycan-binding protein",
+   "strand": "+",
+   "start": 157461,
+   "stop": 158115,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 4,
+   "protein_id": "HAC6515968.1",
+   "product": "type VI secretion system tip protein VgrG",
+   "strand": "+",
+   "start": 155653,
+   "stop": 157447,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 5,
+   "protein_id": "HAC6515967.1",
+   "product": "type VI secretion protein",
+   "strand": "+",
+   "start": 155334,
+   "stop": 155634,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 6,
+   "protein_id": "HAC6515966.1",
+   "product": "hypothetical protein",
+   "strand": "+",
+   "start": 154855,
+   "stop": 155305,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 7,
+   "protein_id": "HAC6515965.1",
+   "product": "hypothetical protein",
+   "strand": "+",
+   "start": 150884,
+   "stop": 154856,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 8,
+   "protein_id": "HAC6515964.1",
+   "product": "hypothetical protein",
+   "strand": "+",
+   "start": 150061,
+   "stop": 150892,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 9,
+   "protein_id": "HAC6515963.1",
+   "product": "hypothetical protein",
+   "strand": "+",
+   "start": 147674,
+   "stop": 150053,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 10,
+   "protein_id": "HAC6515962.1",
+   "product": "hypothetical protein",
+   "strand": "+",
+   "start": 143646,
+   "stop": 147678,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 11,
+   "protein_id": "HAC6515961.1",
+   "product": "hypothetical protein",
+   "strand": "+",
+   "start": 141040,
+   "stop": 143635,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 12,
+   "protein_id": "HAC6515960.1",
+   "product": "hypothetical protein",
+   "strand": "-",
+   "start": 139636,
+   "stop": 140890,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 13,
+   "protein_id": "HAC6515959.1",
+   "product": "DUF4157 domain-containing protein",
+   "strand": "-",
+   "start": 139121,
+   "stop": 139556,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 14,
+   "protein_id": "HAC6515958.1",
+   "product": "ATP-binding protein",
+   "strand": "-",
+   "start": 137660,
+   "stop": 139034,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 15,
+   "protein_id": "HAC6515957.1",
+   "product": "yersiniabactin biosynthesis salicylate synthase YbtS",
+   "strand": "-",
+   "start": 135893,
+   "stop": 137210,
+   "sheath_bits": 0
+  },
+  {
+   "slot": 16,
+   "protein_id": "HAC6515956.1",
+   "product": "yersiniabactin-associated zinc MFS transporter YbtX",
+   "strand": "-",
+   "start": 134585,
+   "stop": 135866,
+   "sheath_bits": 0
+  }
+ ]
+}

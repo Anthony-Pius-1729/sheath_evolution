@@ -1,0 +1,1 @@
+Presentation of saved analysis outputs. Table CSVs preserve full numerical precision. archived/ contains selected original outputs and provenance files, not a complete analysis environment or a public repository. Paths in archived_commands.txt are relative to the original project root. No scientific fits were run to create these files.

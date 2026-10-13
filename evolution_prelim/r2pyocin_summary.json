@@ -1,0 +1,110 @@
+{
+  "family": "r2pyocin",
+  "built_at": "2026-10-13T05:58:22Z",
+  "status": "PRELIMINARY QC SCREEN -- not an orthology decision, not a final phylogeny, no rates computed",
+  "inputs": {
+    "filtered_rows": 967,
+    "sequences_aligned": 968,
+    "synteny_rows": 250
+  },
+  "msa": {
+    "tool": "pyfamsa (FAMSA)",
+    "taxa": 968,
+    "columns": 1310
+  },
+  "tree": {
+    "tool": "FastTree LG+Gamma",
+    "rooting": "midpoint",
+    "note": "QC screen only; model selection remains open"
+  },
+  "reference_placement": {
+    "sister_clade_size": 7,
+    "nested_levels": 11,
+    "levels_to_half_the_pool": 10
+  },
+  "four_way_by_level_PROVISIONAL": {
+    "L0": {
+      "clade_size": 7,
+      "in_clade_synteny_supported": 0,
+      "in_clade_not_supported": 0,
+      "out_clade_synteny_supported": 219,
+      "out_clade_not_supported": 39
+    },
+    "L1": {
+      "clade_size": 119,
+      "in_clade_synteny_supported": 2,
+      "in_clade_not_supported": 0,
+      "out_clade_synteny_supported": 217,
+      "out_clade_not_supported": 39
+    },
+    "L2": {
+      "clade_size": 124,
+      "in_clade_synteny_supported": 2,
+      "in_clade_not_supported": 0,
+      "out_clade_synteny_supported": 217,
+      "out_clade_not_supported": 39
+    },
+    "L3": {
+      "clade_size": 146,
+      "in_clade_synteny_supported": 4,
+      "in_clade_not_supported": 2,
+      "out_clade_synteny_supported": 215,
+      "out_clade_not_supported": 37
+    },
+    "L4": {
+      "clade_size": 155,
+      "in_clade_synteny_supported": 7,
+      "in_clade_not_supported": 3,
+      "out_clade_synteny_supported": 212,
+      "out_clade_not_supported": 36
+    },
+    "L5": {
+      "clade_size": 158,
+      "in_clade_synteny_supported": 7,
+      "in_clade_not_supported": 3,
+      "out_clade_synteny_supported": 212,
+      "out_clade_not_supported": 36
+    },
+    "L6": {
+      "clade_size": 161,
+      "in_clade_synteny_supported": 7,
+      "in_clade_not_supported": 5,
+      "out_clade_synteny_supported": 212,
+      "out_clade_not_supported": 34
+    },
+    "L7": {
+      "clade_size": 293,
+      "in_clade_synteny_supported": 45,
+      "in_clade_not_supported": 11,
+      "out_clade_synteny_supported": 174,
+      "out_clade_not_supported": 28
+    },
+    "L8": {
+      "clade_size": 298,
+      "in_clade_synteny_supported": 47,
+      "in_clade_not_supported": 11,
+      "out_clade_synteny_supported": 172,
+      "out_clade_not_supported": 28
+    },
+    "L9": {
+      "clade_size": 355,
+      "in_clade_synteny_supported": 66,
+      "in_clade_not_supported": 14,
+      "out_clade_synteny_supported": 153,
+      "out_clade_not_supported": 25
+    }
+  },
+  "synteny": {
+    "candidates_scored": 258,
+    "supported": 219,
+    "n_categories_distribution": {
+      "0.0": 39,
+      "2.0": 2,
+      "3.0": 13,
+      "4.0": 78,
+      "5.0": 94,
+      "6.0": 30,
+      "7.0": 2
+    }
+  }
+}

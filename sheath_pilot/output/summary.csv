@@ -1,0 +1,4 @@
+system,entity,identity,modelled_ext,modelled_con,mapped,substitutions,unmatched_internal,rings_ext,rings_con,lattice_failures_ext,lattice_failures_con,counting_rule,engineering_excluded,symmetry_dependent_excluded,symmetry_generated_used,n_persistent_same_partner,n_persistent_changed_partner,n_extended_only,n_contracted_only,n_non_interface,smallest_interface_class,verdict,archived_smallest_interface_class,archived_verdict
+algoriphagus,P1_Putative phage tail sheath protein FI_692aa,1.0,511,656,511,0,0,3,3,0,0,native_coordinates_only+engineering_shell,0,0,False,86,2,45,24,354,2,FAIL,2,FAIL
+vibrio,P1_Type VI secretion protein_473aa,0.993,473,432,429,0,0,1,5,0,0,native_coordinates_only+engineering_shell,0,107,False,73,17,4,50,178,4,FAIL,20,PASS
+vibrio,P2_Type VI secretion protein_159aa,1.0,158,125,125,0,3,1,5,0,0,native_coordinates_only+engineering_shell,4,28,False,56,7,4,3,25,3,FAIL,3,FAIL

@@ -1,0 +1,84 @@
+{
+  "scope": "Read-only provenance audit; no coordinate download, structural reconstruction or model fit performed.",
+  "original_mmCIF_files_present": false,
+  "original_mmCIF_byte_checksums_archived": false,
+  "exact_historical_reference_subunits_verified": false,
+  "selection_rule": "Prefer candidates in interior rings; maximize count of all assembly centroids at distance <90 Angstrom; tied maxima retain first in input order.",
+  "monomer_covariate_chain_rule": "First modeled representative encountered for each entity during family matching; separate from contact reference selection.",
+  "operator_key_rule": "AFP expanded key = author chain plus # plus zero-based operator-list index; ring completion uses ~.",
+  "source_sha256": {
+    "sheath_pilot/structural_qc.py": "e1a09a5651f61731237bd90d7235cd7f3e850b717011e1a1c2183bd1924fe250",
+    "sheath_pilot/lattice.py": "eb712c9a690fe8742f2590453140254ecb66ac0a54f1eca8e86044b2eac5399d",
+    "sheath_pilot/remodeling.py": "d8714b6715d466a259d67167b67bc8e6bdd7200eac1d669f07ddf0c46d4feff0",
+    "sheath_pilot/covariates.py": "38db4dbb8abda570727bfdefeb6a5a0bcf87bfa582d526d0a41cf1ec8e8af506",
+    "hypothesis_test.py": "ce775c5e145d86bcec436fdd6a3173d7ab451866be3b2d37d7d50808075deb5f",
+    "requirements.txt": "c81247640aae0de36a5116fae6937e3b15d4e0faa72fc662eea000460aea3695"
+  },
+  "references": [
+    {
+      "protein": "R2 pyocin",
+      "extended_PDB_entity": "3J9Q/1",
+      "contracted_PDB_entity": "3J9R/1",
+      "eligible_sites": "143",
+      "coordinate_source": "deposited copies",
+      "selected_contact_key_E": null,
+      "selected_contact_key_C": null,
+      "representative_monomer_key_E": null,
+      "representative_monomer_key_C": null,
+      "candidate_scores": null,
+      "tie_candidates": null
+    },
+    {
+      "protein": "AFP Afp2",
+      "extended_PDB_entity": "6RBN/2",
+      "contracted_PDB_entity": "6RC8/1",
+      "eligible_sites": "84",
+      "coordinate_source": "deposited operators",
+      "selected_contact_key_E": null,
+      "selected_contact_key_C": null,
+      "representative_monomer_key_E": null,
+      "representative_monomer_key_C": null,
+      "candidate_scores": null,
+      "tie_candidates": null
+    },
+    {
+      "protein": "AFP Afp3",
+      "extended_PDB_entity": "6RBN/3",
+      "contracted_PDB_entity": "6RC8/2",
+      "eligible_sites": "82",
+      "coordinate_source": "deposited operators",
+      "selected_contact_key_E": null,
+      "selected_contact_key_C": null,
+      "representative_monomer_key_E": null,
+      "representative_monomer_key_C": null,
+      "candidate_scores": null,
+      "tie_candidates": null
+    },
+    {
+      "protein": "SalCIS",
+      "extended_PDB_entity": "9R9H/1",
+      "contracted_PDB_entity": "9R9I/1",
+      "eligible_sites": "68",
+      "coordinate_source": "deposited copies",
+      "selected_contact_key_E": null,
+      "selected_contact_key_C": null,
+      "representative_monomer_key_E": null,
+      "representative_monomer_key_C": null,
+      "candidate_scores": null,
+      "tie_candidates": null
+    },
+    {
+      "protein": "Diffocin",
+      "extended_PDB_entity": "8V3X/1",
+      "contracted_PDB_entity": "8V3Y/1",
+      "eligible_sites": "58",
+      "coordinate_source": "deposited copies",
+      "selected_contact_key_E": null,
+      "selected_contact_key_C": null,
+      "representative_monomer_key_E": null,
+      "representative_monomer_key_C": null,
+      "candidate_scores": null,
+      "tie_candidates": null
+    }
+  ]
+}

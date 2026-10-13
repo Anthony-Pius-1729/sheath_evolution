@@ -1,0 +1,10 @@
+{
+  "archive": "reproducibility_archive.zip",
+  "status": "local archive prepared for deposition; no public URL/DOI",
+  "project_files": 331,
+  "source_bytes": 87681620,
+  "archive_bytes": 29318644,
+  "sha256": "a38f0b0619fa8567a16e8083c30466a026b64b56a702a3dc8ee46a8e900b8157",
+  "original_atomic_coordinates_included": false,
+  "exact_historical_selected_subunits_verified": false
+}

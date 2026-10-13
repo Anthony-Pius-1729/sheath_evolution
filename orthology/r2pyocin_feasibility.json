@@ -1,0 +1,77 @@
+{
+  "family": "r2pyocin",
+  "clade_level": 2,
+  "status": "feasibility diagnostics only -- no rates estimated",
+  "paralog_test": {
+    "dropped_paralogs_tested": 57,
+    "inside_clade_in_paralogs": 39,
+    "outside_clade": 18,
+    "clade_members_recovered": "124/124",
+    "in_paralog_topology": {
+      "mrca_leaves": 156,
+      "in_paralogs": 39,
+      "monophyletic": false
+    },
+    "in_paralog_pairs_sister_leaves": 3,
+    "in_paralog_pairs_tested": 39,
+    "in_paralog_median_patristic": 0.2573,
+    "verdict": "39 in-paralogs: the clade is not a clean ortholog set"
+  },
+  "n_orthologs": 124,
+  "phylogenetic_diversity": {
+    "tree_length": 7.773,
+    "mean_patristic_distance": 0.4181,
+    "median_patristic_distance": 0.4348,
+    "max_patristic_distance": 1.01,
+    "identity_min": 0.6481,
+    "identity_median": 0.7513
+  },
+  "alignment": {
+    "columns": 412,
+    "sequences": 125,
+    "columns_occupancy_ge_50pct": 388,
+    "reference_columns": 386
+  },
+  "structural_sites": {
+    "n_sites": 143,
+    "mapped_to_a_column": 143,
+    "occupancy_ge_80pct": 143,
+    "occupancy_ge_70pct": 143,
+    "occupancy_ge_90pct": 143,
+    "median_occupancy": 1.0,
+    "median_window_occupancy": 1.0,
+    "sites_window_occupancy_lt_80pct": 1,
+    "invariant_sites": 46,
+    "sites_major_aa_ge_95pct": 82,
+    "median_distinct_aa": 2.0,
+    "median_entropy": 0.1854,
+    "entropy_quartiles": [
+      -0.0,
+      0.1854,
+      0.7886
+    ]
+  },
+  "branch_lengths": {
+    "median_tip": 0.02032,
+    "max_tip": 0.3796,
+    "outlier_tips_gt_q3_plus_3iqr": 8,
+    "outlier_labels": [
+      "A0A1Y3NZM6",
+      "H8L2K5",
+      "A0ACG2QC83",
+      "A0A024HAN5",
+      "REFERENCE",
+      "A0ABR7ATL5",
+      "A0A1H2N8N9",
+      "A0A2S6FJB5"
+    ]
+  },
+  "taxonomic_redundancy": {
+    "distinct_species": 124,
+    "distinct_genera": 2,
+    "largest_genus": "Pseudomonas",
+    "largest_genus_frac": 0.992,
+    "genus_shannon": 0.047,
+    "effective_genera": 1.05
+  }
+}
