@@ -83,7 +83,9 @@ Correspondence: ior23@itu.edu.tr.
 This supplement reports retained outputs and reproducibility details for the three-protein
 analysis. It does not introduce new rate estimates, model fits or structural calculations.
 The complete-precision tables, residue mappings, commands and selected archived outputs
-are supplied in `supplementary_data/`. Public repository deposition remains pending.
+are supplied in `supplementary_data/`. Code and retained study outputs are hosted in the
+currently private [GitHub repository](https://github.com/Anthony-Pius-1729/sheath_evolution); public access and an archived release/DOI
+remain pending. Manuscript drafts and submission files are excluded from that repository.
 
 ## Supplementary Methods
 

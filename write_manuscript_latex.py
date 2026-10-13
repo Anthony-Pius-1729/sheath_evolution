@@ -39,7 +39,7 @@ def inline(t):
     t=re.sub(r'`([^`]+)`',code,t)
     t=re.sub(r'\[([^\]]+)\]\((https://(?:[^()]|\([^()]*\))+)\)',lambda m:hold(r'\href{'+m[2]+'}{'+inline(m[1])+'}'),t)
     t=t.replace('ior23@itu.edu.tr',hold(r'\href{mailto:ior23@itu.edu.tr}{ior23@itu.edu.tr}'))
-    for old,tex in [('β_R',r'\(\beta_R\)'),('β_0',r'\(\beta_0\)'),('β_WCN',r'\(\beta_{\mathrm{WCN}}\)'),('R²',r'\(R^2\)'),('10⁻⁵',r'\(10^{-5}\)'),('10⁻⁶',r'\(10^{-6}\)')]:t=t.replace(old,hold(tex))
+    for old,tex in [('β_R',r'\(\beta_R\)'),('β_0',r'\(\beta_0\)'),('ε_i',r'\(\epsilon_i\)'),('β_WCN',r'\(\beta_{\mathrm{WCN}}\)'),('R²',r'\(R^2\)'),('10⁻⁵',r'\(10^{-5}\)'),('10⁻⁶',r'\(10^{-6}\)')]:t=t.replace(old,hold(tex))
     escape={'\\':r'\textbackslash{}','&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','~':r'\textasciitilde{}','^':r'\textasciicircum{}'}
     symbols={'±':r'\ensuremath{\pm}','²':r'\ensuremath{^2}','·':r'\ensuremath{\cdot}','Å':r'\AA{}','×':r'\ensuremath{\times}','ś':r"\'{s}",'ü':r'\"{u}','Γ':r'\ensuremath{\Gamma}','Δ':r'\ensuremath{\Delta}','α':r'\ensuremath{\alpha}','β':r'\ensuremath{\beta}','ε':r'\ensuremath{\varepsilon}','ρ':r'\ensuremath{\rho}','–':'--','—':'---','−':r'\ensuremath{-}','∩':r'\ensuremath{\cap}','∪':r'\ensuremath{\cup}','≈':r'\ensuremath{\approx}','≤':r'\ensuremath{\leq}','≥':r'\ensuremath{\geq}'}
     t=''.join(escape.get(c,symbols.get(c,c)) for c in t)
@@ -91,6 +91,18 @@ def blocks(t,kind='main'):
             close();group=[]
             while i<len(lines) and lines[i].startswith('|'):group.append(lines[i]);i+=1
             out.append(table(group,kind));continue
+        if line.strip() == '```math':
+            close(); i+=1; math=[]
+            while i<len(lines) and lines[i].strip()!='```':
+                math.append(lines[i]); i+=1
+            assert i<len(lines), 'Unclosed math block'
+            i+=1; content='\n'.join(math).strip()
+            label=('eq:regression' if 'z(r_i)' in content else
+                   'eq:remodeling' if content.startswith('R_i') else
+                   'eq:partialr2' if content.startswith('R^2') else None)
+            equation=[r'\begin{equation}',content]
+            if label:equation.append(r'\label{'+label+'}')
+            equation.append(r'\end{equation}');out.append('\n'.join(equation));continue
         if line.startswith('    R_i ='):
             out.append(r'''\begin{equation}
 R_i=1-\frac{\lvert C_i^E\cap C_i^C\rvert}{\lvert C_i^E\cup C_i^C\rvert}.
@@ -191,8 +203,14 @@ review_tex=re.sub(r'\\section\{Acknowledgments\}.*?(?=\\section\{Statements and 
 review_tex=re.sub(r'\\subsection\{Corresponding author\}.*?(?=\\clearpage)','',review_tex,flags=re.S)
 review_tex=review_tex.replace(r'\input{supplementary.tex}',r'\input{supplementary_for_review.tex}')
 review_supp=re.sub(r'^Anthony Yua Ior,[^\n]+\n+','',(root/'supplementary.tex').read_text(),flags=re.M)
+# Repository-owner URLs belong on the identifying title page, not the review variants.
+def remove_identifying_repo_links(tex):
+    pattern=r'\\href\{https://github\.com/Anthony-Pius-1729/sheath_evolution[^}]*\}\{([^}]+)\}'
+    return re.sub(pattern,lambda m:'source repository (details on title page)' if 'repository' in m[1] else m[1],tex)
+review_tex=remove_identifying_repo_links(review_tex).replace("so this link identifies the source location", "so these details identify the source location")
+review_supp=remove_identifying_repo_links(review_supp)
 for name,tex in [('manuscript_for_review.tex',review_tex),('supplementary_for_review.tex',review_supp)]:
-    assert not any(v in tex for v in ['Anthony Yua Ior','ior23@itu.edu.tr','Istanbul Technical University','Maslak 34867'])
+    assert not any(v in tex for v in ['Anthony Yua Ior','ior23@itu.edu.tr','Istanbul Technical University','Maslak 34867','Anthony-Pius-1729'])
     (root/name).write_text(tex)
 declaration_markdown='## Acknowledgments\n'+source.split('## Acknowledgments\n',1)[1].split('## References\n',1)[0]
 title_page=preamble+'\n'+r'\title{'+inline(title)+'}\n'+r'''\author{Anthony Yua Ior\\[0.5em]
@@ -203,9 +221,11 @@ title_page=preamble+'\n'+r'\title{'+inline(title)+'}\n'+r'''\author{Anthony Yua 
 \begin{document}
 \maketitle
 \section*{Data and code availability}
-A local code/data archive has been prepared for deposition. Its persistent public URL/DOI
-and archived release identifier remain pending. Original coordinate files and selected
-structural-reference keys are absent; the supplied provenance audit documents these limits.
+Code and retained study outputs are hosted at
+\href{https://github.com/Anthony-Pius-1729/sheath_evolution}{the GitHub repository},
+which is currently private. A local code/data archive has been prepared; public access and
+an archived release/DOI remain pending. Original coordinate files and selected reference
+keys are absent; the provenance audit documents these limits.
 '''+blocks(declaration_markdown)+'\n'+r'\end{document}'+'\n'
 assert title_page.isascii()
 (root/'title_page.tex').write_text(title_page)
@@ -258,8 +278,9 @@ limitation and unpropagated rate uncertainty remain visible.
 
 Source consistency, references, saved numbers, archive integrity and figure images have
 been checked. No TeX compiler is installed locally, so manuscript PDF compilation and
-final page-layout verification remain pending. Public repository deposition is also pending;
-no repository accession has been invented. The bundle contains selected processed outputs,
+final page-layout verification remain pending. Code and retained data have been pushed to the private GitHub repository
+https://github.com/Anthony-Pius-1729/sheath_evolution. Manuscript files remain local.
+Public access and an archived release/DOI remain pending. The bundle contains selected processed outputs,
 not the full retrieval cache, external tools or complete runnable analysis environment.
 '''
 (root/'LATEX_README.md').write_text(readme)
