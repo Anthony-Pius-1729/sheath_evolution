@@ -1,15 +1,21 @@
 {
   "archive": "reproducibility_archive.zip",
   "status": "code/data package prepared for versioned GitHub release; DOI deposition pending",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "repository": "https://github.com/Anthony-Pius-1729/sheath_evolution",
-  "release_url": "https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.0",
-  "build_git_head": "02918f400cf8e9de14beab8f72975bd0545a8d39",
-  "project_files": 349,
-  "source_bytes": 91464361,
-  "archive_bytes": 32726164,
-  "sha256": "41db7510c42f0779ce7fd1a1297c0c6e615d23c5d791c3c2548d05192c1877b0",
+  "release_url": "https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.1",
+  "build_git_head": "6609736017221154a7cb57e0c2a44b911a3019ae",
+  "project_files": 380,
+  "source_bytes": 111749505,
+  "archive_bytes": 37696457,
+  "sha256": "4e0b1a43e151846cf529f20cbee39a0b5c449557b72c5c695af95038719a6b63",
   "manuscript_documents_included": false,
   "original_atomic_coordinates_included": false,
+  "reconstruction_atomic_coordinates_included": true,
+  "structural_measurements_reproduced_for": [
+    "AFP Afp2",
+    "AFP Afp3",
+    "Diffocin"
+  ],
   "exact_historical_selected_subunits_verified": false
 }
