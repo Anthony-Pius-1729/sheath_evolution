@@ -86,6 +86,20 @@ retained=json.loads((ROOT/'RETAINED_DATA_VALIDATION.json').read_text())
 assert retained['status']=='passed' and retained['recorded_positions']==927 and retained['primary_fitted_positions']==223
 for p,h in retained['source_sha256'].items():assert hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==h
 assert 'currently private' not in body and '/releases/tag/v1.0.1' in body
+repo='https://github.com/Anthony-Pius-1729/sheath_evolution'
+for file in ['manuscript.tex','supplementary.tex','title_page.tex']:
+    assert all(r'\url{'+url+'}' in tex[file] for url in [repo,repo+'/releases/tag/v1.0.1'])
+covariates=body.split('### Structural covariates\n')[1].split('### Primary linear regression')[0]
+assert all(v in covariates for v in ['np.linalg.pinv','10⁻¹⁰','Retrospective'])
+supp=(ROOT/'SUPPLEMENTARY.md').read_text()
+assert 'It does not introduce new rate estimates, model fits or structural calculations' not in supp
+assert 'no new evolutionary-rate estimates, association models or' in supp
+reference_audit=json.loads((ROOT/'MANUSCRIPT_REFERENCE_AUDIT.json').read_text())
+assert reference_audit['summary']['doi_matches']==reference_audit['summary']['title_matches']==23
+author_orcid=re.search(r'https://orcid\.org/([0-9-]+)',body)[1]
+author_phone=re.search(r'Telephone: ([+0-9 ]+)\.',body)[1]
+for file in ['manuscript_for_review.tex','supplementary_for_review.tex']:
+    assert author_orcid not in tex[file] and author_phone not in tex[file]
 reconstruction=json.loads((ROOT/'reproducibility_check/verification_report.json').read_text())
 assert reconstruction['status']=='passed' and reconstruction['eligible_sites']==224
 with zipfile.ZipFile(ROOT/'manuscript_latex.zip') as z:
@@ -99,6 +113,6 @@ def words(t):
     t=re.sub(r'<sup>.*?</sup>','',t,flags=re.S);return len('\n'.join(l for l in t.splitlines() if not l.startswith(('|','#','    '))).split())
 abstract=body.split('## Abstract\n')[1].split('**Keywords:**')[0];main=body.split('## Introduction\n')[1].split('## Figures\n')[0]
 assert words(abstract)<300 and 4000<=words(main)<=6000
-report=dict(original_analysis_hashes_unchanged=protected,original_frozen_text='byte-identical prefix; dated retrospective addendum appended',main_figures=3,main_tables=3,supplementary_figures=5,supplementary_tables=5,references=23,primary_fitted_sites=223,sensitivity_specifications=8,main_words=words(main),abstract_words=words(abstract),TeX_sources_checked=5,Overleaf_main_document='manuscript.tex',Overleaf_standalone_documents=1,TeX_source_syntax='passed static checks',review_source_identity='removed from text and PDF-author metadata',saved_coefficients='match original JSON',citation_order_DOIs='checked',ZIP_integrity='passed',retained_structural_positions_checked=927,actual_adjustment='monomer descriptors averaged across available states',statistical_intervals='sequence-block bootstrap; spatial coverage unassessed',structural_reference_reconstruction='agreement verified from saved reconstruction for three fitted proteins (224 eligible sites); explicit GNM zero-mode exclusion; historical execution trail not recovered',public_archive='public GitHub repository and v1.0.1 release; v1.0.0 preserved; separate archival-service DOI pending',manuscript_PDF_compilation='not performed: no local TeX compiler')
+report=dict(original_analysis_hashes_unchanged=protected,original_frozen_text='byte-identical prefix; dated retrospective addendum appended',main_figures=3,main_tables=3,supplementary_figures=5,supplementary_tables=5,references=23,primary_fitted_sites=223,sensitivity_specifications=8,main_words=words(main),abstract_words=words(abstract),TeX_sources_checked=5,Overleaf_main_document='manuscript.tex',Overleaf_standalone_documents=1,TeX_source_syntax='passed static checks',review_source_identity='removed from text and PDF-author metadata',saved_coefficients='match original JSON',citation_order_DOIs='checked',ZIP_integrity='passed',retained_structural_positions_checked=927,actual_adjustment='monomer descriptors averaged across available states',statistical_intervals='sequence-block bootstrap; spatial coverage unassessed',structural_reference_reconstruction='agreement verified from saved reconstruction for three fitted proteins (224 eligible sites); explicit GNM zero-mode exclusion; historical execution trail not recovered',public_archive='public GitHub repository and v1.0.1 release; v1.0.0 preserved; separate archival-service DOI pending',manuscript_PDF_compilation='not performed: no local TeX compiler',repository_destinations='full repository and v1.0.1 URLs printed in author manuscript, supplement and title page',reference_metadata='23 DOI/title pairs verified against Crossref/PubMed; publisher title checked for reference 20',journal_guidance_checked='2026-10-14; content limits checked; Word preferred; LaTeX portal handling pending',author_identifiers='provided in local identifying documents; absent from review variants')
 (ROOT/'MANUSCRIPT_VALIDATION.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

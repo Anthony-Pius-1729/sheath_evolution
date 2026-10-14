@@ -37,7 +37,7 @@ def inline(t):
         if value in ['R_i','r_i','C_E','C_C']:return hold(r'\('+value+r'\)')
         return hold(r'\path{'+value+'}')
     t=re.sub(r'`([^`]+)`',code,t)
-    t=re.sub(r'\[([^\]]+)\]\((https://(?:[^()]|\([^()]*\))+)\)',lambda m:hold(r'\href{'+m[2]+'}{'+inline(m[1])+'}'),t)
+    t=re.sub(r'\[([^\]]+)\]\((https://(?:[^()]|\([^()]*\))+)\)',lambda m:hold(r'\url{'+m[2]+'}' if m[1]==m[2] else r'\href{'+m[2]+'}{'+inline(m[1])+'}'),t)
     t=t.replace('ior23@itu.edu.tr',hold(r'\href{mailto:ior23@itu.edu.tr}{ior23@itu.edu.tr}'))
     for old,tex in [('β_R',r'\(\beta_R\)'),('β_0',r'\(\beta_0\)'),('ε_i',r'\(\epsilon_i\)'),('β_WCN',r'\(\beta_{\mathrm{WCN}}\)'),('R²',r'\(R^2\)'),('10⁻⁵',r'\(10^{-5}\)'),('10⁻⁶',r'\(10^{-6}\)'),('10⁻¹⁰',r'\(10^{-10}\)'),('10⁻¹³',r'\(10^{-13}\)')]:t=t.replace(old,hold(tex))
     escape={'\\':r'\textbackslash{}','&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','~':r'\textasciitilde{}','^':r'\textasciicircum{}'}
@@ -206,7 +206,8 @@ review_supp=re.sub(r'^Anthony Yua Ior,[^\n]+\n+','',(root/'supplementary.tex').r
 # Repository-owner URLs belong on the identifying title page, not the review variants.
 def remove_identifying_repo_links(tex):
     pattern=r'\\href\{https://github\.com/Anthony-Pius-1729/sheath_evolution[^}]*\}\{([^}]+)\}'
-    return re.sub(pattern,lambda m:'source repository (details on title page)' if 'repository' in m[1] else m[1],tex)
+    tex=re.sub(pattern,lambda m:'source repository (details on title page)' if 'repository' in m[1] else m[1],tex)
+    return re.sub(r'\\url\{https://github\.com/Anthony-Pius-1729/sheath_evolution[^}]*\}', 'source location (details on title page)',tex)
 review_tex=remove_identifying_repo_links(review_tex).replace("so this link identifies the source location", "so these details identify the source location")
 review_supp=remove_identifying_repo_links(review_supp)
 for name,tex in [('manuscript_for_review.tex',review_tex),('supplementary_for_review.tex',review_supp)]:
@@ -295,6 +296,7 @@ not the full retrieval cache, external tools or complete runnable analysis envir
 (root/'LATEX_README.md').write_text(readme)
 paths=['manuscript.tex','supplementary.tex','MANUSCRIPT.md','SUPPLEMENTARY.md','MANUSCRIPT_REVIEW.md','REVIEW_RESPONSE.md','REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json','DATA_DICTIONARY.md','verify_retained_data.py','RETAINED_DATA_VALIDATION.json','SUBMISSION_CHECKLIST.md','COVER_LETTER_DRAFT.md','prepare_supplementary.py','validate_manuscript.py','build_reproducibility_archive.py','make_figures.py','write_manuscript_latex.py']+figure_files
 if (root/'MANUSCRIPT_VALIDATION.json').exists():paths.append('MANUSCRIPT_VALIDATION.json')
+if (root/'MANUSCRIPT_REFERENCE_AUDIT.json').exists():paths.append('MANUSCRIPT_REFERENCE_AUDIT.json')
 if (root/'REPRODUCIBILITY_ARCHIVE.json').exists():paths.append('REPRODUCIBILITY_ARCHIVE.json')
 with zipfile.ZipFile(root/'manuscript_latex.zip','w',zipfile.ZIP_DEFLATED) as z:
     z.write(root/'LATEX_README.md','README.md')

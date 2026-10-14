@@ -84,12 +84,15 @@ intro='''# Supplementary Methods and Results
 Anthony Yua Ior, Istanbul Technical University, Maslak 34867, Istanbul, Turkiye.
 Correspondence: ior23@itu.edu.tr.
 
-This supplement reports retained outputs and reproducibility details for the three-protein
-analysis. It does not introduce new rate estimates, model fits or structural calculations.
+This supplement documents the retained analyses and their retrospective reproducibility
+verification. It introduces no new evolutionary-rate estimates, association models or
+biological comparisons.
 The complete-precision tables, residue mappings, commands and selected archived outputs
 are supplied in `supplementary_data/`. Code and retained study outputs are hosted in the
-public [GitHub repository](https://github.com/Anthony-Pius-1729/sheath_evolution) and
-[v1.0.1 code/data release](https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.1).
+public repository,
+[https://github.com/Anthony-Pius-1729/sheath_evolution](https://github.com/Anthony-Pius-1729/sheath_evolution),
+and its versioned release, v1.0.1,
+[https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.1](https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.1).
 Separate archival-service deposition and DOI registration remain pending. Current manuscript
 drafts and submission files are excluded from the release package.
 
