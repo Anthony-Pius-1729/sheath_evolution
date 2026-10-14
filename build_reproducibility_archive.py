@@ -15,7 +15,7 @@ files.update(p for p in (ROOT/'sheath_pilot').glob('*.py') if p.is_file())
 for folder in ['sheath_pilot/qc_output','sheath_pilot/output']:
     files.update(p for p in (ROOT/folder).rglob('*') if p.is_file() and p.suffix in EXT)
 files.update(p for p in (ROOT/'supplementary_data').glob('*') if p.is_file())
-for name in ['README.md','INDEX.md','DATA_DICTIONARY.md','RETAINED_DATA_VALIDATION.json','requirements.txt','reference_sequences.json','references.fasta','pair_meta.json','FROZEN_ANALYSIS.md','DATASET_DECISION.md','RESULTS.md','AFP_FEASIBILITY.md','DIFFOCIN_FEASIBILITY.md','R2_FINAL_DECISION.md','R2_EVOLUTIONARY_FEASIBILITY.md','REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json','sheath_pilot/README.md','sheath_pilot/QC_RESULTS.md']:
+for name in ['README.md','INDEX.md','RELEASE_FILES_SHA256.csv','DATA_DICTIONARY.md','RETAINED_DATA_VALIDATION.json','requirements.txt','reference_sequences.json','references.fasta','pair_meta.json','FROZEN_ANALYSIS.md','DATASET_DECISION.md','RESULTS.md','AFP_FEASIBILITY.md','DIFFOCIN_FEASIBILITY.md','R2_FINAL_DECISION.md','R2_EVOLUTIONARY_FEASIBILITY.md','REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json','sheath_pilot/README.md','sheath_pilot/QC_RESULTS.md']:
     p=ROOT/name
     if p.exists():files.add(p)
 # The exact five final rate/alignment/topology commands must point to packaged inputs.

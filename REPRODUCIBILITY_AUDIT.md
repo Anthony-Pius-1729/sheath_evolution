@@ -125,3 +125,10 @@ and checksums. The published v1.0.0 remains available unchanged. The source repo
 public; separate archival-service DOI deposition remains pending. Manuscript drafts and
 submission documents are excluded from the code/data release. No complete historical
 execution environment or original coordinate-download identity is claimed.
+
+Large custom-archive uploads timed out, so public v1.0.1 distribution uses the GitHub
+release's Source code ZIP. It contains every study file inventoried in the prepared local
+package. `RELEASE_FILES_SHA256.csv` and `verify_release_files.py` check versioned file
+contents after extraction. The manifest excludes itself and the generated local ZIP-build
+metadata to avoid self-referential hashes. The local packed ZIP remains available; its
+checksum is not presented as the checksum of GitHub's separately generated source ZIP.

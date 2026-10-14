@@ -187,14 +187,18 @@ To prepare a local code/data bundle with a SHA-256 inventory:
 python3 build_reproducibility_archive.py
 ```
 
-This produces `reproducibility_archive.zip` and its metadata report. The package contains
+This produces a local `reproducibility_archive.zip` and its metadata report. Large release-asset
+uploads timed out; public distribution uses GitHub's versioned Source code ZIP, which
+contains all retained study files and the file-level release manifest. The package contains
 retained code, inputs, outputs, figures and audit documentation; manuscript and submission
 files are excluded even when present locally. Generated ZIP packages,
 extracted duplicate bundles, caches, downloaded article XML and local third-party tool builds
 are excluded from Git. The retained source and study data are versioned directly.
 
 The versioned [v1.0.1 release](https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.1)
-provides the code/data ZIP, reconstruction inputs and SHA-256 checksums. The original
+provides the complete versioned project as its Source code ZIP, including reconstruction
+inputs and `RELEASE_FILES_SHA256.csv`. After extraction, run
+`python3 verify_release_files.py` to check those file hashes. The original
 v1.0.0 release is retained unchanged. GitHub release hosting
 does not assign a DOI; deposition with an archival service remains pending.
 

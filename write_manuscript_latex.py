@@ -260,8 +260,9 @@ not mandate a template; LaTeX upload handling still needs confirmation in the po
 `SUBMISSION_CHECKLIST.md` and `COVER_LETTER_DRAFT.md` record submission preparation.
 `REVIEW_RESPONSE.md` describes the changes made in response to the supplied review.
 `REPRODUCIBILITY_AUDIT.md` documents what the archive can and cannot reproduce.
-The separate `reproducibility_archive.zip` contains retained code/data and is available
-through the public v1.0.1 GitHub release. It excludes manuscript and submission documents.
+The local `reproducibility_archive.zip` packages retained code/data. The public v1.0.1
+release distributes the complete versioned project through its Source code ZIP with
+`RELEASE_FILES_SHA256.csv` and `verify_release_files.py`. Manuscript documents are excluded.
 Separate archival-service deposition and DOI registration remain pending.
 To produce the main paper without the supplement, comment out `\\input{supplementary.tex}`.
 The supplement depends on the main preamble and is not a standalone document.

@@ -23,7 +23,7 @@
   "orthology/diffocin_primary.afa": "07bd0dc4c3f2f2cb6fe799f80fa6cb77f72401aac17279979a5ed1f3865647ba",
   "orthology/diffocin_frozen_offset0.afa": "def569d85fb527f77a6c90b83c74907a565310696b9bb1ef273cb9eb931123dd",
   "orthology/diffocin_collinear_frame.afa": "c78294180e2bf44058003086a4d262e7a48aa7b3897577dfb53d17aa1ed8a9af",
-  "REPRODUCIBILITY_AUDIT.md": "45b54be9f2e6f86a90ef6254efdb81508895a4b40aeef534e9e4f69571ce0c67",
+  "REPRODUCIBILITY_AUDIT.md": "d07cf5ffc9bfa337f026d4401bb68f7ffd63aab6b815103800a806566812b836",
   "structural_provenance_audit.json": "3d8c6fe9ee3eaeed5bbfe9f7f3f3f81fc9414de7b5e713a05f19d9da90a21f12",
   "DATA_DICTIONARY.md": "88ed9246eae135b58d97f2816b1632dd3a9c70fee56976eb0dd62ee16088d8e8",
   "verify_retained_data.py": "dc9873b7ba1019a9b31bfe9925232924d23631e9e6a32c5a290814b4d7bca05d",
