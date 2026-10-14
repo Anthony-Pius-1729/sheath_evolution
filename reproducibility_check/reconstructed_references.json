@@ -1,0 +1,51 @@
+{
+  "scope": "Reconstruction selections from saved selection records; historical execution identities were not logged.",
+  "historical_execution_history_recovered": false,
+  "proteins": [
+    {
+      "protein": "AFP Afp2",
+      "system": "afp",
+      "family": "F1",
+      "extended": {
+        "key": "C#1",
+        "ring": 1,
+        "azimuth": 4
+      },
+      "contracted": {
+        "key": "A#2",
+        "ring": 4,
+        "azimuth": 5
+      }
+    },
+    {
+      "protein": "AFP Afp3",
+      "system": "afp",
+      "family": "F2",
+      "extended": {
+        "key": "D#0",
+        "ring": 2,
+        "azimuth": 4
+      },
+      "contracted": {
+        "key": "B#0",
+        "ring": 3,
+        "azimuth": 0
+      }
+    },
+    {
+      "protein": "Diffocin",
+      "system": "diffocin",
+      "family": "F1",
+      "extended": {
+        "key": "g",
+        "ring": 1,
+        "azimuth": 2
+      },
+      "contracted": {
+        "key": "B",
+        "ring": 2,
+        "azimuth": 1
+      }
+    }
+  ]
+}

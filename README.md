@@ -10,8 +10,8 @@ The computational analysis is closed. The repository preserves the reported esti
 separates the primary analysis from historical feasibility checks and manuscript preparation.
 Manuscript sources and submission documents are kept locally and excluded from this repository.
 The repository supports inspection of the evidence and reproduction from retained downstream inputs;
-missing atomic-coordinate provenance limits exact reconstruction of the original structural
-calculations.
+the v1.0.1 reconstruction addition reproduces structural inputs for the three fitted
+proteins while distinguishing agreement from recovery of the unlogged execution history.
 
 **Study snapshot:** 14 October 2026
 
@@ -46,7 +46,7 @@ linear associations, not causal effects or a test of adaptive evolution.
 |---|---|
 | [`RESULTS.md`](RESULTS.md) | Numerical findings and their interpretation. |
 | [`INDEX.md`](INDEX.md) | Map from each result to its supporting files. |
-| [`FROZEN_ANALYSIS.md`](FROZEN_ANALYSIS.md) | Original written specification, preserved unchanged. |
+| [`FROZEN_ANALYSIS.md`](FROZEN_ANALYSIS.md) | Original written specification, followed by a dated retrospective deviation addendum. |
 | [`DATASET_DECISION.md`](DATASET_DECISION.md) | Evolutionary inclusion/exclusion decisions. |
 | [`REPRODUCIBILITY_AUDIT.md`](REPRODUCIBILITY_AUDIT.md) | Input completeness, deterministic structural selection and unresolved provenance. |
 | [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) | Residue-table fields, indexing, joins and missing measurements. |
@@ -193,8 +193,9 @@ files are excluded even when present locally. Generated ZIP packages,
 extracted duplicate bundles, caches, downloaded article XML and local third-party tool builds
 are excluded from Git. The retained source and study data are versioned directly.
 
-The versioned [v1.0.0 release](https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.0)
-provides the code/data ZIP and its SHA-256 checksum. GitHub release hosting
+The versioned [v1.0.1 release](https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.1)
+provides the code/data ZIP, reconstruction inputs and SHA-256 checksums. The original
+v1.0.0 release is retained unchanged. GitHub release hosting
 does not assign a DOI; deposition with an archival service remains pending.
 
 ### Local manuscript preparation
@@ -213,6 +214,27 @@ The validation script checks manuscript syntax, citations, saved numerical estim
 package integrity when its local document inputs exist. Manuscript editing and compilation
 are separate from inspection of the versioned code and scientific outputs.
 
+## Structural reconstruction addition (v1.0.1)
+
+The supplied reconstruction covers 224 eligible positions in Afp2, Afp3 and diffocin,
+including all 223 primary fitted sites. Remodeling, RSA and WCN agree to numerical
+precision. Explicit exclusion of Kirchhoff zero modes reproduces retained GNM values
+with maximum absolute difference below 1.7e-13. The original producer, measurements,
+rates and regression results are preserved. The numerical backend of the historical
+execution has not been recovered.
+
+```sh
+python3 reproducibility_check/verify_package.py
+```
+
+This standard-library command checks saved reconstruction evidence and its manifests.
+It performs no structural recalculation. The package also supplies an optional
+`reproducibility_check/run_check.py` for independent reconstruction from the bundled
+coordinates, with the zero-mode treatment enabled by default. This wrapper was
+syntax-checked during packaging; the reconstruction was not repeated. See the
+[reconstruction instructions](reproducibility_check/REPRODUCIBILITY_CHECK.md) for commands,
+input hashes, selected subunit keys, the initial GNM failure and the provenance limits.
+
 ## Reproduction boundaries
 
 The retained downstream inputs and outputs are available for inspection. An exact end-to-end
@@ -223,8 +245,11 @@ reproduction claim would exceed what has been preserved:
   actual means. An extended-state-only adjusted association has not been estimated.
 - **Structural provenance:** original mmCIF bytes/checksums, selected contact-reference keys,
   representative monomer-chain keys, candidate tie scores and separate descriptor arrays
-  were not retained. The selection algorithm is documented, but exact historical selected
-  subunits cannot be verified from the saved outputs alone.
+  were not retained. A bounded reconstruction reproduces the retained inputs for the
+  three fitted proteins, including GNM after explicit zero-mode exclusion. Newly retrieved
+  coordinate bytes and reconstructed subunit identifiers are supplied; they establish
+  measurement agreement rather than recovery of the unlogged historical execution trail.
+  R2 pyocin and SalCIS were not reconstructed.
 - **Sensitivity scope:** the written variable-site clause explicitly names Afp2. Parallel
   Afp3 and diffocin restrictions are archived checks beyond that literal clause; their timing
   is not invented. All eight saved sensitivity results are reported.

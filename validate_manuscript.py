@@ -68,8 +68,12 @@ for p,h in manifest.items():
     assert hashlib.sha256((ROOT/'supplementary_data/archived'/p).read_bytes()).hexdigest()==h,p
 baseline=Path('/private/tmp/sheath_methods_review_before/analysis_sha256.json')
 if baseline.exists():
-    orig=json.loads(baseline.read_text());assert all(hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==h for p,h in orig.items())
-    protected=len(orig)
+    orig=json.loads(baseline.read_text())
+    frozen_original=(ROOT/'reproducibility_check/FROZEN_ANALYSIS_original.md').read_bytes()
+    assert hashlib.sha256(frozen_original).hexdigest()==orig['FROZEN_ANALYSIS.md']
+    assert (ROOT/'FROZEN_ANALYSIS.md').read_bytes().startswith(frozen_original)
+    assert all(hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==h for p,h in orig.items() if p!='FROZEN_ANALYSIS.md')
+    protected=len(orig)-1
 else:protected='session-specific baseline unavailable; source manifest checked'
 # Confidence wording remains conditional on the actual scheme and adjustment inputs.
 assert 'an extended-state-only adjusted association has not been tested' in body
@@ -81,7 +85,9 @@ for p,h in audit['source_sha256'].items():assert hashlib.sha256((ROOT/p).read_by
 retained=json.loads((ROOT/'RETAINED_DATA_VALIDATION.json').read_text())
 assert retained['status']=='passed' and retained['recorded_positions']==927 and retained['primary_fitted_positions']==223
 for p,h in retained['source_sha256'].items():assert hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==h
-assert 'currently private' not in body and '/releases/tag/v1.0.0' in body
+assert 'currently private' not in body and '/releases/tag/v1.0.1' in body
+reconstruction=json.loads((ROOT/'reproducibility_check/verification_report.json').read_text())
+assert reconstruction['status']=='passed' and reconstruction['eligible_sites']==224
 with zipfile.ZipFile(ROOT/'manuscript_latex.zip') as z:
     assert z.testzip() is None
     for p in ['manuscript.tex','supplementary.tex']:assert z.read(p)==(ROOT/p).read_bytes()
@@ -93,6 +99,6 @@ def words(t):
     t=re.sub(r'<sup>.*?</sup>','',t,flags=re.S);return len('\n'.join(l for l in t.splitlines() if not l.startswith(('|','#','    '))).split())
 abstract=body.split('## Abstract\n')[1].split('**Keywords:**')[0];main=body.split('## Introduction\n')[1].split('## Figures\n')[0]
 assert words(abstract)<300 and 4000<=words(main)<=6000
-report=dict(original_analysis_hashes_unchanged=protected,main_figures=3,main_tables=3,supplementary_figures=5,supplementary_tables=5,references=23,primary_fitted_sites=223,sensitivity_specifications=8,main_words=words(main),abstract_words=words(abstract),TeX_sources_checked=5,Overleaf_main_document='manuscript.tex',Overleaf_standalone_documents=1,TeX_source_syntax='passed static checks',review_source_identity='removed from text and PDF-author metadata',saved_coefficients='match original JSON',citation_order_DOIs='checked',ZIP_integrity='passed',retained_structural_positions_checked=927,actual_adjustment='monomer descriptors averaged across available states',statistical_intervals='sequence-block bootstrap; spatial coverage unassessed',structural_reference_reconstruction='not verified: original coordinates and selected keys absent',public_archive='public GitHub repository and v1.0.0 release; separate archival-service DOI pending',manuscript_PDF_compilation='not performed: no local TeX compiler')
+report=dict(original_analysis_hashes_unchanged=protected,original_frozen_text='byte-identical prefix; dated retrospective addendum appended',main_figures=3,main_tables=3,supplementary_figures=5,supplementary_tables=5,references=23,primary_fitted_sites=223,sensitivity_specifications=8,main_words=words(main),abstract_words=words(abstract),TeX_sources_checked=5,Overleaf_main_document='manuscript.tex',Overleaf_standalone_documents=1,TeX_source_syntax='passed static checks',review_source_identity='removed from text and PDF-author metadata',saved_coefficients='match original JSON',citation_order_DOIs='checked',ZIP_integrity='passed',retained_structural_positions_checked=927,actual_adjustment='monomer descriptors averaged across available states',statistical_intervals='sequence-block bootstrap; spatial coverage unassessed',structural_reference_reconstruction='agreement verified from saved reconstruction for three fitted proteins (224 eligible sites); explicit GNM zero-mode exclusion; historical execution trail not recovered',public_archive='public GitHub repository and v1.0.1 release; v1.0.0 preserved; separate archival-service DOI pending',manuscript_PDF_compilation='not performed: no local TeX compiler')
 (ROOT/'MANUSCRIPT_VALIDATION.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

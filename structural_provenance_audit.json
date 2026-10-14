@@ -1,5 +1,5 @@
 {
-  "scope": "Read-only provenance audit; no coordinate download, structural reconstruction or model fit performed.",
+  "scope": "Cumulative audit: historical source/provenance record plus saved reconstruction verification for the three fitted proteins. No additional reconstruction or evolutionary analysis was run during packaging.",
   "original_mmCIF_files_present": false,
   "original_mmCIF_byte_checksums_archived": false,
   "exact_historical_reference_subunits_verified": false,
@@ -26,7 +26,10 @@
       "representative_monomer_key_E": null,
       "representative_monomer_key_C": null,
       "candidate_scores": null,
-      "tie_candidates": null
+      "tie_candidates": null,
+      "reconstructed_contact_key_E": null,
+      "reconstructed_contact_key_C": null,
+      "reconstruction_status": "not reconstructed"
     },
     {
       "protein": "AFP Afp2",
@@ -39,7 +42,10 @@
       "representative_monomer_key_E": null,
       "representative_monomer_key_C": null,
       "candidate_scores": null,
-      "tie_candidates": null
+      "tie_candidates": null,
+      "reconstructed_contact_key_E": "C#1",
+      "reconstructed_contact_key_C": "A#2",
+      "reconstruction_status": "measurement agreement verified; historical execution unlogged"
     },
     {
       "protein": "AFP Afp3",
@@ -52,7 +58,10 @@
       "representative_monomer_key_E": null,
       "representative_monomer_key_C": null,
       "candidate_scores": null,
-      "tie_candidates": null
+      "tie_candidates": null,
+      "reconstructed_contact_key_E": "D#0",
+      "reconstructed_contact_key_C": "B#0",
+      "reconstruction_status": "measurement agreement verified; historical execution unlogged"
     },
     {
       "protein": "SalCIS",
@@ -65,7 +74,10 @@
       "representative_monomer_key_E": null,
       "representative_monomer_key_C": null,
       "candidate_scores": null,
-      "tie_candidates": null
+      "tie_candidates": null,
+      "reconstructed_contact_key_E": null,
+      "reconstructed_contact_key_C": null,
+      "reconstruction_status": "not reconstructed"
     },
     {
       "protein": "Diffocin",
@@ -78,7 +90,19 @@
       "representative_monomer_key_E": null,
       "representative_monomer_key_C": null,
       "candidate_scores": null,
-      "tie_candidates": null
+      "tie_candidates": null,
+      "reconstructed_contact_key_E": "g",
+      "reconstructed_contact_key_C": "B",
+      "reconstruction_status": "measurement agreement verified; historical execution unlogged"
     }
-  ]
+  ],
+  "reconstruction_measurements_verified_for": [
+    "AFP Afp2",
+    "AFP Afp3",
+    "Diffocin"
+  ],
+  "reconstruction_eligible_sites": 224,
+  "reconstruction_report": "reproducibility_check/verification_report.json",
+  "reconstruction_coordinate_inputs": "reproducibility_check/coordinate_inputs.json",
+  "original_frozen_specification": "reproducibility_check/FROZEN_ANALYSIS_original.md"
 }

@@ -39,7 +39,7 @@ def inline(t):
     t=re.sub(r'`([^`]+)`',code,t)
     t=re.sub(r'\[([^\]]+)\]\((https://(?:[^()]|\([^()]*\))+)\)',lambda m:hold(r'\href{'+m[2]+'}{'+inline(m[1])+'}'),t)
     t=t.replace('ior23@itu.edu.tr',hold(r'\href{mailto:ior23@itu.edu.tr}{ior23@itu.edu.tr}'))
-    for old,tex in [('β_R',r'\(\beta_R\)'),('β_0',r'\(\beta_0\)'),('ε_i',r'\(\epsilon_i\)'),('β_WCN',r'\(\beta_{\mathrm{WCN}}\)'),('R²',r'\(R^2\)'),('10⁻⁵',r'\(10^{-5}\)'),('10⁻⁶',r'\(10^{-6}\)')]:t=t.replace(old,hold(tex))
+    for old,tex in [('β_R',r'\(\beta_R\)'),('β_0',r'\(\beta_0\)'),('ε_i',r'\(\epsilon_i\)'),('β_WCN',r'\(\beta_{\mathrm{WCN}}\)'),('R²',r'\(R^2\)'),('10⁻⁵',r'\(10^{-5}\)'),('10⁻⁶',r'\(10^{-6}\)'),('10⁻¹⁰',r'\(10^{-10}\)'),('10⁻¹³',r'\(10^{-13}\)')]:t=t.replace(old,hold(tex))
     escape={'\\':r'\textbackslash{}','&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','~':r'\textasciitilde{}','^':r'\textasciicircum{}'}
     symbols={'±':r'\ensuremath{\pm}','²':r'\ensuremath{^2}','·':r'\ensuremath{\cdot}','Å':r'\AA{}','×':r'\ensuremath{\times}','ś':r"\'{s}",'ü':r'\"{u}','Γ':r'\ensuremath{\Gamma}','Δ':r'\ensuremath{\Delta}','α':r'\ensuremath{\alpha}','β':r'\ensuremath{\beta}','ε':r'\ensuremath{\varepsilon}','ρ':r'\ensuremath{\rho}','–':'--','—':'---','−':r'\ensuremath{-}','∩':r'\ensuremath{\cap}','∪':r'\ensuremath{\cup}','≈':r'\ensuremath{\approx}','≤':r'\ensuremath{\leq}','≥':r'\ensuremath{\geq}'}
     t=''.join(escape.get(c,symbols.get(c,c)) for c in t)
@@ -261,7 +261,7 @@ not mandate a template; LaTeX upload handling still needs confirmation in the po
 `REVIEW_RESPONSE.md` describes the changes made in response to the supplied review.
 `REPRODUCIBILITY_AUDIT.md` documents what the archive can and cannot reproduce.
 The separate `reproducibility_archive.zip` contains retained code/data and is available
-through the public v1.0.0 GitHub release. It excludes manuscript and submission documents.
+through the public v1.0.1 GitHub release. It excludes manuscript and submission documents.
 Separate archival-service deposition and DOI registration remain pending.
 To produce the main paper without the supplement, comment out `\\input{supplementary.tex}`.
 The supplement depends on the main preamble and is not a standalone document.
@@ -274,10 +274,14 @@ running those scripts. Regeneration scripts require the complete original projec
 
 Reporting distinguishes operator-expanded AFP coordinates from guessed ring completion,
 discloses averaged monomer covariates versus the written extended-state definition,
-identifies unlogged reference-copy keys, and identifies parallel variable-site checks
+distinguishes reconstructed reference keys from unlogged historical selections, and identifies parallel variable-site checks
 beyond the literal Afp2-only clause. None of these issues was corrected by refitting.
 Afp2's weaker variable-site evidence, diffocin non-detection, the sequence dependence
 limitation and unpropagated rate uncertainty remain visible.
+
+The v1.0.1 reconstruction addition verifies structural measurements for the three fitted
+proteins with explicit GNM zero-mode treatment; the original v1.0.0 remains unchanged.
+Historical execution identities are not recovered.
 
 Source consistency, references, saved numbers, archive integrity and figure images have
 been checked. No TeX compiler is installed locally, so manuscript PDF compilation and

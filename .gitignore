@@ -14,6 +14,7 @@ evoenv/
 /manuscript_latex/
 /figures/previous_layout/
 /supplementary_data/archived/
+/reproducibility_check/reruns/
 
 # Local third-party downloads, binaries and compilation products
 /tools/

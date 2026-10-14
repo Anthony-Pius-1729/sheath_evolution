@@ -1,6 +1,6 @@
-protein,extended_PDB_entity,contracted_PDB_entity,extended_author_chains,contracted_author_chains,modeled_E,modeled_C,identity,eligible_sites,eligible_min_SEQRES,eligible_max_SEQRES,coordinate_source,assembly_subunits_E,assembly_subunits_C,selected_contact_subunit_key
-R2 pyocin,3J9Q/1,3J9R/1,"A–R, X, a, d, g, j, m","0–5, A–R, a–l",385,383,1.0,143,2,383,deposited copies,24,36,not archived
-AFP Afp2,6RBN/2,6RC8/1,C,A,350,348,1.0,84,5,351,deposited operators,24,48,not archived
-AFP Afp3,6RBN/3,6RC8/2,D,B,358,355,0.9915492957746479,82,4,447,deposited operators,24,48,not archived
-SalCIS,9R9H/1,9R9I/1,"T–Z, a–k","O–Z, a–f",514,495,0.9939393939393939,68,12,515,deposited copies,18,18,not archived
-Diffocin,8V3X/1,8V3Y/1,"E, F, P, Q, S–X, d, e, g, n, q–s, z","A–Z, a–d",352,353,1.0,58,3,354,deposited copies,18,30,not archived
+protein,extended_PDB_entity,contracted_PDB_entity,extended_author_chains,contracted_author_chains,modeled_E,modeled_C,identity,eligible_sites,eligible_min_SEQRES,eligible_max_SEQRES,coordinate_source,assembly_subunits_E,assembly_subunits_C,selected_contact_subunit_key,reconstructed_contact_key_E,reconstructed_contact_key_C
+R2 pyocin,3J9Q/1,3J9R/1,"A–R, X, a, d, g, j, m","0–5, A–R, a–l",385,383,1.0,143,2,383,deposited copies,24,36,not archived,not reconstructed,not reconstructed
+AFP Afp2,6RBN/2,6RC8/1,C,A,350,348,1.0,84,5,351,deposited operators,24,48,not archived,C#1,A#2
+AFP Afp3,6RBN/3,6RC8/2,D,B,358,355,0.9915492957746479,82,4,447,deposited operators,24,48,not archived,D#0,B#0
+SalCIS,9R9H/1,9R9I/1,"T–Z, a–k","O–Z, a–f",514,495,0.9939393939393939,68,12,515,deposited copies,18,18,not archived,not reconstructed,not reconstructed
+Diffocin,8V3X/1,8V3Y/1,"E, F, P, Q, S–X, d, e, g, n, q–s, z","A–Z, a–d",352,353,1.0,58,3,354,deposited copies,18,30,not archived,g,B

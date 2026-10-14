@@ -3,13 +3,13 @@
 from pathlib import Path
 import csv,hashlib,io,json,zipfile,subprocess
 ROOT=Path(__file__).resolve().parent
-EXT={'.py','.csv','.json','.nwk','.afa','.fasta','.fa','.faa','.tsv','.txt','.log','.treefile','.res','.unnorm','.cmd','.stdout','.iqtree','.contree','.bionj','.png','.pdf','.gff','.gff3','.gb','.gbk','.stderr'}
-roots=['orthology','phylo','rates','results','retrieval_uniprot','filtered','synteny','evolution_prelim','figures']
+EXT={'.py','.csv','.json','.nwk','.afa','.fasta','.fa','.faa','.tsv','.txt','.log','.treefile','.res','.unnorm','.cmd','.stdout','.iqtree','.contree','.bionj','.png','.pdf','.gff','.gff3','.gb','.gbk','.stderr','.cif','.md'}
+roots=['orthology','phylo','rates','results','retrieval_uniprot','filtered','synteny','evolution_prelim','figures','reproducibility_check']
 files=set()
 for folder in roots:
     base=ROOT/folder
     if base.exists():
-        files.update(p for p in base.rglob('*') if p.is_file() and p.suffix in EXT and (folder!='figures' or p.parent==base))
+        files.update(p for p in base.rglob('*') if p.is_file() and '__pycache__' not in p.parts and 'reruns' not in p.parts and p.suffix in EXT and (folder!='figures' or p.parent==base))
 files.update(p for p in ROOT.glob('*.py') if p.is_file())
 files.update(p for p in (ROOT/'sheath_pilot').glob('*.py') if p.is_file())
 for folder in ['sheath_pilot/qc_output','sheath_pilot/output']:
@@ -24,25 +24,28 @@ for k in ['afp_Afp2','afp_Afp3','diffocin','diffocin_asscreened','diffocin_colli
     import re
     command=(ROOT/f'rates/{k}.cmd').read_text()
     required += [re.search(r'-s (\S+)',command)[1],re.search(r'-t (\S+)',command)[1],f'rates/{k}.res',f'phylo/{k}.log']
+required += ['reproducibility_check/run_check.py','reproducibility_check/verify_package.py','reproducibility_check/covariates_zeromode_fix.py','reproducibility_check/verification_report.json','reproducibility_check/package_manifest.json']
+required += [f'reproducibility_check/structures/{p}.cif' for p in ['6RBN','6RC8','8V3X','8V3Y']]
 assert all(ROOT/p in files for p in required)
 rows=[]
 for p in sorted(files):
     rel=str(p.relative_to(ROOT));data=p.read_bytes()
     rows.append(dict(path=rel,bytes=len(data),sha256=hashlib.sha256(data).hexdigest()))
 stream=io.StringIO();w=csv.DictWriter(stream,fieldnames=['path','bytes','sha256']);w.writeheader();w.writerows(rows)
-readme='''# Sheath evolution: retained code and data, v1.0.0
+readme='''# Sheath evolution: retained code and data, v1.0.1
 
 Study: Contact-Network Remodeling During Bacterial Sheath Contraction Is Associated with
 Site-Specific Evolutionary Rates in an AFP System.
 Public source: https://github.com/Anthony-Pius-1729/sheath_evolution
-Versioned release: https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.0
+Versioned release: https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.1
 Snapshot: 2026-10-14. DOI: not assigned; separate archival-service deposition pending.
 The release URL identifies the publication destination; see GitHub for upload status.
 
 Extract into a new empty directory. Paths are relative to the extracted project root.
-`ARCHIVE_SHA256.csv` inventories every included original project file and its byte count/hash.
+`ARCHIVE_SHA256.csv` inventories every included project file and its byte count/hash.
+The original public v1.0.0 release is retained unchanged.
 Read `README.md`, `DATA_DICTIONARY.md` and `REPRODUCIBILITY_AUDIT.md` before reuse.
-`FROZEN_ANALYSIS.md` is retained unchanged; its state-definition/sensitivity-scope mismatch
+`FROZEN_ANALYSIS.md` preserves the original text and appends dated deviation notes; its state-definition/sensitivity-scope mismatch
 with implemented inputs/archived checks is disclosed in the current text. Historical files
 are included as decision evidence and may describe earlier stages rather than final sets.
 
@@ -60,7 +63,8 @@ Primary analysis entry points:
 - `verify_retained_data.py`, `RETAINED_DATA_VALIDATION.json`: saved-file correspondence
   audit covering all 927 recorded structural positions and 223 primary fitted sites.
 
-No analysis was rerun to create this archive. Source scripts, recorded sequence pools,
+No scientific analysis was rerun during this packaging revision. The supplied bounded
+reconstruction evidence is included and independently checked from its saved files. Source scripts, recorded sequence pools,
 retrieval/orthology evidence and intermediate outputs are supplied for inspection and
 replay from retained inputs. Rate estimates, structure geometry and models are unchanged.
 The numerical analyses require scientific Python dependencies and external tools; the
@@ -69,19 +73,23 @@ assume a current plotting environment is the original fitting environment.
 
 Important completeness limits:
 
-Original mmCIF coordinate bytes/checksums, selected structural-reference keys, candidate
-tie scores and state-specific descriptor intermediates are absent. External tool binaries
+Historical coordinate-download bytes/checksums, selected-reference logs, candidate
+tie scores and state-specific descriptor intermediates are absent. Newly retrieved
+coordinates for AFP/diffocin, reconstructed selected keys and explicit GNM zero-mode
+code are included under `reproducibility_check/`, with hashes and verification reports. External tool binaries
 and full third-party build source are omitted; recorded versions/build notes remain in
 `FROZEN_ANALYSIS.md`. Public structure accessions identify deposited sources, but later
-coordinate downloads cannot prove original-byte identity. Exact historical structural-copy
-reconstruction has not been verified. This archive does not imply that it has been.
+coordinate downloads cannot prove original-byte identity. Structural measurements are reproduced for the three fitted proteins;
+this does not recover the original execution trail. R2 pyocin and SalCIS were not
+reconstructed. See the reconstruction README for the initial GNM failure and the
+explicit zero-mode treatment that reproduces retained values.
 
 Publication figures are included. Manuscript drafts, LaTeX files, submission documents
 and the Overleaf ZIP are excluded, even if present locally. Authoring scripts require
 their local manuscript inputs; the retained-data verifier works with the code/data archive.
 GitHub release hosting is separate from archival-service deposition and DOI registration.
-No DOI, complete original numerical environment or verified structural reconstruction is
-claimed. Third-party data retain their source terms; this package adds no license grant.
+No DOI, complete historical numerical environment or recovered historical execution
+trail is claimed. Third-party data retain their source terms; this package adds no license grant.
 '''
 archive=ROOT/'reproducibility_archive.zip'
 excluded={'MANUSCRIPT.md','SUPPLEMENTARY.md','MANUSCRIPT_REVIEW.md','MANUSCRIPT_VALIDATION.json','REVIEW_RESPONSE.md','SUBMISSION_CHECKLIST.md','COVER_LETTER_DRAFT.md','LATEX_README.md','manuscript.tex','supplementary.tex','title_page.tex','manuscript_for_review.tex','supplementary_for_review.tex'}
@@ -100,6 +108,6 @@ try:
     build_head=head.stdout.strip() if head.returncode==0 else None
 except FileNotFoundError:
     build_head=None
-summary=dict(archive=archive.name,status='code/data package prepared for versioned GitHub release; DOI deposition pending',version='v1.0.0',repository='https://github.com/Anthony-Pius-1729/sheath_evolution',release_url='https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.0',build_git_head=build_head,project_files=len(rows),source_bytes=sum(row['bytes'] for row in rows),archive_bytes=archive.stat().st_size,sha256=hashlib.sha256(archive.read_bytes()).hexdigest(),manuscript_documents_included=False,original_atomic_coordinates_included=False,exact_historical_selected_subunits_verified=False)
+summary=dict(archive=archive.name,status='code/data package prepared for versioned GitHub release; DOI deposition pending',version='v1.0.1',repository='https://github.com/Anthony-Pius-1729/sheath_evolution',release_url='https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.1',build_git_head=build_head,project_files=len(rows),source_bytes=sum(row['bytes'] for row in rows),archive_bytes=archive.stat().st_size,sha256=hashlib.sha256(archive.read_bytes()).hexdigest(),manuscript_documents_included=False,original_atomic_coordinates_included=False,reconstruction_atomic_coordinates_included=True,structural_measurements_reproduced_for=['AFP Afp2','AFP Afp3','Diffocin'],exact_historical_selected_subunits_verified=False)
 (ROOT/'REPRODUCIBILITY_ARCHIVE.json').write_text(json.dumps(summary,indent=2)+'\n')
 print(json.dumps(summary,indent=2))

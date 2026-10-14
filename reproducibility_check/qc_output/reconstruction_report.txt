@@ -1,0 +1,79 @@
+
+==============================================================================
+Serratia entomophila AFP   extended 6RBN / contracted 6RC8
+==============================================================================
+  F1: Afp2                                             identity=1.000  modelled 350 ext / 348 con
+  F2: Afp3                                             identity=0.992  modelled 358 ext / 355 con
+  subunits: 24 extended (EXPANDED), 48 contracted (EXPANDED)
+  lattice extended  : rings=4 sizes=[6, 6, 6, 6] C6 rise=39.4 A twist=20.5 deg
+  lattice contracted: rings=8 sizes=[6, 6, 6, 6, 6, 6, 6, 6] C6 rise=17.5 A twist=-28.5 deg
+  contraction ratio : 0.44
+  expansion clashes : 0 extended, 0 contracted (OK)
+  metadata QC (coordinates vs deposited helical record):
+      ext rise   coords=      39.4 A deposited=        78.6 A  PASS
+      ext twist  coords=    20.5 deg deposited=      40.3 deg  PASS
+      ext Cn     coords=          C6 deposited=            C6  PASS
+      con rise   coords=      17.5 A deposited=        35.0 A  PASS
+      con twist  coords=   -28.5 deg deposited=       3.1 deg  PASS
+      con Cn     coords=          C6 deposited=            C6  PASS
+
+  --- F1 (Afp2) ---
+      neighbour shell complete  : yes ext / yes con
+      contacts dropped (partner unmatched): 94 ext / 72 con residues
+      residues with any contact : 184
+      in primary domain (>=3)   : 84
+      R: mean=0.551 median=0.500 sd=0.383  q10=0.000 q90=1.000
+      R distribution: frac<=0.05=0.143  frac>=0.95=0.357  interior=0.500
+      cutoff sweep : 4.0A:n=46,m=0.53  4.5A:n=61,m=0.49  5.0A:n=84,m=0.55  5.5A:n=101,m=0.58  6.0A:n=113,m=0.62
+      domain sweep : >=2:n=109,m=0.58  >=3:n=84,m=0.55  >=4:n=52,m=0.48  >=5:n=39,m=0.39
+      lattice-stripped: n=84 mean=0.551   rho(lattice, stripped)=1.000
+      Spearman rho(R, covariate) in domain:
+        RSA  rho=+0.020 p=0.86  n=84
+        WCN  rho=+0.237 p=0.03  n=84
+        GNM  rho=-0.349 p=0.0011  n=84
+
+  --- F2 (Afp3) ---
+      neighbour shell complete  : yes ext / yes con
+      contacts dropped (partner unmatched): 90 ext / 69 con residues
+      residues with any contact : 190
+      in primary domain (>=3)   : 82
+      R: mean=0.541 median=0.500 sd=0.391  q10=0.000 q90=1.000
+      R distribution: frac<=0.05=0.183  frac>=0.95=0.341  interior=0.476
+      cutoff sweep : 4.0A:n=47,m=0.56  4.5A:n=61,m=0.51  5.0A:n=82,m=0.54  5.5A:n=96,m=0.57  6.0A:n=116,m=0.60
+      domain sweep : >=2:n=104,m=0.57  >=3:n=82,m=0.54  >=4:n=57,m=0.46  >=5:n=39,m=0.39
+      lattice-stripped: n=82 mean=0.541   rho(lattice, stripped)=1.000
+      Spearman rho(R, covariate) in domain:
+        RSA  rho=+0.073 p=0.51  n=82
+        WCN  rho=+0.105 p=0.35  n=82
+        GNM  rho=-0.234 p=0.035  n=82
+
+==============================================================================
+Clostridioides difficile diffocin   extended 8V3X / contracted 8V3Y
+==============================================================================
+  F1: Sheath (CD1363)                                  identity=1.000  modelled 352 ext / 353 con
+  subunits: 18 extended, 30 contracted
+  lattice extended  : rings=3 sizes=[6, 6, 6] C6 rise=39.7 A twist=17.5 deg
+  lattice contracted: rings=5 sizes=[6, 6, 6, 6, 6] C6 rise=25.6 A twist=27.8 deg
+  contraction ratio : 0.65   <-- ANOMALOUS, expected ~0.42-0.45
+  metadata QC (coordinates vs deposited helical record):
+      ext rise   coords=      39.7 A deposited= not deposited  n/a
+      ext twist  coords=    17.5 deg deposited= not deposited  n/a
+      ext Cn     coords=          C6 deposited= not deposited  n/a
+      con rise   coords=      25.6 A deposited= not deposited  n/a
+      con twist  coords=    27.8 deg deposited= not deposited  n/a
+      con Cn     coords=          C6 deposited= not deposited  n/a
+
+  --- F1 (Sheath (CD1363)) ---
+      neighbour shell complete  : yes ext / yes con
+      contacts dropped (partner unmatched): 0 ext / 29 con residues
+      residues with any contact : 128
+      in primary domain (>=3)   : 58
+      R: mean=0.294 median=0.236 sd=0.305  q10=0.000 q90=0.765
+      R distribution: frac<=0.05=0.328  frac>=0.95=0.069  interior=0.603
+      cutoff sweep : 4.0A:n=39,m=0.31  4.5A:n=49,m=0.30  5.0A:n=58,m=0.29  5.5A:n=67,m=0.29  6.0A:n=76,m=0.28
+      domain sweep : >=2:n=86,m=0.37  >=3:n=58,m=0.29  >=4:n=42,m=0.23  >=5:n=31,m=0.27
+      lattice-stripped: n=58 mean=0.294   rho(lattice, stripped)=1.000
+      Spearman rho(R, covariate) in domain:
+        RSA  rho=+0.060 p=0.65  n=58
+        WCN  rho=+0.068 p=0.61  n=58
+        GNM  rho=-0.098 p=0.46  n=58

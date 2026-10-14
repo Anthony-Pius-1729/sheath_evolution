@@ -74,7 +74,9 @@ measure of invariant columns.
 ## Boundaries
 
 Original mmCIF bytes/checksums, selected subunit keys, tie-candidate scores and monomer
-chain keys were not retained. Exact historical structural reconstruction remains
-unverified. `REPRODUCIBILITY_AUDIT.md` specifies the ordered selection algorithm and
+chain keys were not retained. The supplied reconstruction reproduces measurements for the three fitted proteins,
+including GNM with explicit zero-mode exclusion. Reconstruction coordinate bytes and
+subunit identifiers are in `reproducibility_check/`; historical execution identities
+remain unverified. R2 pyocin and SalCIS were not reconstructed. `REPRODUCIBILITY_AUDIT.md` specifies the ordered selection algorithm and
 these limits. The bootstrap resamples ten-reference-position sequence windows;
 coverage under three-dimensional structural dependence has not been assessed.

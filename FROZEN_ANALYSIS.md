@@ -160,3 +160,29 @@ observations and must not be described as such. R2 pyocin, the protein in which 
 correlation was computed, is not in any dataset above.
 
 **Deviations from this specification:** none at the time of freezing.
+
+
+---
+
+## Retrospective deviation record (added 2026-10-14)
+
+The original frozen specification above is preserved byte-for-byte; the statement that
+no deviations were known applies to the time of freezing. The original file and checksum
+are retained in `reproducibility_check/FROZEN_ANALYSIS_original.md` and the package manifest.
+
+1. **Covariate state (discrepancy recorded 2026-10-13).** Section 4 specified
+   extended-state monomer covariates. Retrospective auditing found that the producer
+   computes descriptors separately on extended and contracted representative monomer
+   chains, then averages available values (`np.nanmean`, structural_qc.py line 320).
+   The retained models therefore condition on state-averaged descriptors. This is an
+   implementation departure; an extended-state-only adjusted association has not
+   been tested, and no model was refitted to resolve the discrepancy.
+2. **GNM numerical reproduction (2026-10-14).** The initial reconstruction with the
+   archived `np.linalg.pinv` implementation did not reproduce the retained GNM values.
+   Explicit exclusion of Kirchhoff eigenvalues at or below 1e-10 times the maximum
+   reproduced the retained values at all 224 eligible positions of AFP Afp2, Afp3
+   and diffocin, with maximum absolute difference below 1.7e-13. This establishes
+   numerical agreement with the supplied zero-mode treatment; it does not identify
+   the historical LAPACK build or its eigenvalue handling. Original producer files,
+   structural measurements, rates and fitted models remain unchanged. See
+   `reproducibility_check/REPRODUCIBILITY_CHECK.md`.

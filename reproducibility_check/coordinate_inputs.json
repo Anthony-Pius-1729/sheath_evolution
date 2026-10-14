@@ -1,0 +1,37 @@
+{
+  "scope": "Newly retrieved deposited coordinates used in the supplied reconstruction; packaged bytes are fixed by these hashes.",
+  "inputs": [
+    {
+      "accession": "6RBN",
+      "path": "reproducibility_check/structures/6RBN.cif",
+      "source_url": "https://files.rcsb.org/download/6RBN.cif",
+      "bytes": 787449,
+      "sha256": "a6059a150642e66c2fdd5f5782fe8fac8cca65cc3f09278db873dc990248d6b8",
+      "identity_with_historical_download_verified": false
+    },
+    {
+      "accession": "6RC8",
+      "path": "reproducibility_check/structures/6RC8.cif",
+      "source_url": "https://files.rcsb.org/download/6RC8.cif",
+      "bytes": 582226,
+      "sha256": "cbef02fe111a728e7b2a2cf45285a357d8bd7ccd37698ae86a045fcc9f428774",
+      "identity_with_historical_download_verified": false
+    },
+    {
+      "accession": "8V3X",
+      "path": "reproducibility_check/structures/8V3X.cif",
+      "source_url": "https://files.rcsb.org/download/8V3X.cif",
+      "bytes": 7234932,
+      "sha256": "bd6db201784b4bdde3884153822c0fd877b7270010327bac08719ba5ba71d103",
+      "identity_with_historical_download_verified": false
+    },
+    {
+      "accession": "8V3Y",
+      "path": "reproducibility_check/structures/8V3Y.cif",
+      "source_url": "https://files.rcsb.org/download/8V3Y.cif",
+      "bytes": 7890039,
+      "sha256": "b00cd8ec280a7109644b5eea2abced7790af9cfdf78b72e40069f73ba2cd2843",
+      "identity_with_historical_download_verified": false
+    }
+  ]
+}

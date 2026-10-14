@@ -8,7 +8,7 @@ def readcsv(path):
     with (ROOT/path).open() as f: return list(csv.DictReader(f))
 def writecsv(name, rows):
     with (OUT/name).open('w') as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n' if name=='TableS1_structural_references.csv' else '\r\n');w.writeheader();w.writerows(rows)
 def mdtable(headers,rows):
     return '\n'.join(['| '+' | '.join(headers)+' |','|'+'|'.join(['---']*len(headers))+'|']+['| '+' | '.join(map(str,r))+' |' for r in rows])
 def fasta(path):
@@ -21,11 +21,14 @@ names={'afp_Afp2':'AFP Afp2','afp_Afp3':'AFP Afp3','diffocin':'Diffocin'}
 primary={r['dataset']:r for r in json.loads((ROOT/'results/hypothesis_test_primary.json').read_text())}
 struct=[('r2pyocin','F1','R2 pyocin','3J9Q/1','3J9R/1','A–R, X, a, d, g, j, m','0–5, A–R, a–l',385,383,'deposited copies',24,36),('afp','F1','AFP Afp2','6RBN/2','6RC8/1','C','A',350,348,'deposited operators',24,48),('afp','F2','AFP Afp3','6RBN/3','6RC8/2','D','B',358,355,'deposited operators',24,48),('salcis','F1','SalCIS','9R9H/1','9R9I/1','T–Z, a–k','O–Z, a–f',514,495,'deposited copies',18,18),('diffocin','F1','Diffocin','8V3X/1','8V3Y/1','E, F, P, Q, S–X, d, e, g, n, q–s, z','A–Z, a–d',352,353,'deposited copies',18,30)]
 s1=[];mapping=[]
+reconstructed={r['protein']:r for r in json.loads((ROOT/'reproducibility_check/reconstructed_references.json').read_text())['proteins']}
 for sys,fam,name,pe,pc,ce,cc,me,mc,coords,ne,nc in struct:
     rows=[r for r in readcsv(f'sheath_pilot/qc_output/R_{sys}.csv') if r['family']==fam]
     eligible=[r for r in rows if r['in_domain']=='True'];identity=float(rows[0]['identity'])
     for r in rows:mapping.append(dict(protein=name,**r))
     s1.append(dict(protein=name,extended_PDB_entity=pe,contracted_PDB_entity=pc,extended_author_chains=ce,contracted_author_chains=cc,modeled_E=me,modeled_C=mc,identity=identity,eligible_sites=len(eligible),eligible_min_SEQRES=min(int(r['seqres_pos']) for r in eligible),eligible_max_SEQRES=max(int(r['seqres_pos']) for r in eligible),coordinate_source=coords,assembly_subunits_E=ne,assembly_subunits_C=nc,selected_contact_subunit_key='not archived'))
+    rec=reconstructed.get(name)
+    s1[-1].update(reconstructed_contact_key_E=rec['extended']['key'] if rec else 'not reconstructed',reconstructed_contact_key_C=rec['contracted']['key'] if rec else 'not reconstructed')
 writecsv('TableS1_structural_references.csv',s1);writecsv('TableS1_residue_mapping.csv',mapping)
 s2=[dict(system='R2 pyocin',pool=8035,blast_hits=4593,gated=1266,species_dereplicated=967,decision='excluded: reference lineage ambiguous'),dict(system='SalCIS',pool=7592,blast_hits=4490,gated=805,species_dereplicated=667,decision='excluded: reference locus poorly recovered'),dict(system='Diffocin',pool=8005,blast_hits=930,gated=192,species_dereplicated=165,decision='retained: primary 33 sequences'),dict(system='AFP joint route',pool=8005,blast_hits=5470,gated='not archived as a comparable single-query funnel',species_dereplicated='not applicable to joint route',decision='retained: Afp2 27 / Afp3 31')]
 writecsv('TableS2_retrieval_decisions.csv',s2)
@@ -63,6 +66,7 @@ for k in alns:
 copy_paths=['results/hypothesis_test_primary.json','results/sensitivity.json','results/partial_residuals.csv','results/R_all_references.csv','orthology/primary_alignment_verification.csv','orthology/afp_sf1_feasibility.csv','orthology/dataset_decision.csv','orthology/afp_check3.json','orthology/r2pyocin_genome_copies.csv','orthology/r2pyocin_within_genome_distance.csv','orthology/salcis_loci.csv','orthology/salcis_ent_loci.csv','orthology/diffocin_all_loci.csv','sheath_pilot/qc_output/structural_qc_report.txt','FROZEN_ANALYSIS.md','hypothesis_test.py','requirements.txt','sheath_pilot/structural_qc.py','sheath_pilot/covariates.py']
 copy_paths += list(alns.values())
 copy_paths += ['REPRODUCIBILITY_AUDIT.md','structural_provenance_audit.json','DATA_DICTIONARY.md','verify_retained_data.py','RETAINED_DATA_VALIDATION.json']
+copy_paths += [f'reproducibility_check/{p}' for p in ['REPRODUCIBILITY_CHECK.md','verification_report.json','reconstruction_comparison.csv','reconstructed_references.json','coordinate_inputs.json','package_manifest.json','verify_package.py','run_check.py','covariates_zeromode_fix.py','FROZEN_ANALYSIS_original.md']]
 copy_paths += ['reference_sequences.json','DATASET_DECISION.md','AFP_FEASIBILITY.md','DIFFOCIN_FEASIBILITY.md','R2_FINAL_DECISION.md','sheath_pilot/lattice.py','sheath_pilot/remodeling.py','afp_loci.py','afp_tree.py','locus_architecture.py','filter_hits.py','local_search.py','uniprot_retrieve.py','prelim_tree.py']
 copy_paths += [f'retrieval_uniprot/{fam}_provenance.json' for fam in ['r2pyocin','afp_Afp2','afp_Afp3','salcis','diffocin']]
 copy_paths += [f'retrieval_uniprot/{fam}_search_provenance.json' for fam in ['r2pyocin','salcis','diffocin']]
@@ -85,7 +89,7 @@ analysis. It does not introduce new rate estimates, model fits or structural cal
 The complete-precision tables, residue mappings, commands and selected archived outputs
 are supplied in `supplementary_data/`. Code and retained study outputs are hosted in the
 public [GitHub repository](https://github.com/Anthony-Pius-1729/sheath_evolution) and
-[v1.0.0 code/data release](https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.0).
+[v1.0.1 code/data release](https://github.com/Anthony-Pius-1729/sheath_evolution/releases/tag/v1.0.1).
 Separate archival-service deposition and DOI registration remain pending. Current manuscript
 drafts and submission files are excluded from the release package.
 
@@ -110,8 +114,8 @@ the deposited chain names. A selected contact-reference subunit key was not arch
 The implementation prefers non-terminal family subunits and then the candidate with the
 largest number of subunit centroids at strictly less than 90 Å. Python `max` retains the
 first candidate in input order when scores tie. The original mmCIF bytes, selected keys,
-candidate scores and tie counts are absent, so exact historical subunits cannot be verified
-from the archived outputs. The accompanying `REPRODUCIBILITY_AUDIT.md` documents the
+candidate scores and tie counts were not retained, so the historical execution trail cannot
+be recovered from the original outputs. The accompanying `REPRODUCIBILITY_AUDIT.md` documents the
 ordered-input procedure and separates downstream input replay from structural reconstruction. Residue correspondence uses global
 BLOSUM62 alignment with opening −11 and extension −1. Modeled amino acids require Cα;
 family matching requires at least 90% identity, calculated as the number of identical
@@ -120,6 +124,25 @@ the family meets this criterion. The continuous producer does not implement an e
 mask or the earlier pilot's 8 Å exclusion. Thus neither an engineering exclusion nor a
 specific unlogged central chain is claimed. Direct PDB chain examples in the main table
 identify family membership rather than the computational reference copy.
+
+The supplied retrospective reconstruction covers AFP Afp2, Afp3 and diffocin only. It
+recovers identical eligible-site sets (84, 82 and 58; 224 positions), and contact remodeling,
+RSA and WCN agree to numerical precision. One Afp3 site fails primary occupancy, leaving
+223 fitted sites. The initial pseudoinverse GNM discrepancy is recorded in the comparison
+summary. Explicit exclusion of eigenvalues at or below 10⁻¹⁰ times the maximum reproduces
+retained GNM values with maximum absolute difference below 1.7 × 10⁻¹³. The saved per-site
+tables contain the agreeing values; no separate per-site copy of the initial failing
+output is supplied. The historical numerical backend was not recovered.
+
+Newly retrieved coordinate files, source URLs and SHA-256 hashes accompany the public
+reconstruction package. Reconstructed contact-reference keys are Afp2 `C#1`/`A#2`, Afp3
+`D#0`/`B#0` and diffocin `g`/`B` (extended/contracted). These keys establish a selection
+yielding agreement with retained measurements; they do not recover the unlogged historical
+selection or monomer-chain identities. R2 pyocin and SalCIS were not reconstructed. The
+original producer remains unchanged; the explicit zero-mode implementation is separate.
+`verify_package.py` checks the saved evidence without structural recalculation. The optional
+`run_check.py` uses bundled coordinates and writes separate outputs; its revised wrapper
+was syntax-checked during packaging and not executed to repeat the reconstruction.
 
 R2, SalCIS and diffocin use deposited copies; AFP applies deposited biological-assembly
 operators in both states. No retained reference needs guessed screw-based ring completion.

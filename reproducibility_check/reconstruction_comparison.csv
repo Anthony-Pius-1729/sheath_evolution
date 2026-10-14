@@ -1,0 +1,4 @@
+system,family,sites_retained,sites_reconstructed,sites_shared,sites_only_retained,sites_only_reconstructed,R_max_abs_diff,R_n_mismatched,R_spearman,rsa_max_abs_diff,rsa_n_mismatched,rsa_spearman,wcn_max_abs_diff,wcn_n_mismatched,wcn_spearman,gnm_max_abs_diff,gnm_n_mismatched,gnm_spearman
+afp,F1,84,84,84,0,0,8.326672684688674e-17,0,1.0,8.326672684688674e-17,0,1.0,1.1102230246251565e-16,0,1.0,1319211124.8963966,84,0.9987799877620523
+afp,F2,82,82,82,0,0,8.326672684688674e-17,0,1.0,8.326672684688674e-17,0,1.0,2.220446049250313e-16,0,1.0,53087420973.085526,82,0.998302151696216
+diffocin,F1,58,58,58,0,0,5.551115123125783e-17,0,1.0,8.326672684688674e-17,0,1.0,1.1102230246251565e-16,0,1.0,66903618.12160428,58,0.9923098218954752

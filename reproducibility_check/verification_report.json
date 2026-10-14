@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "scope": "Saved reconstruction evidence for the three fitted proteins only; no structural calculations rerun.",
+  "eligible_sites": 224,
+  "fitted_sites": 223,
+  "comparisons": [
+    {
+      "protein": "AFP Afp2",
+      "eligible_sites": 84,
+      "identical_eligible_sets": true,
+      "saved_reconstruction_max_absolute_difference": {
+        "R": 0.0,
+        "rsa": 0.0,
+        "wcn": 0.0,
+        "gnm": 1.6431300764452317e-13
+      },
+      "initial_GNM_discrepancy_reported_in_summary": 1319211124.8963966,
+      "explicit_zero_mode_max_absolute_difference": {
+        "R": 0.0,
+        "rsa": 0.0,
+        "wcn": 0.0,
+        "gnm": 1.6431300764452317e-13
+      }
+    },
+    {
+      "protein": "AFP Afp3",
+      "eligible_sites": 82,
+      "identical_eligible_sets": true,
+      "saved_reconstruction_max_absolute_difference": {
+        "R": 0.0,
+        "rsa": 0.0,
+        "wcn": 0.0,
+        "gnm": 4.3076653355456074e-14
+      },
+      "initial_GNM_discrepancy_reported_in_summary": 53087420973.085526,
+      "explicit_zero_mode_max_absolute_difference": {
+        "R": 0.0,
+        "rsa": 0.0,
+        "wcn": 0.0,
+        "gnm": 4.3076653355456074e-14
+      }
+    },
+    {
+      "protein": "Diffocin",
+      "eligible_sites": 58,
+      "identical_eligible_sets": true,
+      "saved_reconstruction_max_absolute_difference": {
+        "R": 0.0,
+        "rsa": 0.0,
+        "wcn": 0.0,
+        "gnm": 8.215650382226158e-14
+      },
+      "initial_GNM_discrepancy_reported_in_summary": 66903618.12160428,
+      "explicit_zero_mode_max_absolute_difference": {
+        "R": 0.0,
+        "rsa": 0.0,
+        "wcn": 0.0,
+        "gnm": 8.215650382226158e-14
+      }
+    }
+  ],
+  "original_producer_hashes_verified": true,
+  "original_frozen_specification_preserved": true,
+  "coordinate_files_verified": 4,
+  "historical_coordinate_byte_identity_verified": false,
+  "historical_subunit_execution_history_recovered": false,
+  "package_files_checked": 40
+}

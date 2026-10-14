@@ -1,8 +1,10 @@
 # Reproducibility and structural-reference audit
 
-This audit reads existing files and source. It did not download coordinates, rebuild
-assemblies, recompute contacts, estimate rates or refit models. Original scientific outputs
-and the written specification remain unchanged. Machine-readable findings and source-file
+This cumulative audit distinguishes the original retained files from the supplied bounded
+reconstruction for AFP Afp2, Afp3 and diffocin. The current packaging review verified saved
+outputs and source/input hashes; it did not repeat reconstruction or evolutionary analysis.
+Retained scientific measurements and models remain unchanged. The original frozen text is
+preserved verbatim, followed by a dated retrospective deviation note. Machine-readable findings and source-file
 SHA-256 checksums are in `structural_provenance_audit.json`.
 
 ## What the retained files can establish
@@ -60,19 +62,40 @@ scores, tied candidates, lattice labels and selected keys were not serialized. T
 mappings and shell checks do not supply the missing identity. No example chain in main
 Table 1 is promoted to a verified computational reference.
 
-## Conclusion of the requested provenance check
+## Reconstruction agreement and historical provenance
 
-Exact historical structural-reference reconstruction is **not established by this archive**.
-The original coordinate bytes and selected keys are absent. Current PDB downloads could
-support an isolated prospective reconstruction, but that would re-execute the structural
-pipeline and would not by itself prove original-byte identity. It was outside this revision's
-closed-analysis scope and was not performed. The manuscript retains the limitation.
+The supplied reconstruction reproduces the retained structural inputs for the three fitted
+proteins. All 224 eligible positions are recovered (84 Afp2, 82 Afp3 and 58 diffocin);
+223 pass the primary occupancy requirement. Remodeling, RSA and WCN agree to numerical
+precision. Initial GNM discrepancies are recorded in `reconstruction_comparison.csv`.
+Explicit zero-mode exclusion reproduces retained GNM values with maximum absolute
+difference below 1.7e-13. The currently saved reconstructed CSVs contain those agreeing
+values; a separate per-site copy of the initial failing output is not present.
 
-A future reconstruction would need to preserve input mmCIF checksums/revisions, parser and
-numerical versions, representative-chain keys, operator order, subunit keys/ring/azimuths,
-candidate scores/tie order and the final reference keys in both states. Comparison should
-then be made against archived site outputs in an isolated directory. This describes needed
-provenance; it is not a report that such a verification has already occurred.
+`reproducibility_check/verify_package.py` checks the supplied tables, original producer
+checksums, coordinate hashes and original specification. The reconstruction input mmCIF
+files are packaged, with source URLs and hashes in `coordinate_inputs.json`. The supported
+optional reconstruction runner uses those inputs and the separate zero-mode function,
+writes new outputs and records selected keys and numerical versions. Its wrapper was
+syntax-checked during packaging; the reconstruction itself was not repeated.
+
+Reconstructed contact-reference subunits (extended / contracted):
+
+- Afp2: `C#1` / `A#2`.
+- Afp3: `D#0` / `B#0`.
+- Diffocin: `g` / `B`.
+
+The compact identifier record preserves ring/azimuth values from the supplied selection
+records. Agreement establishes a reconstruction consistent with retained measurements;
+it does not recover the unlogged historical execution trail, candidate scores, monomer
+chain identities or historical download bytes. The four packaged coordinate files are
+new retrievals, whose byte identity with historical downloads cannot be established.
+R2 pyocin and SalCIS were not reconstructed. No historical measurement was replaced.
+
+The earlier report's explanation of a particular LAPACK build is unverified. The supported
+claim is that explicit zero-mode exclusion removes the discrepancy. The reconstruction
+README corrects the earlier statement about NumPy's default pseudoinverse tolerance and
+distinguishes original reported explanations from the evidence actually verified.
 
 ## Statistical and environment boundaries
 
@@ -95,12 +118,10 @@ already documented. External tool binaries/build sources are not part of the dep
 
 ## Archive and deposition status
 
-`reproducibility_archive.zip` packages local code, recorded sequence inputs, processed
-alignments/trees/rates/site tables, decision evidence and documentation with a SHA-256
-inventory. The source repository is public. The code/data package is prepared for the
-versioned GitHub release v1.0.0; a separate archival-service deposit and DOI remain pending.
-The package excludes local manuscript drafts and submission documents. Original atomic
-coordinates and unlogged intermediate provenance are absent and are not replaced by guessed
-values. The archive supports inspection and downstream replay from retained site inputs,
-with the limits above. Archival DOI deposition and complete structural reconstruction are
-separate remaining tasks.
+`reproducibility_archive.zip` supplies code, recorded sequence inputs, processed alignments,
+trees, rates, site tables, models, decision evidence, figures and documentation. Version
+v1.0.1 adds the bounded reconstruction package and its coordinate files, scripts, identifiers
+and checksums. The published v1.0.0 remains available unchanged. The source repository is
+public; separate archival-service DOI deposition remains pending. Manuscript drafts and
+submission documents are excluded from the code/data release. No complete historical
+execution environment or original coordinate-download identity is claimed.
